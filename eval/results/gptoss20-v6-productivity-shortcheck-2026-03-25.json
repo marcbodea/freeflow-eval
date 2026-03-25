@@ -1,0 +1,243 @@
+{
+  "generated_at": "2026-03-25T20:25:48Z",
+  "mode": "postprocess",
+  "models": [
+    "openai/gpt-oss-20b"
+  ],
+  "summary": [
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-final-v6",
+      "avg_combined_total": 0.8145,
+      "cases": 15
+    }
+  ],
+  "results": [
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-final-v6",
+      "case_id": "slack-standup-update-names",
+      "context_summary": null,
+      "output_text": "Morning, I shipped the billing fix with Marisa and I'm waiting on PR review from Jonah.",
+      "scores": {
+        "output_total": 0.8466,
+        "output_terms": 1.0,
+        "output_reference": 0.9943,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.8466
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-final-v6",
+      "case_id": "slack-dm-quick-reply",
+      "context_summary": null,
+      "output_text": "Yep, I'll send the updated screenshots before three and flag anything weird I see.",
+      "scores": {
+        "output_total": 0.7025,
+        "output_terms": 0.5,
+        "output_reference": 0.9625,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.7025
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-final-v6",
+      "case_id": "slack-no-hallucinated-ticket",
+      "context_summary": null,
+      "output_text": "Can you reproduce this on your side and let me know what you find?",
+      "scores": {
+        "output_total": 0.7062,
+        "output_terms": 0.5,
+        "output_reference": 0.9688,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.7062
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-final-v6",
+      "case_id": "email-reply-scheduling",
+      "context_summary": null,
+      "output_text": "Thursday morning works for me. I'll send edits tonight so we can lock it then.",
+      "scores": {
+        "output_total": 0.8314,
+        "output_terms": 1.0,
+        "output_reference": 0.9689,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.8314
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-final-v6",
+      "case_id": "email-proper-noun-correction",
+      "context_summary": null,
+      "output_text": "Thanks, Camille. I just granted Figma access to the Growth and Brand contractors.",
+      "scores": {
+        "output_total": 0.8388,
+        "output_terms": 1.0,
+        "output_reference": 0.9814,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.8388
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-final-v6",
+      "case_id": "email-no-context-insertion",
+      "context_summary": null,
+      "output_text": "Sounds good, I don't have any constraints on my side.",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-final-v6",
+      "case_id": "prompt-writing-refactor-request",
+      "context_summary": null,
+      "output_text": "Refactor this file in small, safe steps and explain the tradeoffs.",
+      "scores": {
+        "output_total": 0.6149,
+        "output_terms": 0.6667,
+        "output_reference": 0.747,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.6149
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-final-v6",
+      "case_id": "prompt-writing-quoted-text",
+      "context_summary": null,
+      "output_text": "Keep the phrase 'not a blocker' exactly as written and don't make it sound robotic.",
+      "scores": {
+        "output_total": 0.6339,
+        "output_terms": 0.5,
+        "output_reference": 0.8482,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.6339
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-final-v6",
+      "case_id": "prompt-writing-command-correction",
+      "context_summary": null,
+      "output_text": "Use rg, not grep, when searching the repo.",
+      "scores": {
+        "output_total": 0.7124,
+        "output_terms": 1.0,
+        "output_reference": 0.7706,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.7124
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-final-v6",
+      "case_id": "system-empty-filler-only",
+      "context_summary": null,
+      "output_text": "",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-final-v6",
+      "case_id": "system-remove-false-start",
+      "context_summary": null,
+      "output_text": "I can send the revised total by noon.",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-final-v6",
+      "case_id": "system-preserve-intent-not-overformalize",
+      "context_summary": null,
+      "output_text": "This feels a bit too heavy; maybe we can trim it back.",
+      "scores": {
+        "output_total": 0.8079,
+        "output_terms": 1.0,
+        "output_reference": 0.9298,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.8079
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-final-v6",
+      "case_id": "system-correct-close-misspelling-from-context",
+      "context_summary": null,
+      "output_text": "I just pinged Nadia and I'm waiting to hear back.",
+      "scores": {
+        "output_total": 0.8439,
+        "output_terms": 1.0,
+        "output_reference": 0.9899,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.8439
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-final-v6",
+      "case_id": "system-do-not-insert-name-from-context",
+      "context_summary": null,
+      "output_text": "Sounds good. I'll follow up once I hear back from legal.",
+      "scores": {
+        "output_total": 0.8393,
+        "output_terms": 1.0,
+        "output_reference": 0.9821,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.8393
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-final-v6",
+      "case_id": "system-preserve-list-structure",
+      "context_summary": null,
+      "output_text": "First update the changelog. Second cut the release candidate. Third post the announcement.",
+      "scores": {
+        "output_total": 0.8402,
+        "output_terms": 1.0,
+        "output_reference": 0.9836,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.8402
+    }
+  ]
+}
