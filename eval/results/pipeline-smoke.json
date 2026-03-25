@@ -1,0 +1,500 @@
+{
+  "generated_at": "2026-03-24T16:23:30Z",
+  "mode": "pipeline",
+  "models": [
+    "llama-3.1-8b-instant",
+    "meta-llama/llama-4-scout-17b-16e-instruct"
+  ],
+  "summary": [
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "app-default-system",
+      "avg_combined_total": 1.5798,
+      "cases": 3
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "system-strict-no-hallucination",
+      "avg_combined_total": 1.5736,
+      "cases": 3
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "app-default-system",
+      "avg_combined_total": 1.5151,
+      "cases": 3
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "system-strict-no-hallucination",
+      "avg_combined_total": 1.4743,
+      "cases": 3
+    },
+    {
+      "model": "llama-3.1-8b-instant",
+      "context_variant": "context-more-conservative",
+      "system_variant": "app-default-system",
+      "avg_combined_total": 1.4318,
+      "cases": 3
+    },
+    {
+      "model": "llama-3.1-8b-instant",
+      "context_variant": "context-more-conservative",
+      "system_variant": "system-strict-no-hallucination",
+      "avg_combined_total": 1.4318,
+      "cases": 3
+    },
+    {
+      "model": "llama-3.1-8b-instant",
+      "context_variant": "app-default-context",
+      "system_variant": "app-default-system",
+      "avg_combined_total": 1.4287,
+      "cases": 3
+    },
+    {
+      "model": "llama-3.1-8b-instant",
+      "context_variant": "app-default-context",
+      "system_variant": "system-strict-no-hallucination",
+      "avg_combined_total": 1.4287,
+      "cases": 3
+    }
+  ],
+  "results": [
+    {
+      "model": "llama-3.1-8b-instant",
+      "context_variant": "app-default-context",
+      "system_variant": "app-default-system",
+      "case_id": "email-reply-typo-fix",
+      "context_summary": "The user is currently composing a reply to an email thread titled \"Q2 launch plan - Dana Kline.\" They are responding to Dana Kline's message, likely to provide revised numbers for the Q2 launch plan.",
+      "output_text": "I can send the revised numbers to Dana Kline by this afternoon.",
+      "scores": {
+        "context_total": 0.684,
+        "context_terms": 1.0,
+        "context_reference": 0.2979,
+        "output_total": 0.8227,
+        "output_terms": 1.0,
+        "output_reference": 0.9545,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.5067
+    },
+    {
+      "model": "llama-3.1-8b-instant",
+      "context_variant": "app-default-context",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "email-reply-typo-fix",
+      "context_summary": "The user is currently composing a reply to an email thread titled \"Q2 launch plan - Dana Kline.\" They are responding to Dana Kline's message, likely to provide revised numbers for the Q2 launch plan.",
+      "output_text": "I can send the revised numbers to Dana Kline by this afternoon.",
+      "scores": {
+        "context_total": 0.684,
+        "context_terms": 1.0,
+        "context_reference": 0.2979,
+        "output_total": 0.8227,
+        "output_terms": 1.0,
+        "output_reference": 0.9545,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.5067
+    },
+    {
+      "model": "llama-3.1-8b-instant",
+      "context_variant": "context-more-conservative",
+      "system_variant": "app-default-system",
+      "case_id": "email-reply-typo-fix",
+      "context_summary": "The user is currently in the Mail app, composing a response to an email with the subject \"Re: Q2 launch plan - Dana Kline\". They are likely trying to type the next part of their response.",
+      "output_text": "I can send the revised numbers to Dana Kline by this afternoon.",
+      "scores": {
+        "context_total": 0.6647,
+        "context_terms": 0.75,
+        "context_reference": 0.5604,
+        "output_total": 0.8227,
+        "output_terms": 1.0,
+        "output_reference": 0.9545,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.4874
+    },
+    {
+      "model": "llama-3.1-8b-instant",
+      "context_variant": "context-more-conservative",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "email-reply-typo-fix",
+      "context_summary": "The user is currently in the Mail app, composing a response to an email with the subject \"Re: Q2 launch plan - Dana Kline\". They are likely trying to type the next part of their response.",
+      "output_text": "I can send the revised numbers to Dana Kline by this afternoon.",
+      "scores": {
+        "context_total": 0.6647,
+        "context_terms": 0.75,
+        "context_reference": 0.5604,
+        "output_total": 0.8227,
+        "output_terms": 1.0,
+        "output_reference": 0.9545,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.4874
+    },
+    {
+      "model": "llama-3.1-8b-instant",
+      "context_variant": "app-default-context",
+      "system_variant": "app-default-system",
+      "case_id": "terminal-command-cleanup",
+      "context_summary": "The user is currently running a command in the terminal to evaluate Groq prompts using a Python script. They are likely writing a command or a script to automate a task related to natural language processing or model evaluation.",
+      "output_text": "run python3 scripts/eval_groq_prompts.py with mode pipeline on llama-3.1-8b-instant",
+      "scores": {
+        "context_total": 0.1921,
+        "context_terms": 0.25,
+        "context_reference": 0.1213,
+        "output_total": 0.8464,
+        "output_terms": 1.0,
+        "output_reference": 0.994,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.0385
+    },
+    {
+      "model": "llama-3.1-8b-instant",
+      "context_variant": "app-default-context",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "terminal-command-cleanup",
+      "context_summary": "The user is currently running a command in the terminal to evaluate Groq prompts using a Python script. They are likely writing a command or a script to automate a task related to natural language processing or model evaluation.",
+      "output_text": "run python3 scripts/eval_groq_prompts.py with mode pipeline on llama-3.1-8b-instant",
+      "scores": {
+        "context_total": 0.1921,
+        "context_terms": 0.25,
+        "context_reference": 0.1213,
+        "output_total": 0.8464,
+        "output_terms": 1.0,
+        "output_reference": 0.994,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.0385
+    },
+    {
+      "model": "llama-3.1-8b-instant",
+      "context_variant": "context-more-conservative",
+      "system_variant": "app-default-system",
+      "case_id": "terminal-command-cleanup",
+      "context_summary": "The user is currently in the Terminal app, running a zsh shell, and has selected a command to execute. They are most likely trying to type the next command or argument.",
+      "output_text": "run python3 scripts/eval_groq_prompts.py with mode pipeline on llama-3.1-8b-instant",
+      "scores": {
+        "context_total": 0.1796,
+        "context_terms": 0.25,
+        "context_reference": 0.0935,
+        "output_total": 0.8464,
+        "output_terms": 1.0,
+        "output_reference": 0.994,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.026
+    },
+    {
+      "model": "llama-3.1-8b-instant",
+      "context_variant": "context-more-conservative",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "terminal-command-cleanup",
+      "context_summary": "The user is currently in the Terminal app, running a zsh shell, and has selected a command to execute. They are most likely trying to type the next command or argument.",
+      "output_text": "run python3 scripts/eval_groq_prompts.py with mode pipeline on llama-3.1-8b-instant",
+      "scores": {
+        "context_total": 0.1796,
+        "context_terms": 0.25,
+        "context_reference": 0.0935,
+        "output_total": 0.8464,
+        "output_terms": 1.0,
+        "output_reference": 0.994,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.026
+    },
+    {
+      "model": "llama-3.1-8b-instant",
+      "context_variant": "app-default-context",
+      "system_variant": "app-default-system",
+      "case_id": "notes-empty-filler",
+      "context_summary": "The user is currently taking notes in the \"Quick ideas\" window of the Notes app. The writing intent appears to be jotting down a list of ideas or reminders.",
+      "output_text": "",
+      "scores": {
+        "context_total": 0.741,
+        "context_terms": 1.0,
+        "context_reference": 0.4244,
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.741
+    },
+    {
+      "model": "llama-3.1-8b-instant",
+      "context_variant": "app-default-context",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "notes-empty-filler",
+      "context_summary": "The user is currently taking notes in the \"Quick ideas\" window of the Notes app. The writing intent appears to be jotting down a list of ideas or reminders.",
+      "output_text": "",
+      "scores": {
+        "context_total": 0.741,
+        "context_terms": 1.0,
+        "context_reference": 0.4244,
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.741
+    },
+    {
+      "model": "llama-3.1-8b-instant",
+      "context_variant": "context-more-conservative",
+      "system_variant": "app-default-system",
+      "case_id": "notes-empty-filler",
+      "context_summary": "The user is currently in the Notes app, specifically in the \"Quick ideas\" window, where they are likely jotting down a list of ideas. They are most likely trying to type the next idea in their list.",
+      "output_text": "",
+      "scores": {
+        "context_total": 0.782,
+        "context_terms": 1.0,
+        "context_reference": 0.5156,
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.782
+    },
+    {
+      "model": "llama-3.1-8b-instant",
+      "context_variant": "context-more-conservative",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "notes-empty-filler",
+      "context_summary": "The user is currently in the Notes app, specifically in the \"Quick ideas\" window, where they are likely jotting down a list of ideas. They are most likely trying to type the next idea in their list.",
+      "output_text": "",
+      "scores": {
+        "context_total": 0.782,
+        "context_terms": 1.0,
+        "context_reference": 0.5156,
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.782
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "app-default-system",
+      "case_id": "email-reply-typo-fix",
+      "context_summary": "The user is currently responding to an email from Dana Kline regarding the Q2 launch plan. The user is likely writing a reply to confirm sending revised numbers, as indicated by the selected text in the email response.",
+      "output_text": "sure I can send the revised numbers to Dana Kline by this afternoon",
+      "scores": {
+        "context_total": 0.8052,
+        "context_terms": 1.0,
+        "context_reference": 0.5671,
+        "output_total": 0.8412,
+        "output_terms": 1.0,
+        "output_reference": 0.9853,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.6464
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "email-reply-typo-fix",
+      "context_summary": "The user is currently responding to an email from Dana Kline regarding the Q2 launch plan. The user is likely writing a reply to confirm sending revised numbers, as indicated by the selected text in the email response.",
+      "output_text": "I can send the revised numbers to Dana Kline by this afternoon.",
+      "scores": {
+        "context_total": 0.8052,
+        "context_terms": 1.0,
+        "context_reference": 0.5671,
+        "output_total": 0.8227,
+        "output_terms": 1.0,
+        "output_reference": 0.9545,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.6279
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "app-default-system",
+      "case_id": "email-reply-typo-fix",
+      "context_summary": "The user is in the Mail app, specifically in a reply email conversation with Dana Kline about the Q2 launch plan. The user is most likely trying to type a statement agreeing to send revised numbers or providing additional context related to the numbers.",
+      "output_text": "sure i can send the revised numbers to Dana Kline by this afternoon",
+      "scores": {
+        "context_total": 0.7823,
+        "context_terms": 1.0,
+        "context_reference": 0.5163,
+        "output_total": 0.8412,
+        "output_terms": 1.0,
+        "output_reference": 0.9853,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.6235
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "email-reply-typo-fix",
+      "context_summary": "The user is in the Mail app, specifically in a reply email conversation with Dana Kline about the Q2 launch plan. The user is most likely trying to type a statement agreeing to send revised numbers or providing additional context related to the numbers.",
+      "output_text": "I agree to send the revised numbers to Dana Kline by this afternoon.",
+      "scores": {
+        "context_total": 0.7823,
+        "context_terms": 1.0,
+        "context_reference": 0.5163,
+        "output_total": 0.7843,
+        "output_terms": 1.0,
+        "output_reference": 0.8905,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.5666
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "app-default-system",
+      "case_id": "terminal-command-cleanup",
+      "context_summary": "The user is currently running a Python script called \"eval_groq_prompts.py\" with specific arguments in a terminal window using zsh. The likely intent is to evaluate or test the performance of a model, possibly related to a project or task involving the \"llama-3.1-8b-instant\" model.",
+      "output_text": "run python3 scripts/eval_groq_prompts.py with mode pipeline on llama-3.1-8b-instant",
+      "scores": {
+        "context_total": 0.4846,
+        "context_terms": 0.75,
+        "context_reference": 0.1603,
+        "output_total": 0.8464,
+        "output_terms": 1.0,
+        "output_reference": 0.994,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.331
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "terminal-command-cleanup",
+      "context_summary": "The user is currently running a Python script called \"eval_groq_prompts.py\" with specific arguments in a terminal window using zsh. The likely intent is to evaluate or test the performance of a model, possibly related to a project or task involving the \"llama-3.1-8b-instant\" model.",
+      "output_text": "run python3 scripts/eval_groq_prompts.py with mode pipeline on llama-3.1-8b-instant",
+      "scores": {
+        "context_total": 0.4846,
+        "context_terms": 0.75,
+        "context_reference": 0.1603,
+        "output_total": 0.8464,
+        "output_terms": 1.0,
+        "output_reference": 0.994,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.331
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "app-default-system",
+      "case_id": "terminal-command-cleanup",
+      "context_summary": "The user is in the Terminal app, running a Python script called \"eval_groq_prompts.py\" with specific arguments. The user is likely trying to type the next command or option for the script, possibly pressing the Tab key for auto-completion or typing another argument.",
+      "output_text": "run python3 scripts/eval_groq_prompts.py with mode pipeline on llama-3.1-8b-instant",
+      "scores": {
+        "context_total": 0.3179,
+        "context_terms": 0.5,
+        "context_reference": 0.0952,
+        "output_total": 0.8464,
+        "output_terms": 1.0,
+        "output_reference": 0.994,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.1643
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "terminal-command-cleanup",
+      "context_summary": "The user is in the Terminal app, running a Python script called \"eval_groq_prompts.py\" with specific arguments. The user is likely trying to type the next command or option for the script, possibly pressing the Tab key for auto-completion or typing another argument.",
+      "output_text": "python3 scripts/eval_groq_prompts.py --mode pipeline --model llama-3.1-8b-instant",
+      "scores": {
+        "context_total": 0.3179,
+        "context_terms": 0.5,
+        "context_reference": 0.0952,
+        "output_total": 0.7809,
+        "output_terms": 1.0,
+        "output_reference": 0.8848,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.0988
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "app-default-system",
+      "case_id": "notes-empty-filler",
+      "context_summary": "The user is currently in the Notes app, specifically in a window titled \"Quick ideas\", but the content of the note is not specified. The user's writing intent is unclear as there is no selected text or additional context to indicate what they are writing about.",
+      "output_text": "",
+      "scores": {
+        "context_total": 0.762,
+        "context_terms": 1.0,
+        "context_reference": 0.4712,
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.762
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "notes-empty-filler",
+      "context_summary": "The user is currently in the Notes app, specifically in a window titled \"Quick ideas\", but the content of the note is not specified. The user's writing intent is unclear as there is no selected text or additional context to indicate what they are writing about.",
+      "output_text": "",
+      "scores": {
+        "context_total": 0.762,
+        "context_terms": 1.0,
+        "context_reference": 0.4712,
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.762
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "app-default-system",
+      "case_id": "notes-empty-filler",
+      "context_summary": "The user is currently in the Notes app, specifically in a window or section labeled \"Quick ideas\", and appears to be taking notes or jotting down ideas. The user is likely trying to type a new note or idea, possibly starting with a brief phrase or sentence.",
+      "output_text": "",
+      "scores": {
+        "context_total": 0.7575,
+        "context_terms": 1.0,
+        "context_reference": 0.4612,
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.7575
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "notes-empty-filler",
+      "context_summary": "The user is currently in the Notes app, specifically in a window or section labeled \"Quick ideas\", and appears to be taking notes or jotting down ideas. The user is likely trying to type a new note or idea, possibly starting with a brief phrase or sentence.",
+      "output_text": "",
+      "scores": {
+        "context_total": 0.7575,
+        "context_terms": 1.0,
+        "context_reference": 0.4612,
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.7575
+    }
+  ]
+}

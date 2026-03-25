@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-03-24T17:44:55Z",
+  "mode": "postprocess",
+  "models": [
+    "openai/gpt-oss-20b",
+    "meta-llama/llama-4-scout"
+  ],
+  "summary": [
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-minimal-literal-v1",
+      "avg_combined_total": 1.0,
+      "cases": 1
+    },
+    {
+      "model": "meta-llama/llama-4-scout",
+      "context_variant": "-",
+      "system_variant": "system-minimal-literal-v1",
+      "avg_combined_total": 1.0,
+      "cases": 1
+    }
+  ],
+  "results": [
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-minimal-literal-v1",
+      "case_id": "en-slack-self-correction-day",
+      "context_summary": null,
+      "output_text": "Let's meet Wednesday after lunch.",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "meta-llama/llama-4-scout",
+      "context_variant": "-",
+      "system_variant": "system-minimal-literal-v1",
+      "case_id": "en-slack-self-correction-day",
+      "context_summary": null,
+      "output_text": "Let's meet Wednesday after lunch.",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    }
+  ]
+}

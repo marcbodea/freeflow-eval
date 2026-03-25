@@ -1,0 +1,1059 @@
+{
+  "generated_at": "2026-03-24T17:58:13Z",
+  "mode": "postprocess",
+  "models": [
+    "openai/gpt-oss-20b"
+  ],
+  "summary": [
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-contract-first-v2",
+      "avg_combined_total": 0.8754,
+      "cases": 17
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-finalist-v3",
+      "avg_combined_total": 0.8543,
+      "cases": 17
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-romanian-chat-v2",
+      "avg_combined_total": 0.8266,
+      "cases": 17
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-balanced-v2",
+      "avg_combined_total": 0.8173,
+      "cases": 17
+    }
+  ],
+  "results": [
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-balanced-v2",
+      "case_id": "en-slack-self-correction-day",
+      "context_summary": null,
+      "output_text": "Let's meet Wednesday after lunch.",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-romanian-chat-v2",
+      "case_id": "en-slack-self-correction-day",
+      "context_summary": null,
+      "output_text": "let's meet Wednesday after lunch",
+      "scores": {
+        "output_total": 0.8408,
+        "output_terms": 1.0,
+        "output_reference": 0.9846,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.8408
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-contract-first-v2",
+      "case_id": "en-slack-self-correction-day",
+      "context_summary": null,
+      "output_text": "Let's meet Wednesday after lunch.",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-finalist-v3",
+      "case_id": "en-slack-self-correction-day",
+      "context_summary": null,
+      "output_text": "Let's meet Wednesday after lunch.",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-balanced-v2",
+      "case_id": "en-email-formal-confirmation",
+      "context_summary": null,
+      "output_text": "Yes, that works for me. I'll send the revised draft tonight.",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-romanian-chat-v2",
+      "case_id": "en-email-formal-confirmation",
+      "context_summary": null,
+      "output_text": "Yes, that works for me. I'll send the revised draft tonight.",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-contract-first-v2",
+      "case_id": "en-email-formal-confirmation",
+      "context_summary": null,
+      "output_text": "Yes, that works for me. I'll send the revised draft tonight.",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-finalist-v3",
+      "case_id": "en-email-formal-confirmation",
+      "context_summary": null,
+      "output_text": "Yes, that works for me. I'll send the revised draft tonight.",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-balanced-v2",
+      "case_id": "en-no-context-name-insertion",
+      "context_summary": null,
+      "output_text": "Sounds good. I'll follow up once I hear back from legal.",
+      "scores": {
+        "output_total": 0.8393,
+        "output_terms": 1.0,
+        "output_reference": 0.9821,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.8393
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-romanian-chat-v2",
+      "case_id": "en-no-context-name-insertion",
+      "context_summary": null,
+      "output_text": "Sounds good. I'll follow up once I hear back from legal.",
+      "scores": {
+        "output_total": 0.8393,
+        "output_terms": 1.0,
+        "output_reference": 0.9821,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.8393
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-contract-first-v2",
+      "case_id": "en-no-context-name-insertion",
+      "context_summary": null,
+      "output_text": "Sounds good. I'll follow up once I hear back from legal.",
+      "scores": {
+        "output_total": 0.8393,
+        "output_terms": 1.0,
+        "output_reference": 0.9821,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.8393
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-finalist-v3",
+      "case_id": "en-no-context-name-insertion",
+      "context_summary": null,
+      "output_text": "Sounds good, I'll follow up once I hear back from legal.",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-balanced-v2",
+      "case_id": "en-correct-name-from-vocabulary",
+      "context_summary": null,
+      "output_text": "I synced with Marisa and Jonah on the rollout.",
+      "scores": {
+        "output_total": 0.875,
+        "output_terms": 0.5,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 0.875
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-romanian-chat-v2",
+      "case_id": "en-correct-name-from-vocabulary",
+      "context_summary": null,
+      "output_text": "I synced with Marisa and Jonah on the rollout.",
+      "scores": {
+        "output_total": 0.875,
+        "output_terms": 0.5,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 0.875
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-contract-first-v2",
+      "case_id": "en-correct-name-from-vocabulary",
+      "context_summary": null,
+      "output_text": "I synced with Marisa and Jonah on the rollout.",
+      "scores": {
+        "output_total": 0.875,
+        "output_terms": 0.5,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 0.875
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-finalist-v3",
+      "case_id": "en-correct-name-from-vocabulary",
+      "context_summary": null,
+      "output_text": "I synced with Marisa and Jonah on the rollout.",
+      "scores": {
+        "output_total": 0.875,
+        "output_terms": 0.5,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 0.875
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-balanced-v2",
+      "case_id": "en-terminal-preserve-technical-string",
+      "context_summary": null,
+      "output_text": "python3 scripts/eval_groq_prompts.py --mode postprocess",
+      "scores": {
+        "output_total": 0.8239,
+        "output_terms": 1.0,
+        "output_reference": 0.9565,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.8239
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-romanian-chat-v2",
+      "case_id": "en-terminal-preserve-technical-string",
+      "context_summary": null,
+      "output_text": "python3 scripts/eval_groq_prompts.py --mode postprocess",
+      "scores": {
+        "output_total": 0.8239,
+        "output_terms": 1.0,
+        "output_reference": 0.9565,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.8239
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-contract-first-v2",
+      "case_id": "en-terminal-preserve-technical-string",
+      "context_summary": null,
+      "output_text": "python3 scripts/eval_groq_prompts.py --mode postprocess",
+      "scores": {
+        "output_total": 0.8239,
+        "output_terms": 1.0,
+        "output_reference": 0.9565,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.8239
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-finalist-v3",
+      "case_id": "en-terminal-preserve-technical-string",
+      "context_summary": null,
+      "output_text": "run python3 scripts/eval_groq_prompts.py --mode postprocess",
+      "scores": {
+        "output_total": 0.845,
+        "output_terms": 1.0,
+        "output_reference": 0.9916,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.845
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-balanced-v2",
+      "case_id": "en-chat-keep-casual-tone",
+      "context_summary": null,
+      "output_text": "Yeah, this feels a bit too heavy. Maybe we can trim it back.",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-romanian-chat-v2",
+      "case_id": "en-chat-keep-casual-tone",
+      "context_summary": null,
+      "output_text": "Yeah, this feels a bit too heavy. Maybe we can trim it back.",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-contract-first-v2",
+      "case_id": "en-chat-keep-casual-tone",
+      "context_summary": null,
+      "output_text": "Yeah, this feels a bit too heavy; maybe we can trim it back.",
+      "scores": {
+        "output_total": 0.84,
+        "output_terms": 1.0,
+        "output_reference": 0.9833,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.84
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-finalist-v3",
+      "case_id": "en-chat-keep-casual-tone",
+      "context_summary": null,
+      "output_text": "Yeah, this feels a bit too heavy. Maybe we can trim it back.",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-balanced-v2",
+      "case_id": "en-list-structure",
+      "context_summary": null,
+      "output_text": "1. Update the changelog.  \n2. Cut the release candidate.  \n3. Post the announcement.",
+      "scores": {
+        "output_total": 0.5758,
+        "output_terms": 0.25,
+        "output_reference": 0.8555,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.5758
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-romanian-chat-v2",
+      "case_id": "en-list-structure",
+      "context_summary": null,
+      "output_text": "1. Update the changelog.  \n2. Cut the release candidate.  \n3. Post the announcement.",
+      "scores": {
+        "output_total": 0.5758,
+        "output_terms": 0.25,
+        "output_reference": 0.8555,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.5758
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-contract-first-v2",
+      "case_id": "en-list-structure",
+      "context_summary": null,
+      "output_text": "First, update the changelog. Second, cut the release candidate. Third, post the announcement.",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-finalist-v3",
+      "case_id": "en-list-structure",
+      "context_summary": null,
+      "output_text": "First update the changelog. Second cut the release candidate. Third post the announcement.",
+      "scores": {
+        "output_total": 0.8402,
+        "output_terms": 1.0,
+        "output_reference": 0.9836,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.8402
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-balanced-v2",
+      "case_id": "ro-slack-casual",
+      "context_summary": null,
+      "output_text": "Cred c\u0103 putem lansa m\u00e2ine, dar vreau s\u0103 mai verific o dat\u0103 flow\u2011ul de onboarding.",
+      "scores": {
+        "output_total": 0.7176,
+        "output_terms": 0.5,
+        "output_reference": 0.9877,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.7176
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-romanian-chat-v2",
+      "case_id": "ro-slack-casual",
+      "context_summary": null,
+      "output_text": "Cred c\u0103 putem lansa m\u00e2ine, dar vreau s\u0103 mai verific o dat\u0103 flow\u2011ul de onboarding.",
+      "scores": {
+        "output_total": 0.7176,
+        "output_terms": 0.5,
+        "output_reference": 0.9877,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.7176
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-contract-first-v2",
+      "case_id": "ro-slack-casual",
+      "context_summary": null,
+      "output_text": "Cred c\u0103 putem lansa m\u00e2ine, dar vreau s\u0103 mai verific o dat\u0103 flow-ul de onboarding.",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-finalist-v3",
+      "case_id": "ro-slack-casual",
+      "context_summary": null,
+      "output_text": "Cred c\u0103 putem lansa m\u00e2ine, dar vreau s\u0103 mai verific o dat\u0103 flow-ul de onboarding.",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-balanced-v2",
+      "case_id": "ro-email-formal",
+      "context_summary": null,
+      "output_text": "Mul\u021bumesc, am ata\u0219at varianta actualizat\u0103 \u0219i pot trimite cifrele finale p\u00e2n\u0103 disear\u0103.",
+      "scores": {
+        "output_total": 0.8429,
+        "output_terms": 1.0,
+        "output_reference": 0.9882,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.8429
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-romanian-chat-v2",
+      "case_id": "ro-email-formal",
+      "context_summary": null,
+      "output_text": "Mul\u021bumesc, am ata\u0219at varianta actualizat\u0103 \u0219i pot trimite cifrele finale p\u00e2n\u0103 disear\u0103.",
+      "scores": {
+        "output_total": 0.8429,
+        "output_terms": 1.0,
+        "output_reference": 0.9882,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.8429
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-contract-first-v2",
+      "case_id": "ro-email-formal",
+      "context_summary": null,
+      "output_text": "Mul\u021bumesc, am ata\u0219at varianta actualizat\u0103 \u0219i pot trimite cifrele finale p\u00e2n\u0103 disear\u0103.",
+      "scores": {
+        "output_total": 0.8429,
+        "output_terms": 1.0,
+        "output_reference": 0.9882,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.8429
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-finalist-v3",
+      "case_id": "ro-email-formal",
+      "context_summary": null,
+      "output_text": "Mul\u021bumesc, am ata\u0219at varianta actualizat\u0103 \u0219i pot trimite cifrele finale p\u00e2n\u0103 disear\u0103.",
+      "scores": {
+        "output_total": 0.8429,
+        "output_terms": 1.0,
+        "output_reference": 0.9882,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.8429
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-balanced-v2",
+      "case_id": "ro-self-correction",
+      "context_summary": null,
+      "output_text": "Hai s\u0103 vorbim joi, nu, stai miercuri dup\u0103-amiaza.",
+      "scores": {
+        "output_total": 0.4857,
+        "output_terms": 0.0,
+        "output_reference": 0.8095,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.4857
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-romanian-chat-v2",
+      "case_id": "ro-self-correction",
+      "context_summary": null,
+      "output_text": "Hai s\u0103 vorbim joi, nu stai miercuri dup\u0103-amiaza.",
+      "scores": {
+        "output_total": 0.4916,
+        "output_terms": 0.0,
+        "output_reference": 0.8193,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.4916
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-contract-first-v2",
+      "case_id": "ro-self-correction",
+      "context_summary": null,
+      "output_text": "Hai s\u0103 vorbim joi, nu stai miercuri dup\u0103-amiaza.",
+      "scores": {
+        "output_total": 0.4916,
+        "output_terms": 0.0,
+        "output_reference": 0.8193,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.4916
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-finalist-v3",
+      "case_id": "ro-self-correction",
+      "context_summary": null,
+      "output_text": "Hai s\u0103 vorbim joi, nu miercuri dup\u0103-amiaza.",
+      "scores": {
+        "output_total": 0.5231,
+        "output_terms": 0.0,
+        "output_reference": 0.8718,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.5231
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-balanced-v2",
+      "case_id": "ro-mixed-language-technical",
+      "context_summary": null,
+      "output_text": "Adaug\u0103 te rog un bullet despre rollback plan \u0219i un altul despre feature flag cleanup.",
+      "scores": {
+        "output_total": 0.843,
+        "output_terms": 1.0,
+        "output_reference": 0.9884,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.843
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-romanian-chat-v2",
+      "case_id": "ro-mixed-language-technical",
+      "context_summary": null,
+      "output_text": "Adaug\u0103, te rog, un bullet despre rollback plan \u0219i un altul despre feature flag cleanup.",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-contract-first-v2",
+      "case_id": "ro-mixed-language-technical",
+      "context_summary": null,
+      "output_text": "Adaug\u0103, te rog, un bullet despre rollback plan \u0219i un altul despre feature flag cleanup.",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-finalist-v3",
+      "case_id": "ro-mixed-language-technical",
+      "context_summary": null,
+      "output_text": "- rollback plan\n- feature flag cleanup",
+      "scores": {
+        "output_total": 0.5956,
+        "output_terms": 1.0,
+        "output_reference": 0.576,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.5956
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-balanced-v2",
+      "case_id": "ro-empty-filler",
+      "context_summary": null,
+      "output_text": "",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-romanian-chat-v2",
+      "case_id": "ro-empty-filler",
+      "context_summary": null,
+      "output_text": "",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-contract-first-v2",
+      "case_id": "ro-empty-filler",
+      "context_summary": null,
+      "output_text": "",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-finalist-v3",
+      "case_id": "ro-empty-filler",
+      "context_summary": null,
+      "output_text": "",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-balanced-v2",
+      "case_id": "ro-no-context-insertion",
+      "context_summary": null,
+      "output_text": "Sun\u0103 bine, revin dup\u0103 ce primesc r\u0103spunsul de la juridic.",
+      "scores": {
+        "output_total": 0.8395,
+        "output_terms": 1.0,
+        "output_reference": 0.9825,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.8395
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-romanian-chat-v2",
+      "case_id": "ro-no-context-insertion",
+      "context_summary": null,
+      "output_text": "Sun\u0103 bine, revin dup\u0103 ce primesc r\u0103spunsul de la juridic.",
+      "scores": {
+        "output_total": 0.8395,
+        "output_terms": 1.0,
+        "output_reference": 0.9825,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.8395
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-contract-first-v2",
+      "case_id": "ro-no-context-insertion",
+      "context_summary": null,
+      "output_text": "Sun\u0103 bine. Revin dup\u0103 ce primesc r\u0103spunsul de la juridic.",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-finalist-v3",
+      "case_id": "ro-no-context-insertion",
+      "context_summary": null,
+      "output_text": "Sun\u0103 bine, revin dup\u0103 ce primesc r\u0103spunsul de la juridic.",
+      "scores": {
+        "output_total": 0.8395,
+        "output_terms": 1.0,
+        "output_reference": 0.9825,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.8395
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-balanced-v2",
+      "case_id": "ro-self-correction-de-fapt",
+      "context_summary": null,
+      "output_text": "Pot s\u0103 trimit draftul m\u00e2ine, de fapt poim\u00e2ine diminea\u021ba.",
+      "scores": {
+        "output_total": 0.4948,
+        "output_terms": 0.0,
+        "output_reference": 0.8247,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.4948
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-romanian-chat-v2",
+      "case_id": "ro-self-correction-de-fapt",
+      "context_summary": null,
+      "output_text": "Pot s\u0103 trimit draftul m\u00e2ine, de fapt poim\u00e2ine diminea\u021ba.",
+      "scores": {
+        "output_total": 0.4948,
+        "output_terms": 0.0,
+        "output_reference": 0.8247,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.4948
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-contract-first-v2",
+      "case_id": "ro-self-correction-de-fapt",
+      "context_summary": null,
+      "output_text": "Pot s\u0103 trimit draftul m\u00e2ine, de fapt poim\u00e2ine diminea\u021ba.",
+      "scores": {
+        "output_total": 0.4948,
+        "output_terms": 0.0,
+        "output_reference": 0.8247,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.4948
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-finalist-v3",
+      "case_id": "ro-self-correction-de-fapt",
+      "context_summary": null,
+      "output_text": "pot s\u0103 trimit draftul m\u00e2ine de fapt poim\u00e2ine diminea\u021b\u0103",
+      "scores": {
+        "output_total": 0.5053,
+        "output_terms": 0.0,
+        "output_reference": 0.8421,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.5053
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-balanced-v2",
+      "case_id": "ro-fillers-only-mixed",
+      "context_summary": null,
+      "output_text": "",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-romanian-chat-v2",
+      "case_id": "ro-fillers-only-mixed",
+      "context_summary": null,
+      "output_text": "",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-contract-first-v2",
+      "case_id": "ro-fillers-only-mixed",
+      "context_summary": null,
+      "output_text": "",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-finalist-v3",
+      "case_id": "ro-fillers-only-mixed",
+      "context_summary": null,
+      "output_text": "",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-balanced-v2",
+      "case_id": "en-prose-sequence-not-list",
+      "context_summary": null,
+      "output_text": "First check the logs. Second, confirm the env vars. Third, rerun the job.",
+      "scores": {
+        "output_total": 0.8459,
+        "output_terms": 1.0,
+        "output_reference": 0.9932,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.8459
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-romanian-chat-v2",
+      "case_id": "en-prose-sequence-not-list",
+      "context_summary": null,
+      "output_text": "First, check the logs. Second, confirm the env vars. Third, rerun the job.",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-contract-first-v2",
+      "case_id": "en-prose-sequence-not-list",
+      "context_summary": null,
+      "output_text": "First check the logs. Second confirm the env vars. Third rerun the job.",
+      "scores": {
+        "output_total": 0.8376,
+        "output_terms": 1.0,
+        "output_reference": 0.9793,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.8376
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-finalist-v3",
+      "case_id": "en-prose-sequence-not-list",
+      "context_summary": null,
+      "output_text": "First check the logs, second confirm the env vars, third rerun the job.",
+      "scores": {
+        "output_total": 0.821,
+        "output_terms": 1.0,
+        "output_reference": 0.9517,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.821
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-balanced-v2",
+      "case_id": "en-keep-leading-run",
+      "context_summary": null,
+      "output_text": "pnpm test --watch",
+      "scores": {
+        "output_total": 0.7106,
+        "output_terms": 0.75,
+        "output_reference": 0.8718,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.7106
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-romanian-chat-v2",
+      "case_id": "en-keep-leading-run",
+      "context_summary": null,
+      "output_text": "pnpm test --watch",
+      "scores": {
+        "output_total": 0.7106,
+        "output_terms": 0.75,
+        "output_reference": 0.8718,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.7106
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-contract-first-v2",
+      "case_id": "en-keep-leading-run",
+      "context_summary": null,
+      "output_text": "run pnpm test --watch",
+      "scores": {
+        "output_total": 0.836,
+        "output_terms": 1.0,
+        "output_reference": 0.9767,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.836
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-finalist-v3",
+      "case_id": "en-keep-leading-run",
+      "context_summary": null,
+      "output_text": "run pnpm test --watch",
+      "scores": {
+        "output_total": 0.836,
+        "output_terms": 1.0,
+        "output_reference": 0.9767,
+        "output_exact": 0.0
+      },
+      "combined_total": 0.836
+    }
+  ]
+}

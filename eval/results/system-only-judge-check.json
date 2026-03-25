@@ -1,0 +1,90 @@
+{
+  "generated_at": "2026-03-24T17:11:19Z",
+  "mode": "postprocess",
+  "models": [
+    "meta-llama/llama-4-scout-17b-16e-instruct"
+  ],
+  "summary": [
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "-",
+      "system_variant": "system-multilingual-precise-v1",
+      "avg_combined_total": 0.9,
+      "cases": 3
+    }
+  ],
+  "results": [
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "-",
+      "system_variant": "system-multilingual-precise-v1",
+      "case_id": "en-slack-self-correction-day",
+      "context_summary": null,
+      "output_text": "Let's meet Wednesday after lunch.",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0,
+        "llm_meaning_preservation": 0.0,
+        "llm_cleanup_quality": 0.0,
+        "llm_correction_quality": 0.0,
+        "llm_format_fit": 0.0,
+        "llm_anti_hallucination": 0.0,
+        "llm_language_preservation": 0.0,
+        "llm_output_contract": 0.0,
+        "llm_output_total": 1.0,
+        "llm_verdict": "The candidate output perfectly matches the expected output."
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "-",
+      "system_variant": "system-multilingual-precise-v1",
+      "case_id": "en-email-formal-confirmation",
+      "context_summary": null,
+      "output_text": "That works for me. I'll send the revised draft tonight.",
+      "scores": {
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 0.9565,
+        "output_exact": 0.0,
+        "llm_meaning_preservation": 0.0,
+        "llm_cleanup_quality": 0.0,
+        "llm_correction_quality": 0.0,
+        "llm_format_fit": 0.0,
+        "llm_anti_hallucination": 0.0,
+        "llm_language_preservation": 0.0,
+        "llm_output_contract": 0.0,
+        "llm_output_total": 1.0,
+        "llm_verdict": "The candidate output perfectly matches the expected output in terms of meaning, formatting, and content."
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "-",
+      "system_variant": "system-multilingual-precise-v1",
+      "case_id": "en-no-context-name-insertion",
+      "context_summary": null,
+      "output_text": "Sounds good, I'll follow up once I hear back from legal.\n\nwas changed to:\n\nThe RAW transcript was short and contained minimal filler. The final version for an email reply should be polished:\n\n Sounds good. I'll follow up once I hear back from legal.",
+      "scores": {
+        "output_total": 0.7,
+        "output_terms": 1.0,
+        "output_reference": 0.3721,
+        "output_exact": 0.0,
+        "llm_meaning_preservation": 1.0,
+        "llm_cleanup_quality": 1.0,
+        "llm_correction_quality": 1.0,
+        "llm_format_fit": 1.0,
+        "llm_anti_hallucination": 1.0,
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 0.0,
+        "llm_output_total": 0.7,
+        "llm_verdict": "The candidate output mostly meets the requirements but fails to adhere to the output contract."
+      },
+      "combined_total": 0.7
+    }
+  ]
+}

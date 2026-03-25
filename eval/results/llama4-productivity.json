@@ -1,0 +1,1119 @@
+{
+  "generated_at": "2026-03-24T16:34:18Z",
+  "mode": "pipeline",
+  "models": [
+    "meta-llama/llama-4-scout-17b-16e-instruct"
+  ],
+  "summary": [
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "app-default-system",
+      "avg_combined_total": 1.5405,
+      "cases": 15
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "system-strict-no-hallucination",
+      "avg_combined_total": 1.4709,
+      "cases": 15
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "app-default-system",
+      "avg_combined_total": 1.4666,
+      "cases": 15
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "system-strict-no-hallucination",
+      "avg_combined_total": 1.4102,
+      "cases": 15
+    }
+  ],
+  "results": [
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "app-default-system",
+      "case_id": "slack-standup-update-names",
+      "context_summary": "The user is currently posting a message to the #eng-standup channel on Slack. The likely writing intent is to share information or updates with the engineering team during a stand-up meeting.",
+      "output_text": "morning I shipped the billing fix with Marisa and I'm waiting on PR review from Jonah",
+      "scores": {
+        "context_total": 0.5226,
+        "context_terms": 0.5,
+        "context_reference": 0.5501,
+        "output_total": 0.8396,
+        "output_terms": 1.0,
+        "output_reference": 0.9827,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.3622
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "slack-standup-update-names",
+      "context_summary": "The user is currently posting a message to the #eng-standup channel on Slack. The likely writing intent is to share information or updates with the engineering team during a stand-up meeting.",
+      "output_text": "Good morning, I shipped the billing fix with Marisa and I'm waiting on PR review from Jonah.",
+      "scores": {
+        "context_total": 0.5226,
+        "context_terms": 0.5,
+        "context_reference": 0.5501,
+        "output_total": 0.83,
+        "output_terms": 1.0,
+        "output_reference": 0.9667,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.3526
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "app-default-system",
+      "case_id": "slack-standup-update-names",
+      "context_summary": "The user is currently in the Slack app, specifically in the \"#eng-standup\" channel, and is in the process of posting a message. The user is likely trying to type the content of their message next.",
+      "output_text": "morning I shipped the billing fix with Marisa and I'm waiting on PR review from Jonah",
+      "scores": {
+        "context_total": 0.4835,
+        "context_terms": 0.5,
+        "context_reference": 0.4633,
+        "output_total": 0.8396,
+        "output_terms": 1.0,
+        "output_reference": 0.9827,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.3231
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "slack-standup-update-names",
+      "context_summary": "The user is currently in the Slack app, specifically in the \"#eng-standup\" channel, and is in the process of posting a message. The user is likely trying to type the content of their message next.",
+      "output_text": "Good morning, I shipped the billing fix with Marisa, and I'm waiting on PR review from Jonah.",
+      "scores": {
+        "context_total": 0.4835,
+        "context_terms": 0.5,
+        "context_reference": 0.4633,
+        "output_total": 0.8334,
+        "output_terms": 1.0,
+        "output_reference": 0.9724,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.3169
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "app-default-system",
+      "case_id": "slack-dm-quick-reply",
+      "context_summary": "The user is currently in a Slack conversation with Alex Rivera, and is likely reading or responding to a message from Alex. The user appears to be in a work-related discussion, possibly related to sharing or requesting updated screenshots.",
+      "output_text": "yep I'll send the updated screenshots before 3 and flag anything weird I see",
+      "scores": {
+        "context_total": 0.6363,
+        "context_terms": 0.75,
+        "context_reference": 0.4973,
+        "output_total": 0.8422,
+        "output_terms": 1.0,
+        "output_reference": 0.987,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.4785
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "slack-dm-quick-reply",
+      "context_summary": "The user is currently in a Slack conversation with Alex Rivera, and is likely reading or responding to a message from Alex. The user appears to be in a work-related discussion, possibly related to sharing or requesting updated screenshots.",
+      "output_text": "I'll send the updated screenshots before 3:00 and flag anything weird I see.",
+      "scores": {
+        "context_total": 0.6363,
+        "context_terms": 0.75,
+        "context_reference": 0.4973,
+        "output_total": 0.8188,
+        "output_terms": 1.0,
+        "output_reference": 0.9481,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.4551
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "app-default-system",
+      "case_id": "slack-dm-quick-reply",
+      "context_summary": "The user is currently in the Slack app, specifically in a conversation window with Alex Rivera, and appears to be responding to a message asking for updated screenshots. The user is most likely trying to type a response to Alex, possibly including an attachment or a confirmation of the request.",
+      "output_text": "yep, I'll send the updated screenshots before 3 and flag anything weird I see.",
+      "scores": {
+        "context_total": 0.581,
+        "context_terms": 0.75,
+        "context_reference": 0.3744,
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.581
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "slack-dm-quick-reply",
+      "context_summary": "The user is currently in the Slack app, specifically in a conversation window with Alex Rivera, and appears to be responding to a message asking for updated screenshots. The user is most likely trying to type a response to Alex, possibly including an attachment or a confirmation of the request.",
+      "output_text": "Here is the polished text:\n\n\"Yep, I'll send the updated screenshots before 3 and flag anything weird I see.\"\n\nwas rewritten to \n\n\"Yep, I'll send the updated screenshots before three and flag anything weird I see.\" to match the context.\n\nNo changes were made to names as \"Alex Rivera\" does not appear in the transcript.\n\nFinal text:\nYep, I'll send the updated screenshots before three and flag anything weird I see.",
+      "scores": {
+        "context_total": 0.581,
+        "context_terms": 0.75,
+        "context_reference": 0.3744,
+        "output_total": 0.4426,
+        "output_terms": 1.0,
+        "output_reference": 0.321,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.0236
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "app-default-system",
+      "case_id": "slack-no-hallucinated-ticket",
+      "context_summary": "The user is currently discussing a product issue in the #product-feedback channel on Slack, specifically regarding a customer complaint about export timing out on large files. The user is likely responding to or investigating this customer feedback, possibly to troubleshoot or resolve the issue.",
+      "output_text": "can you reproduce this on your side and let me know what you find",
+      "scores": {
+        "context_total": 0.769,
+        "context_terms": 1.0,
+        "context_reference": 0.4867,
+        "output_total": 0.7014,
+        "output_terms": 0.5,
+        "output_reference": 0.9606,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.4704
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "slack-no-hallucinated-ticket",
+      "context_summary": "The user is currently discussing a product issue in the #product-feedback channel on Slack, specifically regarding a customer complaint about export timing out on large files. The user is likely responding to or investigating this customer feedback, possibly to troubleshoot or resolve the issue.",
+      "output_text": "Can you reproduce this on your side and let me know what you find?",
+      "scores": {
+        "context_total": 0.769,
+        "context_terms": 1.0,
+        "context_reference": 0.4867,
+        "output_total": 0.7062,
+        "output_terms": 0.5,
+        "output_reference": 0.9688,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.4752
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "app-default-system",
+      "case_id": "slack-no-hallucinated-ticket",
+      "context_summary": "The user is currently in the Slack app, specifically in the \"#product-feedback\" channel, and appears to be responding to a message about an issue with exporting large files. The user is most likely trying to type a response or solution to this problem, possibly including a suggestion or a technical explanation.",
+      "output_text": "can you reproduce this on your side and let me know what you find",
+      "scores": {
+        "context_total": 0.6246,
+        "context_terms": 0.75,
+        "context_reference": 0.4713,
+        "output_total": 0.7014,
+        "output_terms": 0.5,
+        "output_reference": 0.9606,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.326
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "slack-no-hallucinated-ticket",
+      "context_summary": "The user is currently in the Slack app, specifically in the \"#product-feedback\" channel, and appears to be responding to a message about an issue with exporting large files. The user is most likely trying to type a response or solution to this problem, possibly including a suggestion or a technical explanation.",
+      "output_text": "Can you reproduce this on your side and let me know what you find?",
+      "scores": {
+        "context_total": 0.6246,
+        "context_terms": 0.75,
+        "context_reference": 0.4713,
+        "output_total": 0.7062,
+        "output_terms": 0.5,
+        "output_reference": 0.9688,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.3308
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "app-default-system",
+      "case_id": "email-reply-scheduling",
+      "context_summary": "The user is currently working on a draft email in response to a thread about an investor update, specifically with Priya Shah. The user is likely writing to finalize or request feedback on a document or proposal by Thursday morning.",
+      "output_text": "Yes, Thursday morning works for me. I'll send edits tonight so we can lock it then.",
+      "scores": {
+        "context_total": 0.6468,
+        "context_terms": 0.75,
+        "context_reference": 0.5207,
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.6468
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "email-reply-scheduling",
+      "context_summary": "The user is currently working on a draft email in response to a thread about an investor update, specifically with Priya Shah. The user is likely writing to finalize or request feedback on a document or proposal by Thursday morning.",
+      "output_text": "Thursday morning works for me. I'll send edits tonight so we can finalize it then.",
+      "scores": {
+        "context_total": 0.6468,
+        "context_terms": 0.75,
+        "context_reference": 0.5207,
+        "output_total": 0.7955,
+        "output_terms": 1.0,
+        "output_reference": 0.9091,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.4423
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "app-default-system",
+      "case_id": "email-reply-scheduling",
+      "context_summary": "The user is currently in the Mail app, composing a reply to an email draft titled \"Re: Investor update\" addressed to Priya Shah. The user is most likely trying to type a response or suggestion related to the request to finalize a version by Thursday morning.",
+      "output_text": "Yes, Thursday morning works for me. I'll send edits tonight so we can lock it then.",
+      "scores": {
+        "context_total": 0.6473,
+        "context_terms": 0.75,
+        "context_reference": 0.5217,
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.6473
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "email-reply-scheduling",
+      "context_summary": "The user is currently in the Mail app, composing a reply to an email draft titled \"Re: Investor update\" addressed to Priya Shah. The user is most likely trying to type a response or suggestion related to the request to finalize a version by Thursday morning.",
+      "output_text": "Thursday morning works for me. I'll send edits tonight so we can finalize it then.\n\nBest,\n[Your Name] \n\nHowever, since the response seems to be part of an email and considering standard email etiquette, a more suitable response might look like this:\n\nDear Priya Shah,\n\nThursday morning works for me. I'll send edits tonight so we can finalize it then.\n\nBest regards,\n[Your Name]\n\nGiven that only the final text is requested and assuming a standard response format without specific names or sign-offs provided:\n\nThursday morning works for me. I'll send edits tonight so we can finalize it then.",
+      "scores": {
+        "context_total": 0.6473,
+        "context_terms": 0.75,
+        "context_reference": 0.5217,
+        "output_total": 0.3937,
+        "output_terms": 1.0,
+        "output_reference": 0.2395,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.041
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "app-default-system",
+      "case_id": "email-proper-noun-correction",
+      "context_summary": "The user is currently replying to an email thread about Figma access for new hires, specifically addressing Camille Fournier. The likely writing intent is to request access for the Growth and Brand contractors, as indicated by the selected text in the email.",
+      "output_text": "Thanks Camille, I just granted Figma access to the Growth and Brand contractors.",
+      "scores": {
+        "context_total": 0.8198,
+        "context_terms": 1.0,
+        "context_reference": 0.5996,
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.8198
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "email-proper-noun-correction",
+      "context_summary": "The user is currently replying to an email thread about Figma access for new hires, specifically addressing Camille Fournier. The likely writing intent is to request access for the Growth and Brand contractors, as indicated by the selected text in the email.",
+      "output_text": "Thank you, Camille. I just granted Figma access to the Growth and Brand contractors.",
+      "scores": {
+        "context_total": 0.8198,
+        "context_terms": 1.0,
+        "context_reference": 0.5996,
+        "output_total": 0.8207,
+        "output_terms": 1.0,
+        "output_reference": 0.9512,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.6405
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "app-default-system",
+      "case_id": "email-proper-noun-correction",
+      "context_summary": "The user is in the Mail app, specifically in a reply to an email thread titled \"Re: Figma access for new hires\" with Camille Fournier. The user is most likely trying to type the names or details of the Growth and Brand contractors next.",
+      "output_text": "thanks Camille, I just granted Figma access to the Growth and Brand contractors",
+      "scores": {
+        "context_total": 0.8274,
+        "context_terms": 1.0,
+        "context_reference": 0.6165,
+        "output_total": 0.8462,
+        "output_terms": 1.0,
+        "output_reference": 0.9937,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.6736
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "email-proper-noun-correction",
+      "context_summary": "The user is in the Mail app, specifically in a reply to an email thread titled \"Re: Figma access for new hires\" with Camille Fournier. The user is most likely trying to type the names or details of the Growth and Brand contractors next.",
+      "output_text": "Thanks, Camille. I just granted Figma access to the Growth and Brand contractors.",
+      "scores": {
+        "context_total": 0.8274,
+        "context_terms": 1.0,
+        "context_reference": 0.6165,
+        "output_total": 0.8388,
+        "output_terms": 1.0,
+        "output_reference": 0.9814,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.6662
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "app-default-system",
+      "case_id": "email-no-context-insertion",
+      "context_summary": "The user is currently responding to an email thread about a Q3 planning offsite, specifically addressing a message from Maya Patel. The user is likely writing to provide or request information related to travel preferences for the offsite event.",
+      "output_text": "Sounds good, I don't have any constraints on my side.",
+      "scores": {
+        "context_total": 0.6325,
+        "context_terms": 0.75,
+        "context_reference": 0.489,
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.6325
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "email-no-context-insertion",
+      "context_summary": "The user is currently responding to an email thread about a Q3 planning offsite, specifically addressing a message from Maya Patel. The user is likely writing to provide or request information related to travel preferences for the offsite event.",
+      "output_text": "Sounds good. I don't have any constraints on my side.",
+      "scores": {
+        "context_total": 0.6325,
+        "context_terms": 0.75,
+        "context_reference": 0.489,
+        "output_total": 0.8387,
+        "output_terms": 1.0,
+        "output_reference": 0.9811,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.4712
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "app-default-system",
+      "case_id": "email-no-context-insertion",
+      "context_summary": "The user is currently in the Mail app, specifically in a reply to an email conversation titled \"Re: Q3 planning offsite\" with Maya Patel. The user is most likely trying to type a response related to travel preferences or constraints for the Q3 planning offsite.",
+      "output_text": "sounds good, I don't have any constraints on my side",
+      "scores": {
+        "context_total": 0.5607,
+        "context_terms": 0.75,
+        "context_reference": 0.3294,
+        "output_total": 0.8443,
+        "output_terms": 1.0,
+        "output_reference": 0.9905,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.405
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "email-no-context-insertion",
+      "context_summary": "The user is currently in the Mail app, specifically in a reply to an email conversation titled \"Re: Q3 planning offsite\" with Maya Patel. The user is most likely trying to type a response related to travel preferences or constraints for the Q3 planning offsite.",
+      "output_text": "Sounds good. I don't have any constraints on my side.",
+      "scores": {
+        "context_total": 0.5607,
+        "context_terms": 0.75,
+        "context_reference": 0.3294,
+        "output_total": 0.8387,
+        "output_terms": 1.0,
+        "output_reference": 0.9811,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.3994
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "app-default-system",
+      "case_id": "prompt-writing-refactor-request",
+      "context_summary": "The user is currently drafting a prompt in ChatGPT, specifically working on a plan to refactor code safely with incremental steps and tests. The likely writing intent in the current window is to craft a well-structured prompt that elicits guidance on refactoring code while ensuring safety and thorough testing.",
+      "output_text": "Write a prompt that asks the model to refactor this file in small, safe steps and explain trade-offs.",
+      "scores": {
+        "context_total": 0.5829,
+        "context_terms": 0.75,
+        "context_reference": 0.3786,
+        "output_total": 0.7637,
+        "output_terms": 0.6667,
+        "output_reference": 0.995,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.3466
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "prompt-writing-refactor-request",
+      "context_summary": "The user is currently drafting a prompt in ChatGPT, specifically working on a plan to refactor code safely with incremental steps and tests. The likely writing intent in the current window is to craft a well-structured prompt that elicits guidance on refactoring code while ensuring safety and thorough testing.",
+      "output_text": "Write a prompt that asks the model to refactor this file in small, safe steps and explain trade-offs.",
+      "scores": {
+        "context_total": 0.5829,
+        "context_terms": 0.75,
+        "context_reference": 0.3786,
+        "output_total": 0.7637,
+        "output_terms": 0.6667,
+        "output_reference": 0.995,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.3466
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "app-default-system",
+      "case_id": "prompt-writing-refactor-request",
+      "context_summary": "The user is in the ChatGPT app, specifically in a window for drafting a prompt related to refactoring a plan. The user is most likely trying to type a specific request for a prompt that generates a safe incremental refactor with tests.",
+      "output_text": "write a prompt that asks the model to refactor this file in small safe steps and explain tradeoffs",
+      "scores": {
+        "context_total": 0.6562,
+        "context_terms": 0.75,
+        "context_reference": 0.5415,
+        "output_total": 0.7606,
+        "output_terms": 0.6667,
+        "output_reference": 0.9899,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.4168
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "prompt-writing-refactor-request",
+      "context_summary": "The user is in the ChatGPT app, specifically in a window for drafting a prompt related to refactoring a plan. The user is most likely trying to type a specific request for a prompt that generates a safe incremental refactor with tests.",
+      "output_text": "Write a prompt that asks the model to refactor this file in small, safe steps and explain trade-offs.",
+      "scores": {
+        "context_total": 0.6562,
+        "context_terms": 0.75,
+        "context_reference": 0.5415,
+        "output_total": 0.7637,
+        "output_terms": 0.6667,
+        "output_reference": 0.995,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.4199
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "app-default-system",
+      "case_id": "prompt-writing-quoted-text",
+      "context_summary": "The user is currently working on a draft prompt in the ChatGPT application, specifically focused on customer support tone. The user is likely writing or editing a prompt to generate a response that includes the phrase \"not a blocker\" in the context of customer support.",
+      "output_text": "Write a prompt that says, \"Keep the phrase 'not a blocker' exactly as written and don't make it sound robotic.\"",
+      "scores": {
+        "context_total": 0.6053,
+        "context_terms": 0.6667,
+        "context_reference": 0.5303,
+        "output_total": 0.7058,
+        "output_terms": 0.5,
+        "output_reference": 0.968,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.3111
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "prompt-writing-quoted-text",
+      "context_summary": "The user is currently working on a draft prompt in the ChatGPT application, specifically focused on customer support tone. The user is likely writing or editing a prompt to generate a response that includes the phrase \"not a blocker\" in the context of customer support.",
+      "output_text": "Write a prompt that says, \"Keep the phrase 'not a blocker' exactly as written and don't make it sound robotic.\"",
+      "scores": {
+        "context_total": 0.6053,
+        "context_terms": 0.6667,
+        "context_reference": 0.5303,
+        "output_total": 0.7058,
+        "output_terms": 0.5,
+        "output_reference": 0.968,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.3111
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "app-default-system",
+      "case_id": "prompt-writing-quoted-text",
+      "context_summary": "The user is in the ChatGPT app, specifically in a prompt draft window focused on customer support tone. The user is most likely trying to type a revised prompt that includes the exact phrase \"not a blocker\".",
+      "output_text": "Write a prompt that says, \"Keep the phrase 'not a blocker' exactly as written and don't make it sound robotic.\"",
+      "scores": {
+        "context_total": 0.6181,
+        "context_terms": 0.6667,
+        "context_reference": 0.5587,
+        "output_total": 0.7058,
+        "output_terms": 0.5,
+        "output_reference": 0.968,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.3239
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "prompt-writing-quoted-text",
+      "context_summary": "The user is in the ChatGPT app, specifically in a prompt draft window focused on customer support tone. The user is most likely trying to type a revised prompt that includes the exact phrase \"not a blocker\".",
+      "output_text": "Write a prompt that says, \"Keep the phrase 'not a blocker' exactly as written and don't make it sound robotic.\"",
+      "scores": {
+        "context_total": 0.6181,
+        "context_terms": 0.6667,
+        "context_reference": 0.5587,
+        "output_total": 0.7058,
+        "output_terms": 0.5,
+        "output_reference": 0.968,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.3239
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "app-default-system",
+      "case_id": "prompt-writing-command-correction",
+      "context_summary": "The user is currently drafting a prompt in ChatGPT to assist with a code review, specifically focusing on a helper tool. The likely writing intent is to inquire about or discuss best practices for searching a repository, possibly related to using \"rg\" instead of \"grep\".",
+      "output_text": "Use rg, not grep, when searching the repo.",
+      "scores": {
+        "context_total": 0.6241,
+        "context_terms": 0.75,
+        "context_reference": 0.4703,
+        "output_total": 0.7124,
+        "output_terms": 1.0,
+        "output_reference": 0.7706,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.3365
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "prompt-writing-command-correction",
+      "context_summary": "The user is currently drafting a prompt in ChatGPT to assist with a code review, specifically focusing on a helper tool. The likely writing intent is to inquire about or discuss best practices for searching a repository, possibly related to using \"rg\" instead of \"grep\".",
+      "output_text": "Use rg, not grep, when searching the repository.",
+      "scores": {
+        "context_total": 0.6241,
+        "context_terms": 0.75,
+        "context_reference": 0.4703,
+        "output_total": 0.6883,
+        "output_terms": 1.0,
+        "output_reference": 0.7304,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.3124
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "app-default-system",
+      "case_id": "prompt-writing-command-correction",
+      "context_summary": "The user is in the ChatGPT app, specifically in a prompt draft window for a code review helper. The user is most likely trying to type a command or instruction related to searching a repository, possibly involving the \"rg\" tool.",
+      "output_text": "Use rg, not grep, when searching the repo.",
+      "scores": {
+        "context_total": 0.484,
+        "context_terms": 0.5,
+        "context_reference": 0.4644,
+        "output_total": 0.7124,
+        "output_terms": 1.0,
+        "output_reference": 0.7706,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.1964
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "prompt-writing-command-correction",
+      "context_summary": "The user is in the ChatGPT app, specifically in a prompt draft window for a code review helper. The user is most likely trying to type a command or instruction related to searching a repository, possibly involving the \"rg\" tool.",
+      "output_text": "Write a prompt that says use rg, not grep, when searching the repo.",
+      "scores": {
+        "context_total": 0.484,
+        "context_terms": 0.5,
+        "context_reference": 0.4644,
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.484
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "app-default-system",
+      "case_id": "system-empty-filler-only",
+      "context_summary": "The user is currently in the Slack application, specifically in the \"#random\" channel, with no specific text selected. The user's writing intent is uncertain due to lack of context about their current activity or input.",
+      "output_text": "",
+      "scores": {
+        "context_total": 0.7423,
+        "context_terms": 1.0,
+        "context_reference": 0.4274,
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.7423
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "system-empty-filler-only",
+      "context_summary": "The user is currently in the Slack application, specifically in the \"#random\" channel, with no specific text selected. The user's writing intent is uncertain due to lack of context about their current activity or input.",
+      "output_text": "",
+      "scores": {
+        "context_total": 0.7423,
+        "context_terms": 1.0,
+        "context_reference": 0.4274,
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.7423
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "app-default-system",
+      "case_id": "system-empty-filler-only",
+      "context_summary": "The user is currently in the Slack app, specifically in the \"#random\" channel, and appears to be composing a message. The user is likely trying to type a message to be sent to the channel, but the content of the message is ambiguous.",
+      "output_text": "",
+      "scores": {
+        "context_total": 0.759,
+        "context_terms": 1.0,
+        "context_reference": 0.4644,
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.759
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "system-empty-filler-only",
+      "context_summary": "The user is currently in the Slack app, specifically in the \"#random\" channel, and appears to be composing a message. The user is likely trying to type a message to be sent to the channel, but the content of the message is ambiguous.",
+      "output_text": "",
+      "scores": {
+        "context_total": 0.759,
+        "context_terms": 1.0,
+        "context_reference": 0.4644,
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.759
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "app-default-system",
+      "case_id": "system-remove-false-start",
+      "context_summary": "The user is currently reviewing or responding to an email thread about a budget review follow-up with Lena Ortiz. The user is likely writing a reply to confirm a revised total in the context of this email conversation.",
+      "output_text": "I can send the revised total by noon.",
+      "scores": {
+        "context_total": 0.6842,
+        "context_terms": 0.75,
+        "context_reference": 0.6037,
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.6842
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "system-remove-false-start",
+      "context_summary": "The user is currently reviewing or responding to an email thread about a budget review follow-up with Lena Ortiz. The user is likely writing a reply to confirm a revised total in the context of this email conversation.",
+      "output_text": "I can send the revised total by noon.",
+      "scores": {
+        "context_total": 0.6842,
+        "context_terms": 0.75,
+        "context_reference": 0.6037,
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.6842
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "app-default-system",
+      "case_id": "system-remove-false-start",
+      "context_summary": "The user is in the Mail app, specifically in an email conversation window with the subject \"Re: Budget review follow-up - Lena Ortiz\". The user is most likely trying to type a response related to confirming a revised total, possibly a numerical value or a confirmation message.",
+      "output_text": "I can send the revised total by noon.",
+      "scores": {
+        "context_total": 0.6457,
+        "context_terms": 0.75,
+        "context_reference": 0.5182,
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.6457
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "system-remove-false-start",
+      "context_summary": "The user is in the Mail app, specifically in an email conversation window with the subject \"Re: Budget review follow-up - Lena Ortiz\". The user is most likely trying to type a response related to confirming a revised total, possibly a numerical value or a confirmation message.",
+      "output_text": "I can send the revised total by noon.",
+      "scores": {
+        "context_total": 0.6457,
+        "context_terms": 0.75,
+        "context_reference": 0.5182,
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.6457
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "app-default-system",
+      "case_id": "system-preserve-intent-not-overformalize",
+      "context_summary": "The user is currently discussing a design topic in a Slack window titled \"Design sync\". The user is likely seeking feedback or suggestions on simplifying the empty state design.",
+      "output_text": "this feels a bit too heavy, maybe we can trim it back",
+      "scores": {
+        "context_total": 0.6552,
+        "context_terms": 0.75,
+        "context_reference": 0.5394,
+        "output_total": 0.8022,
+        "output_terms": 1.0,
+        "output_reference": 0.9204,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.4574
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "system-preserve-intent-not-overformalize",
+      "context_summary": "The user is currently discussing a design topic in a Slack window titled \"Design sync\". The user is likely seeking feedback or suggestions on simplifying the empty state design.",
+      "output_text": "This design feels a bit too heavy; maybe we can trim it back.",
+      "scores": {
+        "context_total": 0.6552,
+        "context_terms": 0.75,
+        "context_reference": 0.5394,
+        "output_total": 0.7756,
+        "output_terms": 1.0,
+        "output_reference": 0.876,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.4308
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "app-default-system",
+      "case_id": "system-preserve-intent-not-overformalize",
+      "context_summary": "The user is currently in the Slack app, specifically in a channel or conversation titled \"Design sync\", and appears to be discussing a design-related topic. They are most likely trying to type a response or suggestion related to simplifying the empty state, possibly something like \"How about...\" or \"What if...\".",
+      "output_text": "maybe we can trim it back a bit, it feels a bit too heavy.",
+      "scores": {
+        "context_total": 0.5979,
+        "context_terms": 0.75,
+        "context_reference": 0.412,
+        "output_total": 0.5144,
+        "output_terms": 1.0,
+        "output_reference": 0.4407,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.1123
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "system-preserve-intent-not-overformalize",
+      "context_summary": "The user is currently in the Slack app, specifically in a channel or conversation titled \"Design sync\", and appears to be discussing a design-related topic. They are most likely trying to type a response or suggestion related to simplifying the empty state, possibly something like \"How about...\" or \"What if...\".",
+      "output_text": "How about we trim it back; this feels a bit too heavy.",
+      "scores": {
+        "context_total": 0.5979,
+        "context_terms": 0.75,
+        "context_reference": 0.412,
+        "output_total": 0.5553,
+        "output_terms": 1.0,
+        "output_reference": 0.5088,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.1532
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "app-default-system",
+      "case_id": "system-correct-close-misspelling-from-context",
+      "context_summary": "The user is currently interacting with a Slack conversation, specifically mentioning Nadia Chen and inquiring about the status of a Linear issue. The user appears to be drafting a message to ask Nadia about the issue, likely seeking an update or clarification on its current state.",
+      "output_text": "i just pinged Nadia and i'm waiting to hear back",
+      "scores": {
+        "context_total": 0.7755,
+        "context_terms": 1.0,
+        "context_reference": 0.5011,
+        "output_total": 0.8378,
+        "output_terms": 1.0,
+        "output_reference": 0.9796,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.6133
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "system-correct-close-misspelling-from-context",
+      "context_summary": "The user is currently interacting with a Slack conversation, specifically mentioning Nadia Chen and inquiring about the status of a Linear issue. The user appears to be drafting a message to ask Nadia about the issue, likely seeking an update or clarification on its current state.",
+      "output_text": "I just pinged Nadia and I'm waiting to hear back.",
+      "scores": {
+        "context_total": 0.7755,
+        "context_terms": 1.0,
+        "context_reference": 0.5011,
+        "output_total": 0.8439,
+        "output_terms": 1.0,
+        "output_reference": 0.9899,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.6194
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "app-default-system",
+      "case_id": "system-correct-close-misspelling-from-context",
+      "context_summary": "The user is currently in the Slack app, specifically in a conversation window with Nadia Chen, and appears to be asking someone about the status of a Linear issue. The user is most likely trying to type a question or message related to the Linear issue, possibly something like \"what's the update on the Linear issue\".",
+      "output_text": "I just pinged Nadia and I'm waiting to hear back.",
+      "scores": {
+        "context_total": 0.7585,
+        "context_terms": 1.0,
+        "context_reference": 0.4634,
+        "output_total": 0.8439,
+        "output_terms": 1.0,
+        "output_reference": 0.9899,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.6024
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "system-correct-close-misspelling-from-context",
+      "context_summary": "The user is currently in the Slack app, specifically in a conversation window with Nadia Chen, and appears to be asking someone about the status of a Linear issue. The user is most likely trying to type a question or message related to the Linear issue, possibly something like \"what's the update on the Linear issue\".",
+      "output_text": "I just pinged Nadia and I'm waiting to hear back.",
+      "scores": {
+        "context_total": 0.7585,
+        "context_terms": 1.0,
+        "context_reference": 0.4634,
+        "output_total": 0.8439,
+        "output_terms": 1.0,
+        "output_reference": 0.9899,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.6024
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "app-default-system",
+      "case_id": "system-do-not-insert-name-from-context",
+      "context_summary": "The user is currently reading or responding to an email thread about a contract review with Samuel Lee. The user is likely replying to Samuel's question regarding additional information needed from them for legal review.",
+      "output_text": "sounds good I'll follow up once I hear back from legal",
+      "scores": {
+        "context_total": 0.7921,
+        "context_terms": 1.0,
+        "context_reference": 0.5381,
+        "output_total": 0.8391,
+        "output_terms": 1.0,
+        "output_reference": 0.9818,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.6312
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "system-do-not-insert-name-from-context",
+      "context_summary": "The user is currently reading or responding to an email thread about a contract review with Samuel Lee. The user is likely replying to Samuel's question regarding additional information needed from them for legal review.",
+      "output_text": "Sounds good. I'll follow up once I hear back from legal.",
+      "scores": {
+        "context_total": 0.7921,
+        "context_terms": 1.0,
+        "context_reference": 0.5381,
+        "output_total": 0.8393,
+        "output_terms": 1.0,
+        "output_reference": 0.9821,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.6314
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "app-default-system",
+      "case_id": "system-do-not-insert-name-from-context",
+      "context_summary": "The user is in the Mail app, specifically in an email conversation window with the subject \"Re: Contract review - Samuel Lee\", and appears to be reading or composing a response to a message. The user is likely trying to type a response to Samuel Lee's question about whether legal needs anything else from them.",
+      "output_text": "sounds good I'll follow up once I hear back from legal",
+      "scores": {
+        "context_total": 0.743,
+        "context_terms": 1.0,
+        "context_reference": 0.4289,
+        "output_total": 0.8391,
+        "output_terms": 1.0,
+        "output_reference": 0.9818,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.5821
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "system-do-not-insert-name-from-context",
+      "context_summary": "The user is in the Mail app, specifically in an email conversation window with the subject \"Re: Contract review - Samuel Lee\", and appears to be reading or composing a response to a message. The user is likely trying to type a response to Samuel Lee's question about whether legal needs anything else from them.",
+      "output_text": "Sounds good. I'll follow up once I hear back from legal.",
+      "scores": {
+        "context_total": 0.743,
+        "context_terms": 1.0,
+        "context_reference": 0.4289,
+        "output_total": 0.8393,
+        "output_terms": 1.0,
+        "output_reference": 0.9821,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.5823
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "app-default-system",
+      "case_id": "system-preserve-list-structure",
+      "context_summary": "The user is currently drafting a prompt in ChatGPT, specifically working on a \"launch checklist\" and focusing on creating three short bullets. The likely writing intent in the current window is to finalize the prompt content, possibly for a product launch or a similar event.",
+      "output_text": "first, update the changelog. second, cut the release candidate. third, post the announcement.",
+      "scores": {
+        "context_total": 0.575,
+        "context_terms": 0.6667,
+        "context_reference": 0.4631,
+        "output_total": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0
+      },
+      "combined_total": 1.575
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "app-default-context",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "system-preserve-list-structure",
+      "context_summary": "The user is currently drafting a prompt in ChatGPT, specifically working on a \"launch checklist\" and focusing on creating three short bullets. The likely writing intent in the current window is to finalize the prompt content, possibly for a product launch or a similar event.",
+      "output_text": "\u2022 Update the changelog\n\u2022 Cut the release candidate\n\u2022 Post the announcement",
+      "scores": {
+        "context_total": 0.575,
+        "context_terms": 0.6667,
+        "context_reference": 0.4631,
+        "output_total": 0.5727,
+        "output_terms": 0.25,
+        "output_reference": 0.8503,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.1477
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "app-default-system",
+      "case_id": "system-preserve-list-structure",
+      "context_summary": "The user is in the ChatGPT app, specifically in a prompt draft window with a launch checklist, and is working on drafting content. They are most likely trying to type a bullet point list, possibly related to requirements or steps for a launch.",
+      "output_text": "\u2022 First, update the changelog.\n\u2022 Second, cut the release candidate.\n\u2022 Third, post the announcement.",
+      "scores": {
+        "context_total": 0.5736,
+        "context_terms": 0.6667,
+        "context_reference": 0.4599,
+        "output_total": 0.8312,
+        "output_terms": 1.0,
+        "output_reference": 0.9688,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.4048
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "context_variant": "context-more-conservative",
+      "system_variant": "system-strict-no-hallucination",
+      "case_id": "system-preserve-list-structure",
+      "context_summary": "The user is in the ChatGPT app, specifically in a prompt draft window with a launch checklist, and is working on drafting content. They are most likely trying to type a bullet point list, possibly related to requirements or steps for a launch.",
+      "output_text": "\u2022 First, update the changelog.\n\u2022 Second, cut the release candidate.\n\u2022 Third, post the announcement.",
+      "scores": {
+        "context_total": 0.5736,
+        "context_terms": 0.6667,
+        "context_reference": 0.4599,
+        "output_total": 0.8312,
+        "output_terms": 1.0,
+        "output_reference": 0.9688,
+        "output_exact": 0.0
+      },
+      "combined_total": 1.4048
+    }
+  ]
+}
