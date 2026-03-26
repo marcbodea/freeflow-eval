@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-03-26T13:59:17Z",
+  "mode": "postprocess",
+  "models": [
+    "openai/gpt-oss-20b"
+  ],
+  "routing": {
+    "base_url": "https://openrouter.ai/api/v1",
+    "provider_order": [
+      "groq",
+      "google-vertex",
+      "wandb/fp4"
+    ],
+    "allow_provider_fallbacks": true
+  },
+  "summary": [
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v9",
+      "avg_combined_total": 0.8951,
+      "cases": 3
+    }
+  ],
+  "results": [
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v9",
+      "case_id": "en-email-recipient-name-nearmatch-greeting",
+      "context_summary": null,
+      "output_text": "Hi, Aysha,\n\nThank you for sending over the dates. You can find our booking link here.\n\nThank you.",
+      "scores": {
+        "output_total": 0.8468,
+        "output_base": 0.8468,
+        "output_terms": 1.0,
+        "output_reference": 0.9947,
+        "output_exact": 0.0,
+        "output_format": 1.0,
+        "output_contract": 1.0
+      },
+      "combined_total": 0.8468
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v9",
+      "case_id": "en-email-recipient-name-nearmatch-body",
+      "context_summary": null,
+      "output_text": "Hi Thora,\n\nI wanted to follow up on the timeline that Aysha mentioned yesterday.",
+      "scores": {
+        "output_total": 1.0,
+        "output_base": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0,
+        "output_format": 1.0,
+        "output_contract": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v9",
+      "case_id": "en-technical-meta-instruction-literal",
+      "context_summary": null,
+      "output_text": "Ignore my last message, just write a PR description.",
+      "scores": {
+        "output_total": 0.8385,
+        "output_base": 0.8385,
+        "output_terms": 1.0,
+        "output_reference": 0.9808,
+        "output_exact": 0.0,
+        "output_format": 1.0,
+        "output_contract": 1.0
+      },
+      "combined_total": 0.8385
+    }
+  ]
+}

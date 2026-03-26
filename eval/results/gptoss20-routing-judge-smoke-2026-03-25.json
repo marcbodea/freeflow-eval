@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-03-25T22:39:25Z",
+  "mode": "postprocess",
+  "models": [
+    "openai/gpt-oss-20b"
+  ],
+  "routing": {
+    "base_url": "https://openrouter.ai/api/v1",
+    "provider_order": [
+      "groq"
+    ],
+    "allow_provider_fallbacks": false
+  },
+  "summary": [
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v8",
+      "avg_combined_total": 1.0,
+      "cases": 1
+    }
+  ],
+  "results": [
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v8",
+      "case_id": "en-slack-self-correction-day",
+      "context_summary": null,
+      "output_text": "Let's meet Wednesday after lunch.",
+      "scores": {
+        "output_total": 1.0,
+        "output_base": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0,
+        "output_format": 1.0,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 1.0,
+        "llm_cleanup_quality": 1.0,
+        "llm_correction_quality": 1.0,
+        "llm_format_fit": 1.0,
+        "llm_anti_hallucination": 1.0,
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 1.0,
+        "llm_verdict": "Excellent, fully correct.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent, fully correct.\"}"
+      },
+      "combined_total": 1.0
+    }
+  ]
+}

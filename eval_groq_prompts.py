@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import base64
+import concurrent.futures
 import difflib
 import json
 import math
@@ -61,6 +62,49 @@ DEFAULT_FREE_TEXT_MODELS = [
     "openai/gpt-oss-20b",
     "qwen/qwen3-32b",
 ]
+
+EMAIL_APP_NAMES = {"mail", "gmail", "outlook", "spark"}
+EMAIL_SALUTATION_PATTERNS = (
+    r"hi\b",
+    r"hello\b",
+    r"dear\b",
+    r"hey\b",
+    r"bonjour\b",
+    r"bonsoir\b",
+    r"salut\b",
+    r"bună\b",
+    r"buna\b",
+)
+EMAIL_SALUTATION_RE = re.compile(
+    r"^\s*(?:" + "|".join(EMAIL_SALUTATION_PATTERNS) + r")(?:[\s,!.].*)?$",
+    re.IGNORECASE,
+)
+EMAIL_CLOSING_RE = re.compile(
+    r"^\s*(?:thanks|thank you|best|best regards|regards|cheers|mulțumesc|multumesc|merci)\b.*$",
+    re.IGNORECASE,
+)
+OUTPUT_WRAPPER_PATTERNS = [
+    re.compile(
+        r"^\s*(?:here(?:'s| is)\s+(?:the\s+)?)?(?:clean(?:ed)?|corrected|polished|formatted|final)\s+"
+        r"(?:transcript|text|version)\s*:?",
+        re.IGNORECASE,
+    ),
+    re.compile(r"^\s*here(?:'s| is)\s+the\s+(?:clean|cleaned|corrected|formatted|final)\b", re.IGNORECASE),
+]
+LIST_NUMBER_RE = re.compile(r"^\s*\d+[.)]\s+")
+LIST_BULLET_RE = re.compile(r"^\s*[-*•]\s+")
+CORRECTION_MARKER_PATTERNS = (
+    "no actually",
+    "sorry",
+    "wait",
+    "or rather",
+    "de fapt",
+    "nu stai",
+    "ba nu",
+    "perdón",
+    "perdon",
+    "non",
+)
 
 
 @dataclass
@@ -168,6 +212,12 @@ def parse_args() -> argparse.Namespace:
         help="Retries for transient API failures and 429s.",
     )
     parser.add_argument(
+        "--max-concurrency",
+        type=int,
+        default=32,
+        help="Number of cases to evaluate in parallel. Use with care against provider rate limits.",
+    )
+    parser.add_argument(
         "--output-json",
         default=None,
         help="Optional path to write the full results payload.",
@@ -176,13 +226,13 @@ def parse_args() -> argparse.Namespace:
         "--provider-order",
         nargs="*",
         default=None,
-        help="Optional OpenRouter provider order to prioritize, for example: --provider-order groq",
+        help="Optional OpenRouter provider order to prioritize. Defaults to groq on OpenRouter.",
     )
     parser.add_argument(
         "--allow-provider-fallbacks",
         action=argparse.BooleanOptionalAction,
-        default=True,
-        help="Whether to allow provider fallbacks when provider routing is requested.",
+        default=None,
+        help="Whether to allow provider fallbacks when provider routing is requested. Defaults to disabled on OpenRouter.",
     )
     parser.add_argument(
         "--scoring-mode",
@@ -267,6 +317,134 @@ def term_score(text: str, required: list[str], forbidden: list[str]) -> float:
     return max(0.0, required_score - forbidden_penalty)
 
 
+def is_email_case(case: Case) -> bool:
+    app_name = normalize_text(case.metadata.get("app_name", ""))
+    if app_name in EMAIL_APP_NAMES:
+        return True
+    bundle_id = normalize_text(case.metadata.get("bundle_identifier", ""))
+    if any(name in bundle_id for name in EMAIL_APP_NAMES):
+        return True
+    window_title = normalize_text(case.metadata.get("window_title", ""))
+    return window_title.startswith("re:")
+
+
+def email_format_score(output: str, case: Case) -> float:
+    if not is_email_case(case):
+        return 1.0
+
+    stripped = output.strip()
+    if not stripped:
+        return 0.0
+
+    lines = [line.strip() for line in stripped.splitlines() if line.strip()]
+    if not lines:
+        return 0.0
+
+    has_salutation = bool(EMAIL_SALUTATION_RE.match(lines[0]))
+    has_newline = len(lines) >= 2
+    has_blank_line = bool(re.search(r"\n\s*\n", stripped))
+    closing_score = 1.0
+    expected_lines = [line.strip() for line in (case.expected_output or "").splitlines() if line.strip()]
+    expected_has_closing = bool(expected_lines and EMAIL_CLOSING_RE.match(expected_lines[-1]))
+    if expected_has_closing:
+        actual_has_closing_line = bool(lines and EMAIL_CLOSING_RE.match(lines[-1]))
+        closing_blank_line = bool(re.search(r"\n\s*\n\s*" + re.escape(lines[-1]) + r"\s*$", stripped)) if actual_has_closing_line else False
+        closing_score = (0.7 * float(actual_has_closing_line)) + (0.3 * float(closing_blank_line))
+    base_score = (0.6 * float(has_salutation)) + (0.25 * float(has_newline)) + (0.15 * float(has_blank_line))
+    return (0.8 * base_score) + (0.2 * closing_score)
+
+
+def output_contract_score(output: str) -> float:
+    stripped = output.strip()
+    if not stripped:
+        return 1.0
+    for pattern in OUTPUT_WRAPPER_PATTERNS:
+        if pattern.search(stripped):
+            return 0.0
+    return 1.0
+
+
+def explicit_numbered_list_expected(case: Case) -> bool:
+    if not case.expected_output:
+        return False
+    lines = [line.strip() for line in case.expected_output.splitlines() if line.strip()]
+    return len(lines) >= 2 and all(LIST_NUMBER_RE.match(line) for line in lines)
+
+
+def explicit_bulleted_list_expected(case: Case) -> bool:
+    if not case.expected_output:
+        return False
+    lines = [line.strip() for line in case.expected_output.splitlines() if line.strip()]
+    return len(lines) >= 2 and all(LIST_BULLET_RE.match(line) for line in lines)
+
+
+def prose_not_list_expected(case: Case) -> bool:
+    if not case.expected_output:
+        return False
+    if "\n" in case.expected_output:
+        return False
+    markers = {"1.", "2.", "3.", "1)", "-"}
+    return any(term in markers for term in case.forbidden_output_terms)
+
+
+def structure_format_score(output: str, case: Case) -> float | None:
+    stripped = output.strip()
+    if not stripped:
+        return 0.0
+
+    lines = [line.rstrip() for line in stripped.splitlines() if line.strip()]
+    if explicit_numbered_list_expected(case):
+        if len(lines) < 2:
+            return 0.0
+        matches = sum(1 for line in lines if LIST_NUMBER_RE.match(line))
+        return matches / len(lines)
+
+    if explicit_bulleted_list_expected(case):
+        if len(lines) < 2:
+            return 0.0
+        matches = sum(1 for line in lines if LIST_BULLET_RE.match(line))
+        return matches / len(lines)
+
+    if prose_not_list_expected(case):
+        if any(LIST_NUMBER_RE.match(line) or LIST_BULLET_RE.match(line) for line in lines):
+            return 0.0
+        return 1.0
+
+    return None
+
+
+def correction_cleanup_score(output: str, case: Case) -> float | None:
+    transcript = normalize_text(case.raw_transcript)
+    if not any(marker in transcript for marker in CORRECTION_MARKER_PATTERNS):
+        return None
+
+    normalized_output = normalize_text(output)
+    lingering_markers = sum(1 for marker in CORRECTION_MARKER_PATTERNS if marker in normalized_output)
+    marker_score = 1.0 - min(1.0, lingering_markers / 2)
+
+    forbidden_hits = 0
+    if case.forbidden_output_terms:
+        forbidden_hits = sum(1 for term in case.forbidden_output_terms if contains_term(output, term))
+    forbidden_score = 1.0 - min(1.0, forbidden_hits / max(1, len(case.forbidden_output_terms)))
+
+    return max(0.0, (0.45 * marker_score) + (0.55 * forbidden_score))
+
+
+def combined_format_score(output: str, case: Case) -> float:
+    components: list[float] = []
+    if is_email_case(case):
+        components.append(email_format_score(output, case))
+    structure_score = structure_format_score(output, case)
+    if structure_score is not None:
+        components.append(structure_score)
+    correction_score = correction_cleanup_score(output, case)
+    if correction_score is not None:
+        components.append(correction_score)
+    if not components:
+        return 1.0
+    return sum(components) / len(components)
+
+
 def score_context(summary: str, case: Case) -> dict[str, float]:
     term_component = term_score(summary, case.required_context_terms, case.forbidden_context_terms)
     reference_component = (
@@ -291,12 +469,18 @@ def score_output(output: str, case: Case) -> dict[str, float]:
         reference_component = term_component
         exact_component = 0.0
 
-    total = (0.6 * reference_component) + (0.25 * term_component) + (0.15 * exact_component)
+    format_component = combined_format_score(output, case)
+    contract_component = output_contract_score(output)
+    base_total = (0.6 * reference_component) + (0.25 * term_component) + (0.15 * exact_component)
+    total = base_total * (0.65 + (0.20 * format_component) + (0.15 * contract_component))
     return {
         "output_total": round(total, 4),
+        "output_base": round(base_total, 4),
         "output_terms": round(term_component, 4),
         "output_reference": round(reference_component, 4),
         "output_exact": round(exact_component, 4),
+        "output_format": round(format_component, 4),
+        "output_contract": round(contract_component, 4),
     }
 
 
@@ -408,7 +592,11 @@ Return strict JSON only.
     - output_contract: 0.15
 
     Use the expected output as the gold reference, but allow small punctuation differences when meaning and formatting remain correct.
-    If the candidate adds any explanation, surrounding quotes, labels, or extra sentences that were not dictated, score output_contract very low and reduce overall accordingly."""
+    For email cases, proper formatting includes a salutation on the first line and newline-separated body paragraphs.
+    If the raw transcript contains a self-correction, the candidate must keep only the final corrected meaning. Leaving the abandoned version in the output should score meaning_preservation and cleanup_quality low.
+    If the transcript explicitly asks for a numbered or bulleted list, prose sentences should score format_fit low. If the expected output is prose, converting it into a list should also score format_fit low.
+    If the transcript is filler-only and the expected output is empty, any non-empty candidate should score cleanup_quality, meaning_preservation, and output_contract low.
+    If the candidate adds any explanation, surrounding quotes, labels, boilerplate like "Here is the clean transcript", or extra sentences that were not dictated, score output_contract very low and reduce overall accordingly."""
     user_prompt = json.dumps(
         {
             "rubric": rubric,
@@ -602,11 +790,21 @@ class ChatApiClient:
                 with urllib.request.urlopen(request, timeout=60) as response:
                     self.last_request_monotonic = time.monotonic()
                     body = json.loads(response.read().decode("utf-8"))
-                    return body["choices"][0]["message"]["content"].strip()
+                    message = body["choices"][0]["message"]
+                    content = message.get("content")
+                    if isinstance(content, str):
+                        return content.strip()
+                    if isinstance(content, list):
+                        text_parts = []
+                        for item in content:
+                            if isinstance(item, dict) and item.get("type") == "text":
+                                text_parts.append(str(item.get("text", "")))
+                        return "".join(text_parts).strip()
+                    return ""
             except urllib.error.HTTPError as exc:
                 attempt += 1
+                details = exc.read().decode("utf-8", errors="replace")
                 if attempt > self.max_retries:
-                    details = exc.read().decode("utf-8", errors="replace")
                     raise RuntimeError(f"Chat API error {exc.code}: {details}") from exc
 
                 retry_after = exc.headers.get("retry-after")
@@ -614,11 +812,24 @@ class ChatApiClient:
                     time.sleep(float(retry_after) + 0.25)
                     continue
 
+                if exc.code == 429:
+                    try:
+                        parsed_details = json.loads(details)
+                    except json.JSONDecodeError:
+                        parsed_details = {}
+                    retry_after_seconds = (
+                        parsed_details.get("error", {})
+                        .get("metadata", {})
+                        .get("retry_after_seconds")
+                    )
+                    if retry_after_seconds is not None:
+                        time.sleep(float(retry_after_seconds) + 0.25)
+                        continue
+
                 if exc.code in {408, 409, 429, 500, 502, 503, 504}:
                     time.sleep(min(12.0, 1.5 * attempt))
                     continue
 
-                details = exc.read().decode("utf-8", errors="replace")
                 raise RuntimeError(f"Chat API error {exc.code}: {details}") from exc
             except urllib.error.URLError as exc:
                 attempt += 1
@@ -740,12 +951,103 @@ def summarize(entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return summary
 
 
+def evaluate_case(
+    *,
+    client: ChatApiClient,
+    model: str,
+    case: Case,
+    args: argparse.Namespace,
+    context_variants: list[Variant],
+    system_variants: list[Variant],
+) -> list[dict[str, Any]]:
+    case_results: list[dict[str, Any]] = []
+    active_context_variants = context_variants if args.mode in {"context", "pipeline"} else [Variant(name="-", prompt="")]
+
+    for context_variant in active_context_variants:
+        context_summary = case.expected_context_summary or ""
+        context_scores: dict[str, float] = {}
+        if args.mode in {"context", "pipeline"}:
+            print_progress(f"[context] model={model} case={case.id} variant={context_variant.name}")
+            context_summary, context_scores = run_context_stage(
+                client=client,
+                model=model,
+                variant=context_variant,
+                case=case,
+                temperature=args.temperature,
+            )
+
+        if args.mode == "context":
+            case_results.append(
+                build_result_entry(
+                    model=model,
+                    context_variant=context_variant.name,
+                    system_variant="-",
+                    case_id=case.id,
+                    context_summary=context_summary,
+                    output_text=None,
+                    scores=context_scores,
+                )
+            )
+            continue
+
+        selected_system_variants = system_variants
+        context_variant_name = "-" if args.mode == "postprocess" else context_variant.name
+
+        for system_variant in selected_system_variants:
+            print_progress(
+                f"[postprocess] model={model} case={case.id} context={context_variant_name} system={system_variant.name}"
+            )
+            output_text, output_scores = run_postprocess_stage(
+                client=client,
+                model=model,
+                variant=system_variant,
+                case=case,
+                context_summary=context_summary,
+                temperature=args.temperature,
+            )
+            llm_scores = None
+            if args.scoring_mode in {"llm", "hybrid"}:
+                print_progress(
+                    f"[judge] model={model} case={case.id} system={system_variant.name} scoring={args.scoring_mode}"
+                )
+                llm_scores = score_with_llm_judge(
+                    client=client,
+                    model=model,
+                    case=case,
+                    context_summary=context_summary,
+                    output_text=output_text,
+                )
+            scores = {}
+            scores.update(context_scores)
+            scores.update(merge_output_scores(output_scores, llm_scores, args.scoring_mode))
+            case_results.append(
+                build_result_entry(
+                    model=model,
+                    context_variant=context_variant_name,
+                    system_variant=system_variant.name,
+                    case_id=case.id,
+                    context_summary=context_summary if args.mode == "pipeline" else None,
+                    output_text=output_text,
+                    scores=scores,
+                )
+            )
+
+    return case_results
+
+
 def main() -> int:
     args = parse_args()
     if not args.api_key.strip():
         raise SystemExit(
             "Missing API key. Set LLM_API_KEY, OPENROUTER_API_KEY, OPENAI_API_KEY, or GROQ_API_KEY, or pass --api-key."
         )
+    if "openrouter.ai" in args.base_url:
+        if args.provider_order is None:
+            args.provider_order = ["groq"]
+        if args.allow_provider_fallbacks is None:
+            args.allow_provider_fallbacks = False
+    elif args.allow_provider_fallbacks is None:
+        args.allow_provider_fallbacks = True
 
     context_variants, system_variants = load_variants(args.prompts)
     context_variants = filter_variants(context_variants, args.context_variants)
@@ -758,94 +1060,72 @@ def main() -> int:
     if args.mode in {"postprocess", "pipeline"} and args.max_postprocess_cases is not None:
         cases = cases[: args.max_postprocess_cases]
 
-    client = ChatApiClient(
-        api_key=args.api_key,
-        base_url=args.base_url,
-        min_request_interval=args.min_request_interval,
-        max_retries=args.max_retries,
-        provider_order=args.provider_order,
-        allow_provider_fallbacks=args.allow_provider_fallbacks,
+    def build_client() -> ChatApiClient:
+        return ChatApiClient(
+            api_key=args.api_key,
+            base_url=args.base_url,
+            min_request_interval=args.min_request_interval,
+            max_retries=args.max_retries,
+            provider_order=args.provider_order,
+            allow_provider_fallbacks=args.allow_provider_fallbacks,
+        )
+
+    print_progress(
+        "[routing] "
+        f"base_url={args.base_url} "
+        f"provider_order={args.provider_order or []} "
+        f"allow_provider_fallbacks={args.allow_provider_fallbacks}"
     )
 
     results: list[dict[str, Any]] = []
 
     for model in args.models:
-        for case in cases:
-            active_context_variants = context_variants if args.mode in {"context", "pipeline"} else [Variant(name="-", prompt="")]
-            for context_variant in active_context_variants:
-                context_summary = case.expected_context_summary or ""
-                context_scores: dict[str, float] = {}
-                if args.mode in {"context", "pipeline"}:
-                    print_progress(f"[context] model={model} case={case.id} variant={context_variant.name}")
-                    context_summary, context_scores = run_context_stage(
-                        client=client,
+        if args.max_concurrency <= 1 or len(cases) <= 1:
+            for case in cases:
+                results.extend(
+                    evaluate_case(
+                        client=build_client(),
                         model=model,
-                        variant=context_variant,
                         case=case,
-                        temperature=args.temperature,
+                        args=args,
+                        context_variants=context_variants,
+                        system_variants=system_variants,
                     )
+                )
+            continue
 
-                if args.mode == "context":
-                    results.append(
-                        build_result_entry(
-                            model=model,
-                            context_variant=context_variant.name,
-                            system_variant="-",
-                            case_id=case.id,
-                            context_summary=context_summary,
-                            output_text=None,
-                            scores=context_scores,
-                        )
-                    )
-                    continue
+        ordered_case_results: list[list[dict[str, Any]] | None] = [None] * len(cases)
+        with concurrent.futures.ThreadPoolExecutor(max_workers=args.max_concurrency) as executor:
+            future_to_index = {
+                executor.submit(
+                    evaluate_case,
+                    client=build_client(),
+                    model=model,
+                    case=case,
+                    args=args,
+                    context_variants=context_variants,
+                    system_variants=system_variants,
+                ): index
+                for index, case in enumerate(cases)
+            }
+            for future in concurrent.futures.as_completed(future_to_index):
+                index = future_to_index[future]
+                ordered_case_results[index] = future.result()
 
-                selected_system_variants = system_variants
-                context_variant_name = "-" if args.mode == "postprocess" else context_variant.name
-
-                for system_variant in selected_system_variants:
-                    print_progress(
-                        f"[postprocess] model={model} case={case.id} context={context_variant_name} system={system_variant.name}"
-                    )
-                    output_text, output_scores = run_postprocess_stage(
-                        client=client,
-                        model=model,
-                        variant=system_variant,
-                        case=case,
-                        context_summary=context_summary,
-                        temperature=args.temperature,
-                    )
-                    llm_scores = None
-                    if args.scoring_mode in {"llm", "hybrid"}:
-                        print_progress(
-                            f"[judge] model={model} case={case.id} system={system_variant.name} scoring={args.scoring_mode}"
-                        )
-                        llm_scores = score_with_llm_judge(
-                            client=client,
-                            model=model,
-                            case=case,
-                            context_summary=context_summary,
-                            output_text=output_text,
-                        )
-                    scores = {}
-                    scores.update(context_scores)
-                    scores.update(merge_output_scores(output_scores, llm_scores, args.scoring_mode))
-                    results.append(
-                        build_result_entry(
-                            model=model,
-                            context_variant=context_variant_name,
-                            system_variant=system_variant.name,
-                            case_id=case.id,
-                            context_summary=context_summary if args.mode == "pipeline" else None,
-                            output_text=output_text,
-                            scores=scores,
-                        )
-                    )
+        for case_results in ordered_case_results:
+            if case_results:
+                results.extend(case_results)
 
     summary = summarize(results)
     payload = {
         "generated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "mode": args.mode,
         "models": args.models,
+        "routing": {
+            "base_url": args.base_url,
+            "provider_order": args.provider_order or [],
+            "allow_provider_fallbacks": args.allow_provider_fallbacks,
+        },
         "summary": summary,
         "results": results,
     }

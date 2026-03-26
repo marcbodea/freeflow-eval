@@ -1,0 +1,171 @@
+{
+  "generated_at": "2026-03-26T13:52:24Z",
+  "mode": "postprocess",
+  "models": [
+    "openai/gpt-oss-20b"
+  ],
+  "routing": {
+    "base_url": "https://openrouter.ai/api/v1",
+    "provider_order": [
+      "groq",
+      "google-vertex",
+      "wandb/fp4"
+    ],
+    "allow_provider_fallbacks": true
+  },
+  "summary": [
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v9",
+      "avg_combined_total": 0.9242,
+      "cases": 8
+    }
+  ],
+  "results": [
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v9",
+      "case_id": "en-email-formal-confirmation",
+      "context_summary": null,
+      "output_text": "Hi,\n\nYes, that works for me. I'll send the revised draft tonight.",
+      "scores": {
+        "output_total": 1.0,
+        "output_base": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0,
+        "output_format": 1.0,
+        "output_contract": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v9",
+      "case_id": "ro-email-formal",
+      "context_summary": null,
+      "output_text": "Bun\u0103,\n\nMul\u021bumesc. Am ata\u0219at varianta actualizat\u0103 \u0219i pot trimite cifrele finale p\u00e2n\u0103 disear\u0103.",
+      "scores": {
+        "output_total": 1.0,
+        "output_base": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0,
+        "output_format": 1.0,
+        "output_contract": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v9",
+      "case_id": "ro-no-context-insertion",
+      "context_summary": null,
+      "output_text": "Bun\u0103,\n\nSun\u0103 bine, revin dup\u0103 ce primesc r\u0103spunsul de la juridic.",
+      "scores": {
+        "output_total": 0.8405,
+        "output_base": 0.8405,
+        "output_terms": 1.0,
+        "output_reference": 0.9841,
+        "output_exact": 0.0,
+        "output_format": 1.0,
+        "output_contract": 1.0
+      },
+      "combined_total": 0.8405
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v9",
+      "case_id": "fr-email-formal",
+      "context_summary": null,
+      "output_text": "Bonjour,\n\nMerci, j'ai joint la version mise \u00e0 jour et je peux envoyer les chiffres finaux ce soir.",
+      "scores": {
+        "output_total": 0.7188,
+        "output_base": 0.7188,
+        "output_terms": 0.5,
+        "output_reference": 0.9897,
+        "output_exact": 0.0,
+        "output_format": 1.0,
+        "output_contract": 1.0
+      },
+      "combined_total": 0.7188
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v9",
+      "case_id": "en-email-spoken-greeting",
+      "context_summary": null,
+      "output_text": "Hi Dana,\n\nYes, I can send the deck tomorrow morning.",
+      "scores": {
+        "output_total": 1.0,
+        "output_base": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0,
+        "output_format": 1.0,
+        "output_contract": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v9",
+      "case_id": "en-email-dictated-closing",
+      "context_summary": null,
+      "output_text": "Hi Dana,\n\nYes that works for me.\n\nThanks",
+      "scores": {
+        "output_total": 0.8346,
+        "output_base": 0.8346,
+        "output_terms": 1.0,
+        "output_reference": 0.9744,
+        "output_exact": 0.0,
+        "output_format": 1.0,
+        "output_contract": 1.0
+      },
+      "combined_total": 0.8346
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v9",
+      "case_id": "en-email-recipient-name-nearmatch-greeting",
+      "context_summary": null,
+      "output_text": "Hi Aysha,\n\nThank you for sending over the dates. You can find our booking link here. Thank you.",
+      "scores": {
+        "output_total": 1.0,
+        "output_base": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0,
+        "output_format": 1.0,
+        "output_contract": 1.0
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v9",
+      "case_id": "en-email-recipient-name-nearmatch-body",
+      "context_summary": null,
+      "output_text": "Hi Thora,\n\nI wanted to follow up on the timeline that Aysha mentioned yesterday.",
+      "scores": {
+        "output_total": 1.0,
+        "output_base": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0,
+        "output_format": 1.0,
+        "output_contract": 1.0
+      },
+      "combined_total": 1.0
+    }
+  ]
+}

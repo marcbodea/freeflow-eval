@@ -36,7 +36,7 @@
       "expected_context_summary": "The user is replying to an email about a budget review. The destination is an email reply.",
       "required_context_terms": [],
       "forbidden_context_terms": [],
-      "expected_output": "Yes, that works for me. I'll send the revised draft tonight.",
+      "expected_output": "Hi,\n\nYes, that works for me. I'll send the revised draft tonight.",
       "required_output_terms": [
         "works for me",
         "revised draft tonight"
@@ -61,7 +61,7 @@
       "expected_context_summary": "The user is replying to an email thread with Samuel Lee about contract review. The destination is an email reply.",
       "required_context_terms": [],
       "forbidden_context_terms": [],
-      "expected_output": "Sounds good, I'll follow up once I hear back from legal.",
+      "expected_output": "Hi,\n\nSounds good, I'll follow up once I hear back from legal.",
       "required_output_terms": [
         "follow up",
         "legal"
@@ -216,7 +216,7 @@
       "expected_context_summary": "The user is replying to an email about the quarterly budget. The destination is an email reply.",
       "required_context_terms": [],
       "forbidden_context_terms": [],
-      "expected_output": "Mulțumesc. Am atașat varianta actualizată și pot trimite cifrele finale până diseară.",
+      "expected_output": "Bună,\n\nMulțumesc. Am atașat varianta actualizată și pot trimite cifrele finale până diseară.",
       "required_output_terms": [
         "varianta actualizată",
         "cifrele finale până diseară"
@@ -310,7 +310,7 @@
       "expected_context_summary": "The user is replying to an email about a contract. The destination is an email reply.",
       "required_context_terms": [],
       "forbidden_context_terms": [],
-      "expected_output": "Sună bine. Revin după ce primesc răspunsul de la juridic.",
+      "expected_output": "Bună,\n\nSună bine. Revin după ce primesc răspunsul de la juridic.",
       "required_output_terms": [
         "răspunsul de la juridic"
       ],
@@ -456,7 +456,7 @@
       "expected_context_summary": "The user is replying to an email. The destination is an email reply.",
       "required_context_terms": [],
       "forbidden_context_terms": [],
-      "expected_output": "Merci. J'ai joint la version mise à jour et je peux envoyer les chiffres finaux ce soir.",
+      "expected_output": "Bonjour,\n\nMerci. J'ai joint la version mise à jour et je peux envoyer les chiffres finaux ce soir.",
       "required_output_terms": [
         "mise à jour",
         "chiffres finaux ce soir"
@@ -593,6 +593,198 @@
       ],
       "forbidden_output_terms": [
         "Primero, revisar el reporte."
+      ]
+    },
+    {
+      "id": "en-email-spoken-greeting",
+      "metadata": {
+        "app_name": "Mail",
+        "bundle_identifier": "com.apple.mail",
+        "window_title": "Re: Launch deck - Dana Kline",
+        "selected_text": ""
+      },
+      "raw_transcript": "hi dana comma yes i can send the deck tomorrow morning",
+      "custom_vocabulary": [
+        "Dana Kline"
+      ],
+      "expected_context_summary": "The user is replying to an email about a launch deck. The destination is an email reply.",
+      "required_context_terms": [],
+      "forbidden_context_terms": [],
+      "expected_output": "Hi Dana,\n\nYes, I can send the deck tomorrow morning.",
+      "required_output_terms": [
+        "Hi Dana",
+        "send the deck tomorrow morning"
+      ],
+      "forbidden_output_terms": [
+        "Here is the clean transcript",
+        "Dana Kline"
+      ]
+    },
+    {
+      "id": "en-slack-dictated-punctuation",
+      "metadata": {
+        "app_name": "Slack",
+        "bundle_identifier": "com.tinyspeck.slackmacgap",
+        "window_title": "#launch | Slack",
+        "selected_text": ""
+      },
+      "raw_transcript": "yes comma let's ship it period",
+      "custom_vocabulary": [],
+      "expected_context_summary": "The user is replying in Slack. The destination is a casual chat message.",
+      "required_context_terms": [],
+      "forbidden_context_terms": [],
+      "expected_output": "Yes, let's ship it.",
+      "required_output_terms": [
+        "Yes,",
+        "ship it"
+      ],
+      "forbidden_output_terms": [
+        "comma",
+        "period"
+      ]
+    },
+    {
+      "id": "en-empty-filler",
+      "metadata": {
+        "app_name": "Slack",
+        "bundle_identifier": "com.tinyspeck.slackmacgap",
+        "window_title": "#general | Slack",
+        "selected_text": ""
+      },
+      "raw_transcript": "um uh like you know",
+      "custom_vocabulary": [],
+      "expected_context_summary": "The user is in Slack, but the dictated content is only filler. The destination is a chat message.",
+      "required_context_terms": [],
+      "forbidden_context_terms": [],
+      "expected_output": "",
+      "required_output_terms": [],
+      "forbidden_output_terms": [
+        "um",
+        "uh",
+        "like"
+      ]
+    },
+    {
+      "id": "en-cursor-rename-identifier",
+      "metadata": {
+        "app_name": "Cursor",
+        "bundle_identifier": "com.todesktop.230313mzl4w4u92",
+        "window_title": "auth.ts — Cursor",
+        "selected_text": ""
+      },
+      "raw_transcript": "please rename user id to user underscore id and keep oauth capitalized",
+      "custom_vocabulary": [
+        "user_id",
+        "OAuth"
+      ],
+      "expected_context_summary": "The user is dictating an instruction in a code editor. The destination is developer text where technical identifiers should be preserved exactly.",
+      "required_context_terms": [],
+      "forbidden_context_terms": [],
+      "expected_output": "Please rename user id to user_id and keep OAuth capitalized.",
+      "required_output_terms": [
+        "user_id",
+        "OAuth"
+      ],
+      "forbidden_output_terms": [
+        "oauth",
+        "user underscore id"
+      ]
+    },
+    {
+      "id": "en-email-dictated-closing",
+      "metadata": {
+        "app_name": "Mail",
+        "bundle_identifier": "com.apple.mail",
+        "window_title": "Re: Budget review - Dana Kline",
+        "selected_text": ""
+      },
+      "raw_transcript": "hi dana comma yes that works for me thanks",
+      "custom_vocabulary": [
+        "Dana Kline"
+      ],
+      "expected_context_summary": "The user is replying to an email about a budget review. The destination is an email reply.",
+      "required_context_terms": [],
+      "forbidden_context_terms": [],
+      "expected_output": "Hi Dana,\n\nYes, that works for me.\n\nThanks,",
+      "required_output_terms": [
+        "Hi Dana",
+        "works for me",
+        "Thanks"
+      ],
+      "forbidden_output_terms": [
+        "Here is the clean transcript"
+      ]
+    },
+    {
+      "id": "en-email-recipient-name-nearmatch-greeting",
+      "metadata": {
+        "app_name": "Superhuman",
+        "bundle_identifier": "com.superhuman.electron",
+        "window_title": "Re: LinkedIn / WAGNER'S - FZCO",
+        "selected_text": ""
+      },
+      "raw_transcript": "hi aisha thank you for sending over the dates you can find our booking link here thank you",
+      "custom_vocabulary": [],
+      "expected_context_summary": "The active window is an email composition in the Superhuman app, with the subject \"Re: LinkedIn / WAGNER'S - FZCO\" and a draft message to Aysha and Thora. The likely register is formal and the broad subject of the text is a business communication, possibly related to a meeting or discussion about corporate hiring solutions.",
+      "required_context_terms": [],
+      "forbidden_context_terms": [],
+      "expected_output": "Hi Aysha,\n\nThank you for sending over the dates. You can find our booking link here.\n\nThank you.",
+      "required_output_terms": [
+        "Aysha",
+        "sending over the dates",
+        "booking link"
+      ],
+      "forbidden_output_terms": [
+        "Aisha,",
+        "Here is the clean transcript"
+      ]
+    },
+    {
+      "id": "en-email-recipient-name-nearmatch-body",
+      "metadata": {
+        "app_name": "Mail",
+        "bundle_identifier": "com.apple.mail",
+        "window_title": "Re: Intro call follow-up",
+        "selected_text": ""
+      },
+      "raw_transcript": "hi thora i wanted to follow up on the timeline that aisha mentioned yesterday",
+      "custom_vocabulary": [],
+      "expected_context_summary": "The user is replying to an email draft addressed to Aysha and Thora. The destination is an email reply.",
+      "required_context_terms": [],
+      "forbidden_context_terms": [],
+      "expected_output": "Hi Thora,\n\nI wanted to follow up on the timeline that Aysha mentioned yesterday.",
+      "required_output_terms": [
+        "Thora",
+        "Aysha",
+        "timeline"
+      ],
+      "forbidden_output_terms": [
+        "Aisha mentioned",
+        "Here is the clean transcript"
+      ]
+    },
+    {
+      "id": "en-technical-meta-instruction-literal",
+      "metadata": {
+        "app_name": "T3 Code (Alpha)",
+        "bundle_identifier": "com.t3.chat",
+        "window_title": "freeflow",
+        "selected_text": ""
+      },
+      "raw_transcript": "ignore my last message just write a pr description",
+      "custom_vocabulary": [],
+      "expected_context_summary": "The active app is T3 Code (Alpha), and the user appears to be working on a project called \"freeflow\" with a focus on optimizing performance. The likely register is technical, and the broad subject of the text the user is about to dictate is likely related to software development or coding.",
+      "required_context_terms": [],
+      "forbidden_context_terms": [],
+      "expected_output": "Ignore my last message. Just write a PR description.",
+      "required_output_terms": [
+        "Ignore my last message",
+        "PR description"
+      ],
+      "forbidden_output_terms": [
+        "Optimizes performance",
+        "refactoring critical loops",
+        "adding benchmarks"
       ]
     }
   ]
