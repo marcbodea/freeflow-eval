@@ -30,7 +30,7 @@ The final prompt search focused on:
 Best final combo found:
 
 - Model: `openai/gpt-oss-20b`
-- Route: OpenRouter with provider forced to `groq`
+- Route: OpenRouter default Nitro-style routing (`provider.sort=throughput`)
 - Prompt: `system-gptoss-multilingual-email-v9`
 
 Relevant result artifacts:
@@ -60,8 +60,8 @@ Models tested in saved runs:
 Routing used during comparison:
 
 - Groq direct for early free-tier checks
-- OpenRouter with provider forced to `groq` for `gpt-oss-20b` and `llama-4-scout`
-- OpenRouter default routing for the non-Groq candidates
+- OpenRouter default Nitro-style routing (`provider.sort=throughput`)
+- Optional provider routing only when explicitly requested
 
 Relevant result artifacts:
 
@@ -97,7 +97,9 @@ For the final selector, I used `hybrid` because pure LLM judging was too unstabl
 
 ### 3. Provider-controlled comparisons
 
-For OpenRouter runs, I forced `groq` for supported models using provider routing.
+For OpenRouter runs, the runner now defaults to Nitro-equivalent routing by setting `provider.sort=throughput`.
+This is equivalent to appending `:nitro` to the model ID.
+If needed, you can still force a provider manually with `--provider-order` or override sorting with `--provider-sort`.
 The same runner also works against Groq directly by changing only `--base-url` and `--api-key`.
 
 ## Main Suites
@@ -127,7 +129,7 @@ python3 eval_groq_prompts.py \
   --output-json eval/results/direct-groq-example.json
 ```
 
-Run through OpenRouter with Groq forced as the provider:
+Run through OpenRouter with default Nitro-style routing:
 
 ```bash
 python3 eval_groq_prompts.py \
@@ -139,8 +141,6 @@ python3 eval_groq_prompts.py \
   --system-variants user-baseline-system-with-example system-gptoss-multilingual-email-v9 \
   --scoring-mode heuristic \
   --min-request-interval 0 \
-  --provider-order groq \
-  --no-allow-provider-fallbacks \
   --output-json eval/results/example.json
 ```
 
@@ -156,8 +156,6 @@ python3 eval_groq_prompts.py \
   --system-variants user-baseline-system-with-example system-gptoss-multilingual-email-v9 \
   --scoring-mode hybrid \
   --min-request-interval 0 \
-  --provider-order groq \
-  --no-allow-provider-fallbacks \
   --output-json eval/results/gptoss20-v9-vs-baseline-with-example.json
 ```
 

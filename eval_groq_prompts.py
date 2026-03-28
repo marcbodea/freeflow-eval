@@ -226,13 +226,19 @@ def parse_args() -> argparse.Namespace:
         "--provider-order",
         nargs="*",
         default=None,
-        help="Optional OpenRouter provider order to prioritize. Defaults to groq on OpenRouter.",
+        help="Optional OpenRouter provider order to prioritize. By default, no provider is forced.",
+    )
+    parser.add_argument(
+        "--provider-sort",
+        choices=("throughput", "latency", "price"),
+        default=None,
+        help="Optional OpenRouter provider sort. Defaults to throughput on OpenRouter, which is equivalent to Nitro routing.",
     )
     parser.add_argument(
         "--allow-provider-fallbacks",
         action=argparse.BooleanOptionalAction,
         default=None,
-        help="Whether to allow provider fallbacks when provider routing is requested. Defaults to disabled on OpenRouter.",
+        help="Whether to allow provider fallbacks when provider routing is requested. Defaults to enabled unless explicitly disabled.",
     )
     parser.add_argument(
         "--scoring-mode",
@@ -752,6 +758,7 @@ class ChatApiClient:
         min_request_interval: float,
         max_retries: int,
         provider_order: list[str] | None = None,
+        provider_sort: str | None = None,
         allow_provider_fallbacks: bool = True,
     ) -> None:
         self.api_key = api_key
@@ -760,6 +767,7 @@ class ChatApiClient:
         self.max_retries = max_retries
         self.last_request_monotonic = 0.0
         self.provider_order = provider_order or []
+        self.provider_sort = provider_sort
         self.allow_provider_fallbacks = allow_provider_fallbacks
 
     def chat(self, *, model: str, system_prompt: str, user_content: Any, temperature: float) -> str:
@@ -772,11 +780,15 @@ class ChatApiClient:
                 {"role": "user", "content": user_content},
             ],
         }
-        if self.provider_order and "openrouter.ai" in self.base_url:
-            payload["provider"] = {
-                "order": self.provider_order,
-                "allow_fallbacks": self.allow_provider_fallbacks,
-            }
+        if "openrouter.ai" in self.base_url:
+            provider: dict[str, Any] = {}
+            if self.provider_order:
+                provider["order"] = self.provider_order
+                provider["allow_fallbacks"] = self.allow_provider_fallbacks
+            if self.provider_sort:
+                provider["sort"] = self.provider_sort
+            if provider:
+                payload["provider"] = provider
         request = urllib.request.Request(
             url=f"{self.base_url}/chat/completions",
             data=json.dumps(payload).encode("utf-8"),
@@ -1041,12 +1053,9 @@ def main() -> int:
         raise SystemExit(
             "Missing API key. Set LLM_API_KEY, OPENROUTER_API_KEY, OPENAI_API_KEY, or GROQ_API_KEY, or pass --api-key."
         )
-    if "openrouter.ai" in args.base_url:
-        if args.provider_order is None:
-            args.provider_order = ["groq"]
-        if args.allow_provider_fallbacks is None:
-            args.allow_provider_fallbacks = False
-    elif args.allow_provider_fallbacks is None:
+    if "openrouter.ai" in args.base_url and args.provider_sort is None:
+        args.provider_sort = "throughput"
+    if args.allow_provider_fallbacks is None:
         args.allow_provider_fallbacks = True
 
     context_variants, system_variants = load_variants(args.prompts)
@@ -1067,6 +1076,7 @@ def main() -> int:
             min_request_interval=args.min_request_interval,
             max_retries=args.max_retries,
             provider_order=args.provider_order,
+            provider_sort=args.provider_sort,
             allow_provider_fallbacks=args.allow_provider_fallbacks,
         )
 
@@ -1074,6 +1084,7 @@ def main() -> int:
         "[routing] "
         f"base_url={args.base_url} "
         f"provider_order={args.provider_order or []} "
+        f"provider_sort={args.provider_sort or ''} "
         f"allow_provider_fallbacks={args.allow_provider_fallbacks}"
     )
 
@@ -1124,6 +1135,7 @@ def main() -> int:
         "routing": {
             "base_url": args.base_url,
             "provider_order": args.provider_order or [],
+            "provider_sort": args.provider_sort,
             "allow_provider_fallbacks": args.allow_provider_fallbacks,
         },
         "summary": summary,
