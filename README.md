@@ -31,16 +31,19 @@ Best final combo found:
 
 - Model: `openai/gpt-oss-20b`
 - Route: OpenRouter with provider forced to `groq`
-- Prompt: `system-gptoss-multilingual-final-v6`
+- Prompt: `system-gptoss-multilingual-email-v9`
 
-Hybrid-scored result on the multilingual-expanded 24-case suite:
+Relevant result artifacts:
 
-- `system-gptoss-multilingual-final-v6`: `0.8174`
-- baseline prompt: `0.8007`
+- `eval/results/gptoss20-v9-vs-baseline-with-example.json`
+- `eval/results/gptoss20-v9-llm-expanded-2026-03-25.json`
+- `eval/results/gptoss20-v9-email-name-focused-2026-03-26.json`
+- `eval/results/gptoss20-v9-name-meta-focused-2026-03-26.json`
 
-Result file:
+Hybrid-scored result against the baseline prompt with example on the 32-case English-context suite:
 
-- `eval/results/gptoss20-final-vs-baseline.json`
+- `system-gptoss-multilingual-email-v9`: `0.8691`
+- `user-baseline-system-with-example`: `0.8102`
 
 ## Models Tested
 
@@ -119,7 +122,7 @@ python3 eval_groq_prompts.py \
   --mode postprocess \
   --cases eval/prompt_eval_cases_system_only_en_context.json \
   --models meta-llama/llama-4-scout-17b-16e-instruct openai/gpt-oss-20b \
-  --system-variants app-default-system system-gptoss-multilingual-final-v6 \
+  --system-variants app-default-system system-gptoss-multilingual-email-v9 \
   --scoring-mode heuristic \
   --output-json eval/results/direct-groq-example.json
 ```
@@ -133,7 +136,7 @@ python3 eval_groq_prompts.py \
   --mode postprocess \
   --cases eval/prompt_eval_cases_system_only_en_context.json \
   --models openai/gpt-oss-20b \
-  --system-variants user-baseline-system system-gptoss-multilingual-final-v6 \
+  --system-variants user-baseline-system-with-example system-gptoss-multilingual-email-v9 \
   --scoring-mode heuristic \
   --min-request-interval 0 \
   --provider-order groq \
@@ -150,12 +153,12 @@ python3 eval_groq_prompts.py \
   --mode postprocess \
   --cases eval/prompt_eval_cases_system_only_en_context.json \
   --models openai/gpt-oss-20b \
-  --system-variants user-baseline-system system-gptoss-multilingual-final-v6 \
+  --system-variants user-baseline-system-with-example system-gptoss-multilingual-email-v9 \
   --scoring-mode hybrid \
   --min-request-interval 0 \
   --provider-order groq \
   --no-allow-provider-fallbacks \
-  --output-json eval/results/gptoss20-final-vs-baseline.json
+  --output-json eval/results/gptoss20-v9-vs-baseline-with-example.json
 ```
 
 ## Notes
