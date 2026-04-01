@@ -13,7 +13,7 @@
       "expected_context_summary": "The user is replying to an email about a budget review. The destination is an email reply.",
       "required_context_terms": [],
       "forbidden_context_terms": [],
-      "expected_output": "Hi,\n\nYes, that works for me. I'll send the revised draft tonight.",
+      "expected_output": "Yes, that works for me. I'll send the revised draft tonight.",
       "required_output_terms": [
         "works for me",
         "revised draft tonight"
@@ -36,7 +36,7 @@
       "expected_context_summary": "The user is replying to an email about the quarterly budget. The destination is an email reply.",
       "required_context_terms": [],
       "forbidden_context_terms": [],
-      "expected_output": "Bun\u0103,\n\nMul\u021bumesc. Am ata\u0219at varianta actualizat\u0103 \u0219i pot trimite cifrele finale p\u00e2n\u0103 disear\u0103.",
+      "expected_output": "Mul\u021bumesc. Am ata\u0219at varianta actualizat\u0103 \u0219i pot trimite cifrele finale p\u00e2n\u0103 disear\u0103.",
       "required_output_terms": [
         "varianta actualizat\u0103",
         "cifrele finale p\u00e2n\u0103 disear\u0103"
@@ -61,7 +61,7 @@
       "expected_context_summary": "The user is replying to an email about a contract. The destination is an email reply.",
       "required_context_terms": [],
       "forbidden_context_terms": [],
-      "expected_output": "Bun\u0103,\n\nSun\u0103 bine. Revin dup\u0103 ce primesc r\u0103spunsul de la juridic.",
+      "expected_output": "Sun\u0103 bine. Revin dup\u0103 ce primesc r\u0103spunsul de la juridic.",
       "required_output_terms": [
         "r\u0103spunsul de la juridic"
       ],
@@ -83,7 +83,7 @@
       "expected_context_summary": "The user is replying to an email. The destination is an email reply.",
       "required_context_terms": [],
       "forbidden_context_terms": [],
-      "expected_output": "Bonjour,\n\nMerci. J'ai joint la version mise \u00e0 jour et je peux envoyer les chiffres finaux ce soir.",
+      "expected_output": "Merci. J'ai joint la version mise \u00e0 jour et je peux envoyer les chiffres finaux ce soir.",
       "required_output_terms": [
         "mise \u00e0 jour",
         "chiffres finaux ce soir"

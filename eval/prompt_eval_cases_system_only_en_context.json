@@ -36,7 +36,7 @@
       "expected_context_summary": "The user is replying to an email about a budget review. The destination is an email reply.",
       "required_context_terms": [],
       "forbidden_context_terms": [],
-      "expected_output": "Hi,\n\nYes, that works for me. I'll send the revised draft tonight.",
+      "expected_output": "Yes, that works for me. I'll send the revised draft tonight.",
       "required_output_terms": [
         "works for me",
         "revised draft tonight"
@@ -61,7 +61,7 @@
       "expected_context_summary": "The user is replying to an email thread with Samuel Lee about contract review. The destination is an email reply.",
       "required_context_terms": [],
       "forbidden_context_terms": [],
-      "expected_output": "Hi,\n\nSounds good, I'll follow up once I hear back from legal.",
+      "expected_output": "Sounds good, I'll follow up once I hear back from legal.",
       "required_output_terms": [
         "follow up",
         "legal"
@@ -216,7 +216,7 @@
       "expected_context_summary": "The user is replying to an email about the quarterly budget. The destination is an email reply.",
       "required_context_terms": [],
       "forbidden_context_terms": [],
-      "expected_output": "Bună,\n\nMulțumesc. Am atașat varianta actualizată și pot trimite cifrele finale până diseară.",
+      "expected_output": "Mulțumesc. Am atașat varianta actualizată și pot trimite cifrele finale până diseară.",
       "required_output_terms": [
         "varianta actualizată",
         "cifrele finale până diseară"
@@ -310,7 +310,7 @@
       "expected_context_summary": "The user is replying to an email about a contract. The destination is an email reply.",
       "required_context_terms": [],
       "forbidden_context_terms": [],
-      "expected_output": "Bună,\n\nSună bine. Revin după ce primesc răspunsul de la juridic.",
+      "expected_output": "Sună bine. Revin după ce primesc răspunsul de la juridic.",
       "required_output_terms": [
         "răspunsul de la juridic"
       ],
@@ -456,7 +456,7 @@
       "expected_context_summary": "The user is replying to an email. The destination is an email reply.",
       "required_context_terms": [],
       "forbidden_context_terms": [],
-      "expected_output": "Bonjour,\n\nMerci. J'ai joint la version mise à jour et je peux envoyer les chiffres finaux ce soir.",
+      "expected_output": "Merci. J'ai joint la version mise à jour et je peux envoyer les chiffres finaux ce soir.",
       "required_output_terms": [
         "mise à jour",
         "chiffres finaux ce soir"

@@ -16,7 +16,7 @@
       "expected_context_summary": "The user is replying to an email. The destination is an email reply.",
       "required_context_terms": [],
       "forbidden_context_terms": [],
-      "expected_output": "Hi,\n\nThanks Camille, I agree with Marisa's feedback on the backend role.",
+      "expected_output": "Thanks Camille, I agree with Marisa's feedback on the backend role.",
       "required_output_terms": [
         "Camille",
         "Marisa",
@@ -131,7 +131,7 @@
       "expected_context_summary": "The user is replying to an email. The destination is an email reply.",
       "required_context_terms": [],
       "forbidden_context_terms": [],
-      "expected_output": "Hi,\n\nYes, that works for me. I'll send the final version tonight.",
+      "expected_output": "Yes, that works for me. I'll send the final version tonight.",
       "required_output_terms": [
         "Yes,",
         "works for me",

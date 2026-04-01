@@ -126,7 +126,7 @@
         "Slack",
         "terminal"
       ],
-      "expected_output": "Hi,\n\nYes, Thursday morning works for me. I'll send edits tonight so we can lock it then.",
+      "expected_output": "Yes, Thursday morning works for me. I'll send edits tonight so we can lock it then.",
       "required_output_terms": [
         "Thursday morning",
         "send edits tonight"
@@ -160,7 +160,7 @@
         "calendar invite",
         "Slack"
       ],
-      "expected_output": "Hi,\n\nThanks Camille, I just granted Figma access to the Growth and Brand contractors.",
+      "expected_output": "Thanks Camille, I just granted Figma access to the Growth and Brand contractors.",
       "required_output_terms": [
         "Camille",
         "Figma",
@@ -194,7 +194,7 @@
         "hotel",
         "airfare"
       ],
-      "expected_output": "Hi,\n\nSounds good, I don't have any constraints on my side.",
+      "expected_output": "Sounds good, I don't have any constraints on my side.",
       "required_output_terms": [
         "don't have any constraints"
       ],
@@ -352,7 +352,7 @@
         "Slack",
         "calendar"
       ],
-      "expected_output": "Hi,\n\nI can send the revised total by noon.",
+      "expected_output": "I can send the revised total by noon.",
       "required_output_terms": [
         "revised total",
         "by noon"
@@ -449,7 +449,7 @@
         "calendar invite",
         "Slack"
       ],
-      "expected_output": "Hi,\n\nSounds good, I'll follow up once I hear back from legal.",
+      "expected_output": "Sounds good, I'll follow up once I hear back from legal.",
       "required_output_terms": [
         "follow up",
         "hear back from legal"

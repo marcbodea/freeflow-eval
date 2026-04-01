@@ -86,7 +86,7 @@
       "expected_context_summary": "The user is replying to an email about a budget review. The destination is an email reply.",
       "required_context_terms": [],
       "forbidden_context_terms": [],
-      "expected_output": "Hi,\n\nYes, that works for me. I'll send the revised draft tonight.",
+      "expected_output": "Yes, that works for me. I'll send the revised draft tonight.",
       "required_output_terms": [
         "works for me",
         "revised draft tonight"

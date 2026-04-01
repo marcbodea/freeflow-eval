@@ -23,7 +23,7 @@
         "meeting invite",
         "calendar"
       ],
-      "expected_output": "Hi,\n\nSure, I can send the revised numbers to Dana Kline by this afternoon.",
+      "expected_output": "Sure, I can send the revised numbers to Dana Kline by this afternoon.",
       "required_output_terms": [
         "Dana Kline",
         "revised numbers",
