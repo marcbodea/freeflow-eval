@@ -198,6 +198,194 @@ Thank you for sending over the dates. You can find our booking link here. Thank 
 - `es-chat-self-correction`: `0.9134 -> 0.8260`
 - `en-email-formal-confirmation`: `1.0000 -> 0.9226`
 
+<details>
+<summary><code>en-email-spoken-greeting</code></summary>
+
+Raw transcript:
+
+```text
+hi dana comma yes i can send the deck tomorrow morning
+```
+
+Expected text:
+
+```text
+Hi Dana,
+
+Yes, I can send the deck tomorrow morning.
+```
+
+V9:
+
+```text
+Hi Dana,
+
+Yes, I can send the deck tomorrow morning.
+```
+
+V20:
+
+```text
+Hi Dana Kline,
+
+Yes, I can send the deck tomorrow morning.
+```
+
+</details>
+
+<details>
+<summary><code>ro-slack-casual</code></summary>
+
+Raw transcript:
+
+```text
+cred ca putem lansa maine dar vreau sa mai verific o data flow ul de onboarding
+```
+
+Expected text:
+
+```text
+Cred că putem lansa mâine, dar vreau să mai verific o dată flow-ul de onboarding.
+```
+
+V9:
+
+```text
+Cred că putem lansa mâine, dar vreau să mai verific o dată flow-ul de onboarding.
+```
+
+V20:
+
+```text
+Bună,
+
+Cred că putem lansa mâine, dar vreau să mai verific o dată flow-ul de onboarding.
+```
+
+</details>
+
+<details>
+<summary><code>ro-self-correction-de-fapt</code></summary>
+
+Raw transcript:
+
+```text
+pot sa trimit draftul maine de fapt poimaine dimineata
+```
+
+Expected text:
+
+```text
+Pot să trimit draftul poimâine dimineață.
+```
+
+V9:
+
+```text
+Pot să trimit draftul mâine, de fapt poimâine dimineață.
+```
+
+V20:
+
+```text
+Pot să trimit draftul mâine de fapt poimâine dimineață.
+```
+
+</details>
+
+<details>
+<summary><code>en-chat-keep-casual-tone</code></summary>
+
+Raw transcript:
+
+```text
+yeah this feels a bit too heavy maybe we can trim it back
+```
+
+Expected text:
+
+```text
+Yeah, this feels a bit too heavy. Maybe we can trim it back.
+```
+
+V9:
+
+```text
+Yeah, this feels a bit too heavy. Maybe we can trim it back.
+```
+
+V20:
+
+```text
+Yeah this feels a bit too heavy, maybe we can trim it back.
+```
+
+</details>
+
+<details>
+<summary><code>es-chat-self-correction</code></summary>
+
+Raw transcript:
+
+```text
+lo mando mañana no perdon pasado mañana por la tarde
+```
+
+Expected text:
+
+```text
+Lo mando pasado mañana por la tarde.
+```
+
+V9:
+
+```text
+Lo mando pasado mañana por la tarde.
+```
+
+V20:
+
+```text
+lo mando pasado mañana por la tarde
+```
+
+</details>
+
+<details>
+<summary><code>en-email-formal-confirmation</code></summary>
+
+Raw transcript:
+
+```text
+yes that works for me i'll send the revised draft tonight
+```
+
+Expected text:
+
+```text
+Hi,
+
+Yes, that works for me. I'll send the revised draft tonight.
+```
+
+V9:
+
+```text
+Hi,
+
+Yes, that works for me. I'll send the revised draft tonight.
+```
+
+V20:
+
+```text
+Hi,
+
+Yes that works for me. I'll send the revised draft tonight.
+```
+
+</details>
+
 ## Bottom Line
 
 `v20` is the better prompt overall and the better candidate to ship.
