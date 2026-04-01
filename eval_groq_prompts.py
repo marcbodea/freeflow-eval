@@ -848,6 +848,11 @@ class ChatApiClient:
                 if attempt > self.max_retries:
                     raise RuntimeError(f"Chat API network error: {exc}") from exc
                 time.sleep(min(12.0, 1.5 * attempt))
+            except TimeoutError as exc:
+                attempt += 1
+                if attempt > self.max_retries:
+                    raise RuntimeError(f"Chat API read timeout: {exc}") from exc
+                time.sleep(min(12.0, 1.5 * attempt))
 
     def _respect_min_interval(self) -> None:
         now = time.monotonic()

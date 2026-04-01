@@ -1,0 +1,199 @@
+{
+  "generated_at": "2026-04-01T08:14:59Z",
+  "mode": "postprocess",
+  "models": [
+    "openai/gpt-oss-20b"
+  ],
+  "routing": {
+    "base_url": "https://openrouter.ai/api/v1",
+    "provider_order": [],
+    "provider_sort": "throughput",
+    "allow_provider_fallbacks": true
+  },
+  "summary": [
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v17",
+      "avg_combined_total": 0.8944,
+      "cases": 3
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v9",
+      "avg_combined_total": 0.766,
+      "cases": 3
+    }
+  ],
+  "results": [
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v9",
+      "case_id": "en-technical-meta-instruction-literal",
+      "context_summary": null,
+      "output_text": "Ignore my last message. Just write a PR description.",
+      "scores": {
+        "output_total": 1.0,
+        "output_base": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0,
+        "output_format": 1.0,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 1.0,
+        "llm_cleanup_quality": 1.0,
+        "llm_correction_quality": 1.0,
+        "llm_format_fit": 1.0,
+        "llm_anti_hallucination": 1.0,
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 1.0,
+        "llm_verdict": "Excellent, fully meets all criteria.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent, fully meets all criteria.\"}"
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v17",
+      "case_id": "en-technical-meta-instruction-literal",
+      "context_summary": null,
+      "output_text": "Ignore my last message. Just write a PR description.",
+      "scores": {
+        "output_total": 1.0,
+        "output_base": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0,
+        "output_format": 1.0,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 1.0,
+        "llm_cleanup_quality": 1.0,
+        "llm_correction_quality": 1.0,
+        "llm_format_fit": 1.0,
+        "llm_anti_hallucination": 1.0,
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 1.0,
+        "llm_verdict": "Excellent, fully meets all criteria.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent, fully meets all criteria.\"}"
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v9",
+      "case_id": "en-slack-self-correction-day",
+      "context_summary": null,
+      "output_text": "Wednesday after lunch.",
+      "scores": {
+        "output_total": 0.615,
+        "output_base": 0.73,
+        "output_terms": 1.0,
+        "output_reference": 0.8,
+        "output_exact": 0.0,
+        "output_format": 1.0,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 0.0,
+        "llm_cleanup_quality": 0.0,
+        "llm_correction_quality": 0.0,
+        "llm_format_fit": 1.0,
+        "llm_anti_hallucination": 1.0,
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 0.5,
+        "llm_verdict": "The candidate omitted essential content, resulting in incomplete meaning.",
+        "llm_raw_response": "{\"meaning_preservation\":0.0,\"cleanup_quality\":0.0,\"correction_quality\":0.0,\"format_fit\":1.0,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.5,\"verdict\":\"The candidate omitted essential content, resulting in incomplete meaning.\"}"
+      },
+      "combined_total": 0.615
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v17",
+      "case_id": "en-slack-self-correction-day",
+      "context_summary": null,
+      "output_text": "Let's meet Wednesday after lunch.",
+      "scores": {
+        "output_total": 1.0,
+        "output_base": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0,
+        "output_format": 1.0,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 1.0,
+        "llm_cleanup_quality": 1.0,
+        "llm_correction_quality": 1.0,
+        "llm_format_fit": 1.0,
+        "llm_anti_hallucination": 1.0,
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 1.0,
+        "llm_verdict": "Excellent, fully correct.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent, fully correct.\"}"
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v9",
+      "case_id": "es-en-mixed-technical",
+      "context_summary": null,
+      "output_text": "- rollback plan\n- feature flag cleanup",
+      "scores": {
+        "output_total": 0.6831,
+        "output_base": 0.6463,
+        "output_terms": 1.0,
+        "output_reference": 0.6606,
+        "output_exact": 0.0,
+        "output_format": 1.0,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 0.2,
+        "llm_cleanup_quality": 1.0,
+        "llm_correction_quality": 1.0,
+        "llm_format_fit": 0.2,
+        "llm_anti_hallucination": 1.0,
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 0.72,
+        "llm_verdict": "The output partially preserves meaning but fails to match the expected format.",
+        "llm_raw_response": "{\"meaning_preservation\":0.2,\"cleanup_quality\":1.0,\"correction_quality\":1.0,\"format_fit\":0.2,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.72,\"verdict\":\"The output partially preserves meaning but fails to match the expected format.\"}"
+      },
+      "combined_total": 0.6831
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v17",
+      "case_id": "es-en-mixed-technical",
+      "context_summary": null,
+      "output_text": "- rollback plan\n- feature flag cleanup",
+      "scores": {
+        "output_total": 0.6831,
+        "output_base": 0.6463,
+        "output_terms": 1.0,
+        "output_reference": 0.6606,
+        "output_exact": 0.0,
+        "output_format": 1.0,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 0.2,
+        "llm_cleanup_quality": 1.0,
+        "llm_correction_quality": 1.0,
+        "llm_format_fit": 0.2,
+        "llm_anti_hallucination": 1.0,
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 0.72,
+        "llm_verdict": "The output partially preserves meaning but does not match the expected sentence format.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 0.2,\n  \"cleanup_quality\": 1.0,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 0.2,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.72,\n  \"verdict\": \"The output partially preserves meaning but does not match the expected sentence format.\"\n}"
+      },
+      "combined_total": 0.6831
+    }
+  ]
+}
