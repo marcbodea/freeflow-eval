@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-01T11:26:00Z",
+  "generated_at": "2026-04-01T11:29:35Z",
   "mode": "postprocess",
   "models": [
     "openai/gpt-oss-20b"
@@ -15,21 +15,21 @@
       "model": "openai/gpt-oss-20b",
       "context_variant": "-",
       "system_variant": "system-gptoss-multilingual-email-v24",
-      "avg_combined_total": 0.8572,
+      "avg_combined_total": 0.8706,
       "cases": 32
     },
     {
       "model": "openai/gpt-oss-20b",
       "context_variant": "-",
       "system_variant": "user-baseline-system",
-      "avg_combined_total": 0.8433,
+      "avg_combined_total": 0.7934,
       "cases": 32
     },
     {
       "model": "openai/gpt-oss-20b",
       "context_variant": "-",
       "system_variant": "user-baseline-system-with-example",
-      "avg_combined_total": 0.8114,
+      "avg_combined_total": 0.7804,
       "cases": 32
     }
   ],
@@ -57,8 +57,8 @@
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
         "llm_output_total": 1.0,
-        "llm_verdict": "Excellent, fully correct.",
-        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent, fully correct.\"}"
+        "llm_verdict": "Excellent, fully meets all criteria.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 1,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 1,\n  \"verdict\": \"Excellent, fully meets all criteria.\"\n}"
       },
       "combined_total": 1.0
     },
@@ -113,8 +113,8 @@
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
         "llm_output_total": 1.0,
-        "llm_verdict": "Excellent, fully meets all criteria.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 1,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 1,\n  \"verdict\": \"Excellent, fully meets all criteria.\"\n}"
+        "llm_verdict": "Excellent, fully correct.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent, fully correct.\"}"
       },
       "combined_total": 1.0
     },
@@ -169,8 +169,8 @@
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
         "llm_output_total": 1.0,
-        "llm_verdict": "Excellent, fully meets all criteria.",
-        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent, fully meets all criteria.\"}"
+        "llm_verdict": "Excellent, fully correct.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent, fully correct.\"}"
       },
       "combined_total": 0.92
     },
@@ -225,8 +225,8 @@
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
         "llm_output_total": 1.0,
-        "llm_verdict": "Excellent, the output matches the expected result.",
-        "llm_raw_response": "{\"meaning_preservation\":1.0,\"cleanup_quality\":1.0,\"correction_quality\":1.0,\"format_fit\":1.0,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":1.0,\"verdict\":\"Excellent, the output matches the expected result.\"}"
+        "llm_verdict": "Excellent, fully correct.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent, fully correct.\"}"
       },
       "combined_total": 0.8525
     },
@@ -253,8 +253,8 @@
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
         "llm_output_total": 1.0,
-        "llm_verdict": "Excellent",
-        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent\"}"
+        "llm_verdict": "Excellent, fully correct.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 1,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 1,\n  \"verdict\": \"Excellent, fully correct.\"\n}"
       },
       "combined_total": 0.8525
     },
@@ -282,7 +282,7 @@
         "llm_output_contract": 1.0,
         "llm_output_total": 1.0,
         "llm_verdict": "Excellent, fully correct.",
-        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent, fully correct.\"}"
+        "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 1,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 1,\n  \"verdict\": \"Excellent, fully correct.\"\n}"
       },
       "combined_total": 0.8525
     },
@@ -290,6 +290,34 @@
       "model": "openai/gpt-oss-20b",
       "context_variant": "-",
       "system_variant": "user-baseline-system",
+      "case_id": "en-correct-name-from-vocabulary",
+      "context_summary": null,
+      "output_text": "I synced with Marisa and Jonah on the rollout.",
+      "scores": {
+        "output_total": 0.9375,
+        "output_base": 0.875,
+        "output_terms": 0.5,
+        "output_reference": 1.0,
+        "output_exact": 1.0,
+        "output_format": 1.0,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 1.0,
+        "llm_cleanup_quality": 1.0,
+        "llm_correction_quality": 1.0,
+        "llm_format_fit": 1.0,
+        "llm_anti_hallucination": 1.0,
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 1.0,
+        "llm_verdict": "Excellent, fully meets all criteria.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 1,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 1,\n  \"verdict\": \"Excellent, fully meets all criteria.\"\n}"
+      },
+      "combined_total": 0.9375
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "user-baseline-system-with-example",
       "case_id": "en-correct-name-from-vocabulary",
       "context_summary": null,
       "output_text": "I synced with Marisa and Jonah on the rollout.",
@@ -317,7 +345,7 @@
     {
       "model": "openai/gpt-oss-20b",
       "context_variant": "-",
-      "system_variant": "user-baseline-system-with-example",
+      "system_variant": "system-gptoss-multilingual-email-v24",
       "case_id": "en-correct-name-from-vocabulary",
       "context_summary": null,
       "output_text": "I synced with Marisa and Jonah on the rollout.",
@@ -345,58 +373,30 @@
     {
       "model": "openai/gpt-oss-20b",
       "context_variant": "-",
-      "system_variant": "system-gptoss-multilingual-email-v24",
-      "case_id": "en-correct-name-from-vocabulary",
-      "context_summary": null,
-      "output_text": "I synced with Marisa and Jonah on the rollout.",
-      "scores": {
-        "output_total": 0.9375,
-        "output_base": 0.875,
-        "output_terms": 0.5,
-        "output_reference": 1.0,
-        "output_exact": 1.0,
-        "output_format": 1.0,
-        "output_contract": 1.0,
-        "llm_meaning_preservation": 1.0,
-        "llm_cleanup_quality": 1.0,
-        "llm_correction_quality": 1.0,
-        "llm_format_fit": 1.0,
-        "llm_anti_hallucination": 1.0,
-        "llm_language_preservation": 1.0,
-        "llm_output_contract": 1.0,
-        "llm_output_total": 1.0,
-        "llm_verdict": "All criteria met perfectly.",
-        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"All criteria met perfectly.\"}"
-      },
-      "combined_total": 0.9375
-    },
-    {
-      "model": "openai/gpt-oss-20b",
-      "context_variant": "-",
       "system_variant": "user-baseline-system",
       "case_id": "en-terminal-preserve-technical-string",
       "context_summary": null,
-      "output_text": "run python3 scripts/eval_groq_prompts.py --mode postprocess",
+      "output_text": "python3 scripts/eval_groq_prompts.py --mode postprocess",
       "scores": {
-        "output_total": 0.9225,
-        "output_base": 0.845,
+        "output_total": 0.8832,
+        "output_base": 0.8239,
         "output_terms": 1.0,
-        "output_reference": 0.9916,
+        "output_reference": 0.9565,
         "output_exact": 0.0,
         "output_format": 1.0,
         "output_contract": 1.0,
-        "llm_meaning_preservation": 1.0,
+        "llm_meaning_preservation": 0.85,
         "llm_cleanup_quality": 1.0,
         "llm_correction_quality": 1.0,
-        "llm_format_fit": 1.0,
+        "llm_format_fit": 0.8,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 1.0,
-        "llm_verdict": "Excellent, fully correct.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 1,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 1,\n  \"verdict\": \"Excellent, fully correct.\"\n}"
+        "llm_output_total": 0.9425,
+        "llm_verdict": "Good, but missing the initial 'Run' and period.",
+        "llm_raw_response": "{\"meaning_preservation\":0.85,\"cleanup_quality\":1.0,\"correction_quality\":1.0,\"format_fit\":0.8,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.9425,\"verdict\":\"Good, but missing the initial 'Run' and period.\"}"
       },
-      "combined_total": 0.9225
+      "combined_total": 0.8832
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -406,25 +406,25 @@
       "context_summary": null,
       "output_text": "python3 scripts/eval_groq_prompts.py --mode postprocess",
       "scores": {
-        "output_total": 0.8894,
+        "output_total": 0.877,
         "output_base": 0.8239,
         "output_terms": 1.0,
         "output_reference": 0.9565,
         "output_exact": 0.0,
         "output_format": 1.0,
         "output_contract": 1.0,
-        "llm_meaning_preservation": 0.9,
+        "llm_meaning_preservation": 0.8,
         "llm_cleanup_quality": 1.0,
         "llm_correction_quality": 1.0,
         "llm_format_fit": 0.8,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.955,
-        "llm_verdict": "Command correct, but missing the introductory 'Run' and period.",
-        "llm_raw_response": "{\"meaning_preservation\":0.9,\"cleanup_quality\":1.0,\"correction_quality\":1.0,\"format_fit\":0.8,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.955,\"verdict\":\"Command correct, but missing the introductory 'Run' and period.\"}"
+        "llm_output_total": 0.93,
+        "llm_verdict": "Mostly correct, but omitted the initial 'Run' and period.",
+        "llm_raw_response": "{\"meaning_preservation\":0.8,\"cleanup_quality\":1.0,\"correction_quality\":1.0,\"format_fit\":0.8,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.93,\"verdict\":\"Mostly correct, but omitted the initial 'Run' and period.\"}"
       },
-      "combined_total": 0.8894
+      "combined_total": 0.877
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -434,25 +434,25 @@
       "context_summary": null,
       "output_text": "python3 scripts/eval_groq_prompts.py --mode postprocess",
       "scores": {
-        "output_total": 0.8869,
+        "output_total": 0.877,
         "output_base": 0.8239,
         "output_terms": 1.0,
         "output_reference": 0.9565,
         "output_exact": 0.0,
         "output_format": 1.0,
         "output_contract": 1.0,
-        "llm_meaning_preservation": 0.9,
-        "llm_cleanup_quality": 0.95,
+        "llm_meaning_preservation": 0.8,
+        "llm_cleanup_quality": 1.0,
         "llm_correction_quality": 1.0,
         "llm_format_fit": 0.8,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.95,
-        "llm_verdict": "Mostly correct, but omitted the leading 'Run' and period.",
-        "llm_raw_response": "{\"meaning_preservation\":0.9,\"cleanup_quality\":0.95,\"correction_quality\":1.0,\"format_fit\":0.8,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.95,\"verdict\":\"Mostly correct, but omitted the leading 'Run' and period.\"}"
+        "llm_output_total": 0.93,
+        "llm_verdict": "Mostly correct, but omitted the initial 'Run' and period.",
+        "llm_raw_response": "{\"meaning_preservation\":0.8,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":0.8,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":0.93,\"verdict\":\"Mostly correct, but omitted the initial 'Run' and period.\"}"
       },
-      "combined_total": 0.8869
+      "combined_total": 0.877
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -488,27 +488,27 @@
       "system_variant": "user-baseline-system-with-example",
       "case_id": "en-chat-keep-casual-tone",
       "context_summary": null,
-      "output_text": "This feels a bit too heavy, maybe we can trim it back.",
+      "output_text": "This feels a bit too heavy. Maybe we can trim it back.",
       "scores": {
-        "output_total": 0.8539,
-        "output_base": 0.8079,
+        "output_total": 0.7342,
+        "output_base": 0.8184,
         "output_terms": 1.0,
-        "output_reference": 0.9298,
+        "output_reference": 0.9474,
         "output_exact": 0.0,
         "output_format": 1.0,
         "output_contract": 1.0,
-        "llm_meaning_preservation": 0.8,
-        "llm_cleanup_quality": 0.6,
+        "llm_meaning_preservation": 0.0,
+        "llm_cleanup_quality": 0.0,
         "llm_correction_quality": 1.0,
-        "llm_format_fit": 0.9,
+        "llm_format_fit": 1.0,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.9,
-        "llm_verdict": "Good overall, but omitted the initial 'Yeah,' which slightly alters the casual tone.",
-        "llm_raw_response": "{\"meaning_preservation\":0.8,\"cleanup_quality\":0.6,\"correction_quality\":1.0,\"format_fit\":0.9,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.9,\"verdict\":\"Good overall, but omitted the initial 'Yeah,' which slightly alters the casual tone.\"}"
+        "llm_output_total": 0.65,
+        "llm_verdict": "Missing the initial \"Yeah,\" reduces meaning preservation.",
+        "llm_raw_response": "{\"meaning_preservation\":0,\"cleanup_quality\":0,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":0.65,\"verdict\":\"Missing the initial \\\"Yeah,\\\" reduces meaning preservation.\"}"
       },
-      "combined_total": 0.8539
+      "combined_total": 0.7342
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -533,8 +533,8 @@
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
         "llm_output_total": 1.0,
-        "llm_verdict": "All criteria met perfectly.",
-        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"All criteria met perfectly.\"}"
+        "llm_verdict": "Excellent, fully meets expectations.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent, fully meets expectations.\"}"
       },
       "combined_total": 1.0
     },
@@ -561,8 +561,8 @@
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
         "llm_output_total": 0.92,
-        "llm_verdict": "Good overall, but formatting deviates from the expected prose style.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 1.0,\n  \"cleanup_quality\": 1.0,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 0.2,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.92,\n  \"verdict\": \"Good overall, but formatting deviates from the expected prose style.\"\n}"
+        "llm_verdict": "Mostly correct, but list formatting deviates from the expected prose style.",
+        "llm_raw_response": "{\"meaning_preservation\":1.0,\"cleanup_quality\":1.0,\"correction_quality\":1.0,\"format_fit\":0.2,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.92,\"verdict\":\"Mostly correct, but list formatting deviates from the expected prose style.\"}"
       },
       "combined_total": 0.6903
     },
@@ -589,8 +589,8 @@
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
         "llm_output_total": 0.92,
-        "llm_verdict": "Mostly correct, but the list formatting differs from the expected prose style.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 1.0,\n  \"cleanup_quality\": 1.0,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 0.2,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.92,\n  \"verdict\": \"Mostly correct, but the list formatting differs from the expected prose style.\"\n}"
+        "llm_verdict": "Good overall, but the list format differs from the expected prose style.",
+        "llm_raw_response": "{\"meaning_preservation\":1.0,\"cleanup_quality\":1.0,\"correction_quality\":1.0,\"format_fit\":0.2,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.92,\"verdict\":\"Good overall, but the list format differs from the expected prose style.\"}"
       },
       "combined_total": 0.6903
     },
@@ -600,88 +600,32 @@
       "system_variant": "system-gptoss-multilingual-email-v24",
       "case_id": "en-list-structure",
       "context_summary": null,
-      "output_text": "1. Update the changelog.\n2. Cut the release candidate.\n3. Post the announcement.",
+      "output_text": "First, update the changelog. Second, cut the release candidate. Third, post the announcement.",
       "scores": {
-        "output_total": 0.6903,
-        "output_base": 0.5758,
-        "output_terms": 0.25,
-        "output_reference": 0.8555,
-        "output_exact": 0.0,
-        "output_format": 0.0,
+        "output_total": 1.0,
+        "output_base": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0,
+        "output_format": 1.0,
         "output_contract": 1.0,
         "llm_meaning_preservation": 1.0,
         "llm_cleanup_quality": 1.0,
         "llm_correction_quality": 1.0,
-        "llm_format_fit": 0.2,
+        "llm_format_fit": 1.0,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.92,
-        "llm_verdict": "Content is correct but formatting deviates from expected prose style.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 1.0,\n  \"cleanup_quality\": 1.0,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 0.2,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.92,\n  \"verdict\": \"Content is correct but formatting deviates from expected prose style.\"\n}"
+        "llm_output_total": 1.0,
+        "llm_verdict": "Excellent, fully meets all criteria.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent, fully meets all criteria.\"}"
       },
-      "combined_total": 0.6903
+      "combined_total": 1.0
     },
     {
       "model": "openai/gpt-oss-20b",
       "context_variant": "-",
       "system_variant": "user-baseline-system",
-      "case_id": "ro-slack-casual",
-      "context_summary": null,
-      "output_text": "Cred c\u0103 putem lansa m\u00e2ine, dar vreau s\u0103 mai verific o dat\u0103 flow-ul de onboarding.",
-      "scores": {
-        "output_total": 1.0,
-        "output_base": 1.0,
-        "output_terms": 1.0,
-        "output_reference": 1.0,
-        "output_exact": 1.0,
-        "output_format": 1.0,
-        "output_contract": 1.0,
-        "llm_meaning_preservation": 1.0,
-        "llm_cleanup_quality": 1.0,
-        "llm_correction_quality": 1.0,
-        "llm_format_fit": 1.0,
-        "llm_anti_hallucination": 1.0,
-        "llm_language_preservation": 1.0,
-        "llm_output_contract": 1.0,
-        "llm_output_total": 1.0,
-        "llm_verdict": "Excellent, fully meets all criteria.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 1,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 1,\n  \"verdict\": \"Excellent, fully meets all criteria.\"\n}"
-      },
-      "combined_total": 1.0
-    },
-    {
-      "model": "openai/gpt-oss-20b",
-      "context_variant": "-",
-      "system_variant": "user-baseline-system-with-example",
-      "case_id": "ro-slack-casual",
-      "context_summary": null,
-      "output_text": "Cred c\u0103 putem lansa m\u00e2ine, dar vreau s\u0103 mai verific o dat\u0103 flow-ul de onboarding.",
-      "scores": {
-        "output_total": 1.0,
-        "output_base": 1.0,
-        "output_terms": 1.0,
-        "output_reference": 1.0,
-        "output_exact": 1.0,
-        "output_format": 1.0,
-        "output_contract": 1.0,
-        "llm_meaning_preservation": 1.0,
-        "llm_cleanup_quality": 1.0,
-        "llm_correction_quality": 1.0,
-        "llm_format_fit": 1.0,
-        "llm_anti_hallucination": 1.0,
-        "llm_language_preservation": 1.0,
-        "llm_output_contract": 1.0,
-        "llm_output_total": 1.0,
-        "llm_verdict": "Excellent, fully meets all criteria.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 1,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 1,\n  \"verdict\": \"Excellent, fully meets all criteria.\"\n}"
-      },
-      "combined_total": 1.0
-    },
-    {
-      "model": "openai/gpt-oss-20b",
-      "context_variant": "-",
-      "system_variant": "system-gptoss-multilingual-email-v24",
       "case_id": "ro-slack-casual",
       "context_summary": null,
       "output_text": "Cred c\u0103 putem lansa m\u00e2ine, dar vreau s\u0103 mai verific o dat\u0103 flow-ul de onboarding.",
@@ -709,30 +653,86 @@
     {
       "model": "openai/gpt-oss-20b",
       "context_variant": "-",
+      "system_variant": "user-baseline-system-with-example",
+      "case_id": "ro-slack-casual",
+      "context_summary": null,
+      "output_text": "Cred c\u0103 putem lansa m\u00e2ine, dar vreau s\u0103 mai verific o dat\u0103 flow\u2011ul de onboarding.",
+      "scores": {
+        "output_total": 0.8588,
+        "output_base": 0.7176,
+        "output_terms": 0.5,
+        "output_reference": 0.9877,
+        "output_exact": 0.0,
+        "output_format": 1.0,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 1.0,
+        "llm_cleanup_quality": 1.0,
+        "llm_correction_quality": 1.0,
+        "llm_format_fit": 1.0,
+        "llm_anti_hallucination": 1.0,
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 1.0,
+        "llm_verdict": "Excellent, no issues.",
+        "llm_raw_response": "{\"meaning_preservation\":1.0,\"cleanup_quality\":1.0,\"correction_quality\":1.0,\"format_fit\":1.0,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":1.0,\"verdict\":\"Excellent, no issues.\"}"
+      },
+      "combined_total": 0.8588
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v24",
+      "case_id": "ro-slack-casual",
+      "context_summary": null,
+      "output_text": "Cred c\u0103 putem lansa m\u00e2ine, dar vreau s\u0103 mai verific o dat\u0103 flow-ul de onboarding.",
+      "scores": {
+        "output_total": 1.0,
+        "output_base": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0,
+        "output_format": 1.0,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 1.0,
+        "llm_cleanup_quality": 1.0,
+        "llm_correction_quality": 1.0,
+        "llm_format_fit": 1.0,
+        "llm_anti_hallucination": 1.0,
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 1.0,
+        "llm_verdict": "Excellent, fully meets all criteria.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 1,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 1,\n  \"verdict\": \"Excellent, fully meets all criteria.\"\n}"
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
       "system_variant": "user-baseline-system",
       "case_id": "ro-email-formal",
       "context_summary": null,
-      "output_text": "Multumesc, am ata\u0219at varianta actualizat\u0103 \u0219i pot trimite cifrele finale p\u00e2n\u0103 disear\u0103.",
+      "output_text": "Mul\u021bumesc, am ata\u0219at varianta actualizat\u0103 \u0219i pot trimite cifrele finale p\u00e2n\u0103 disear\u0103.",
       "scores": {
-        "output_total": 0.7911,
-        "output_base": 0.8359,
+        "output_total": 0.8427,
+        "output_base": 0.8429,
         "output_terms": 1.0,
-        "output_reference": 0.9765,
+        "output_reference": 0.9882,
         "output_exact": 0.0,
         "output_format": 0.14,
         "output_contract": 1.0,
-        "llm_meaning_preservation": 0.8,
-        "llm_cleanup_quality": 0.9,
-        "llm_correction_quality": 0.9,
+        "llm_meaning_preservation": 0.95,
+        "llm_cleanup_quality": 1.0,
+        "llm_correction_quality": 1.0,
         "llm_format_fit": 1.0,
         "llm_anti_hallucination": 1.0,
-        "llm_language_preservation": 0.8,
-        "llm_output_contract": 0.9,
-        "llm_output_total": 0.89,
-        "llm_verdict": "Good, but missing diacritics and punctuation.",
-        "llm_raw_response": "{\"meaning_preservation\":0.8,\"cleanup_quality\":0.9,\"correction_quality\":0.9,\"format_fit\":1.0,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":0.8,\"output_contract\":0.9,\"overall\":0.88,\"verdict\":\"Good, but missing diacritics and punctuation.\"}"
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 0.9875,
+        "llm_verdict": "Great work, only a minor punctuation issue.",
+        "llm_raw_response": "{\"meaning_preservation\":0.95,\"cleanup_quality\":1.0,\"correction_quality\":1.0,\"format_fit\":1.0,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.9875,\"verdict\":\"Great work, only a minor punctuation issue.\"}"
       },
-      "combined_total": 0.7911
+      "combined_total": 0.8427
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -740,13 +740,13 @@
       "system_variant": "user-baseline-system-with-example",
       "case_id": "ro-email-formal",
       "context_summary": null,
-      "output_text": "Mul\u021bumesc. Am ata\u0219at varianta actualizat\u0103 \u0219i pot trimite cifrele finale p\u00e2n\u0103 disear\u0103.",
+      "output_text": "Mul\u021bumesc, am ata\u0219at varianta actualizat\u0103 \u0219i pot trimite cifrele finale p\u00e2n\u0103 disear\u0103.",
       "scores": {
-        "output_total": 0.914,
-        "output_base": 1.0,
+        "output_total": 0.849,
+        "output_base": 0.8429,
         "output_terms": 1.0,
-        "output_reference": 1.0,
-        "output_exact": 1.0,
+        "output_reference": 0.9882,
+        "output_exact": 0.0,
         "output_format": 0.14,
         "output_contract": 1.0,
         "llm_meaning_preservation": 1.0,
@@ -757,10 +757,10 @@
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
         "llm_output_total": 1.0,
-        "llm_verdict": "Excellent.",
-        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent.\"}"
+        "llm_verdict": "Excellent, meets all criteria.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 1.0,\n  \"cleanup_quality\": 1.0,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 1.0,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 1.0,\n  \"verdict\": \"Excellent, meets all criteria.\"\n}"
       },
-      "combined_total": 0.914
+      "combined_total": 0.849
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -768,27 +768,27 @@
       "system_variant": "system-gptoss-multilingual-email-v24",
       "case_id": "ro-email-formal",
       "context_summary": null,
-      "output_text": "Mul\u021bumesc. Am ata\u0219at varianta actualizat\u0103 \u0219i pot trimite cifrele finale p\u00e2n\u0103 disear\u0103.",
+      "output_text": "Multumesc. Am atasat varianta actualizata si pot trimite cifrele finale pana diseara.",
       "scores": {
-        "output_total": 0.914,
-        "output_base": 1.0,
-        "output_terms": 1.0,
-        "output_reference": 1.0,
-        "output_exact": 1.0,
+        "output_total": 0.6029,
+        "output_base": 0.5506,
+        "output_terms": 0.0,
+        "output_reference": 0.9176,
+        "output_exact": 0.0,
         "output_format": 0.14,
         "output_contract": 1.0,
         "llm_meaning_preservation": 1.0,
         "llm_cleanup_quality": 1.0,
-        "llm_correction_quality": 1.0,
+        "llm_correction_quality": 0.0,
         "llm_format_fit": 1.0,
         "llm_anti_hallucination": 1.0,
-        "llm_language_preservation": 1.0,
+        "llm_language_preservation": 0.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 1.0,
-        "llm_verdict": "Excellent.",
-        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent.\"}"
+        "llm_output_total": 0.75,
+        "llm_verdict": "The output preserves meaning but fails to correct diacritics, affecting language accuracy.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":0,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":0,\"output_contract\":1,\"overall\":0.75,\"verdict\":\"The output preserves meaning but fails to correct diacritics, affecting language accuracy.\"}"
       },
-      "combined_total": 0.914
+      "combined_total": 0.6029
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -796,27 +796,27 @@
       "system_variant": "user-baseline-system",
       "case_id": "ro-self-correction",
       "context_summary": null,
-      "output_text": "Hai s\u0103 vorbim joi, nu miercuri dup\u0103-amiaza.",
+      "output_text": "Let's talk Thursday, not Wednesday afternoon.",
       "scores": {
-        "output_total": 0.5272,
-        "output_base": 0.5231,
+        "output_total": 0.2525,
+        "output_base": 0.105,
         "output_terms": 0.0,
-        "output_reference": 0.8718,
+        "output_reference": 0.175,
         "output_exact": 0.0,
-        "output_format": 0.725,
+        "output_format": 1.0,
         "output_contract": 1.0,
         "llm_meaning_preservation": 0.0,
         "llm_cleanup_quality": 0.0,
-        "llm_correction_quality": 0.4,
+        "llm_correction_quality": 0.0,
         "llm_format_fit": 1.0,
         "llm_anti_hallucination": 1.0,
-        "llm_language_preservation": 1.0,
+        "llm_language_preservation": 0.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.56,
-        "llm_verdict": "The output deviates from the intended meaning and contains an incorrect phrase.",
-        "llm_raw_response": "{\"meaning_preservation\":0.0,\"cleanup_quality\":0.0,\"correction_quality\":0.4,\"format_fit\":1.0,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.56,\"verdict\":\"The output deviates from the intended meaning and contains an incorrect phrase.\"}"
+        "llm_output_total": 0.4,
+        "llm_verdict": "The output fails to preserve meaning and language, but formatting and hallucination checks are fine.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 0.0,\n  \"cleanup_quality\": 0.0,\n  \"correction_quality\": 0.0,\n  \"format_fit\": 1.0,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 0.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.4,\n  \"verdict\": \"The output fails to preserve meaning and language, but formatting and hallucination checks are fine.\"\n}"
       },
-      "combined_total": 0.5272
+      "combined_total": 0.2525
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -826,35 +826,7 @@
       "context_summary": null,
       "output_text": "Hai s\u0103 vorbim joi, nu miercuri dup\u0103-amiaza.",
       "scores": {
-        "output_total": 0.4921,
-        "output_base": 0.5231,
-        "output_terms": 0.0,
-        "output_reference": 0.8718,
-        "output_exact": 0.0,
-        "output_format": 0.725,
-        "output_contract": 1.0,
-        "llm_meaning_preservation": 0.0,
-        "llm_cleanup_quality": 0.0,
-        "llm_correction_quality": 0.4,
-        "llm_format_fit": 0.5,
-        "llm_anti_hallucination": 1.0,
-        "llm_language_preservation": 0.8,
-        "llm_output_contract": 1.0,
-        "llm_output_total": 0.49,
-        "llm_verdict": "The output does not preserve the intended meaning and contains errors.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 0.0,\n  \"cleanup_quality\": 0.0,\n  \"correction_quality\": 0.4,\n  \"format_fit\": 0.5,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 0.8,\n  \"output_contract\": 1.0,\n  \"overall\": 0.49,\n  \"verdict\": \"The output does not preserve the intended meaning and contains errors.\"\n}"
-      },
-      "combined_total": 0.4921
-    },
-    {
-      "model": "openai/gpt-oss-20b",
-      "context_variant": "-",
-      "system_variant": "system-gptoss-multilingual-email-v24",
-      "case_id": "ro-self-correction",
-      "context_summary": null,
-      "output_text": "Hai s\u0103 vorbim joi, nu miercuri dup\u0103-amiaza.",
-      "scores": {
-        "output_total": 0.5247,
+        "output_total": 0.5147,
         "output_base": 0.5231,
         "output_terms": 0.0,
         "output_reference": 0.8718,
@@ -864,15 +836,43 @@
         "llm_meaning_preservation": 0.0,
         "llm_cleanup_quality": 0.0,
         "llm_correction_quality": 0.5,
-        "llm_format_fit": 1.0,
+        "llm_format_fit": 0.8,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 0.8,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.555,
-        "llm_verdict": "The output fails to preserve the intended meaning and contains errors.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 0.0,\n  \"cleanup_quality\": 0.0,\n  \"correction_quality\": 0.5,\n  \"format_fit\": 1.0,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 0.8,\n  \"output_contract\": 1.0,\n  \"overall\": 0.555,\n  \"verdict\": \"The output fails to preserve the intended meaning and contains errors.\"\n}"
+        "llm_output_total": 0.535,
+        "llm_verdict": "The output fails to preserve the intended meaning and contains incorrect additions.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 0.0,\n  \"cleanup_quality\": 0.0,\n  \"correction_quality\": 0.5,\n  \"format_fit\": 0.8,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 0.8,\n  \"output_contract\": 1.0,\n  \"overall\": 0.53,\n  \"verdict\": \"The output fails to preserve the intended meaning and contains incorrect additions.\"\n}"
       },
-      "combined_total": 0.5247
+      "combined_total": 0.5147
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v24",
+      "case_id": "ro-self-correction",
+      "context_summary": null,
+      "output_text": "Hai s\u0103 vorbim joi, nu miercuri dup\u0103-amiaza.",
+      "scores": {
+        "output_total": 0.4897,
+        "output_base": 0.5231,
+        "output_terms": 0.0,
+        "output_reference": 0.8718,
+        "output_exact": 0.0,
+        "output_format": 0.725,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 0.1,
+        "llm_cleanup_quality": 0.1,
+        "llm_correction_quality": 0.1,
+        "llm_format_fit": 0.7,
+        "llm_anti_hallucination": 0.9,
+        "llm_language_preservation": 0.8,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 0.485,
+        "llm_verdict": "The output deviates from the intended meaning and contains errors.",
+        "llm_raw_response": "{\"meaning_preservation\":0.1,\"cleanup_quality\":0.1,\"correction_quality\":0.1,\"format_fit\":0.7,\"anti_hallucination\":0.9,\"romanian_or_language_preservation\":0.8,\"output_contract\":1.0,\"overall\":0.485,\"verdict\":\"The output deviates from the intended meaning and contains errors.\"}"
+      },
+      "combined_total": 0.4897
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -880,27 +880,27 @@
       "system_variant": "user-baseline-system",
       "case_id": "ro-mixed-language-technical",
       "context_summary": null,
-      "output_text": "Adaug\u0103 un bullet despre rollback plan \u0219i un altul despre feature flag cleanup.",
+      "output_text": "Add a bullet about rollback plan and another about feature flag cleanup.",
       "scores": {
-        "output_total": 0.8811,
-        "output_base": 0.8173,
+        "output_total": 0.7388,
+        "output_base": 0.6575,
         "output_terms": 1.0,
-        "output_reference": 0.9455,
+        "output_reference": 0.6792,
         "output_exact": 0.0,
         "output_format": 1.0,
         "output_contract": 1.0,
-        "llm_meaning_preservation": 0.8,
-        "llm_cleanup_quality": 0.95,
+        "llm_meaning_preservation": 1.0,
+        "llm_cleanup_quality": 1.0,
         "llm_correction_quality": 1.0,
-        "llm_format_fit": 1.0,
+        "llm_format_fit": 0.2,
         "llm_anti_hallucination": 1.0,
-        "llm_language_preservation": 1.0,
+        "llm_language_preservation": 0.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.945,
-        "llm_verdict": "Good, but omitted the polite \"te rog\" phrase.",
-        "llm_raw_response": "{\"meaning_preservation\":0.8,\"cleanup_quality\":0.95,\"correction_quality\":1.0,\"format_fit\":1.0,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.945,\"verdict\":\"Good, but omitted the polite \\\"te rog\\\" phrase.\"}"
+        "llm_output_total": 0.82,
+        "llm_verdict": "The output preserves meaning but fails to maintain the Romanian language, resulting in a moderate overall score.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 1.0,\n  \"cleanup_quality\": 1.0,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 0.2,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 0.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.82,\n  \"verdict\": \"The output preserves meaning but fails to maintain the Romanian language, resulting in a moderate overall score.\"\n}"
       },
-      "combined_total": 0.8811
+      "combined_total": 0.7388
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -908,70 +908,14 @@
       "system_variant": "user-baseline-system-with-example",
       "case_id": "ro-mixed-language-technical",
       "context_summary": null,
-      "output_text": "Add a bullet about rollback plan and another about feature flag cleanup.",
+      "output_text": "Adaug\u0103 te rog un bullet despre rollback plan \u0219i un altul despre feature flag cleanup.",
       "scores": {
-        "output_total": 0.7788,
-        "output_base": 0.6575,
+        "output_total": 0.9215,
+        "output_base": 0.843,
         "output_terms": 1.0,
-        "output_reference": 0.6792,
+        "output_reference": 0.9884,
         "output_exact": 0.0,
         "output_format": 1.0,
-        "output_contract": 1.0,
-        "llm_meaning_preservation": 1.0,
-        "llm_cleanup_quality": 1.0,
-        "llm_correction_quality": 1.0,
-        "llm_format_fit": 1.0,
-        "llm_anti_hallucination": 1.0,
-        "llm_language_preservation": 0.0,
-        "llm_output_contract": 1.0,
-        "llm_output_total": 0.9,
-        "llm_verdict": "The output preserves meaning but fails to keep the original Romanian language.",
-        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":0,\"output_contract\":1,\"overall\":0.9,\"verdict\":\"The output preserves meaning but fails to keep the original Romanian language.\"}"
-      },
-      "combined_total": 0.7788
-    },
-    {
-      "model": "openai/gpt-oss-20b",
-      "context_variant": "-",
-      "system_variant": "system-gptoss-multilingual-email-v24",
-      "case_id": "ro-mixed-language-technical",
-      "context_summary": null,
-      "output_text": "Add a bullet about rollback plan and another about feature flag cleanup.",
-      "scores": {
-        "output_total": 0.7788,
-        "output_base": 0.6575,
-        "output_terms": 1.0,
-        "output_reference": 0.6792,
-        "output_exact": 0.0,
-        "output_format": 1.0,
-        "output_contract": 1.0,
-        "llm_meaning_preservation": 1.0,
-        "llm_cleanup_quality": 1.0,
-        "llm_correction_quality": 1.0,
-        "llm_format_fit": 1.0,
-        "llm_anti_hallucination": 1.0,
-        "llm_language_preservation": 0.0,
-        "llm_output_contract": 1.0,
-        "llm_output_total": 0.9,
-        "llm_verdict": "The output preserves meaning and quality but fails to maintain the Romanian language.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 1.0,\n  \"cleanup_quality\": 1.0,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 1.0,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 0.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.9,\n  \"verdict\": \"The output preserves meaning and quality but fails to maintain the Romanian language.\"\n}"
-      },
-      "combined_total": 0.7788
-    },
-    {
-      "model": "openai/gpt-oss-20b",
-      "context_variant": "-",
-      "system_variant": "user-baseline-system",
-      "case_id": "ro-empty-filler",
-      "context_summary": null,
-      "output_text": "",
-      "scores": {
-        "output_total": 0.9,
-        "output_base": 1.0,
-        "output_terms": 1.0,
-        "output_reference": 1.0,
-        "output_exact": 1.0,
-        "output_format": 0.0,
         "output_contract": 1.0,
         "llm_meaning_preservation": 1.0,
         "llm_cleanup_quality": 1.0,
@@ -981,10 +925,66 @@
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
         "llm_output_total": 1.0,
-        "llm_verdict": "All criteria met.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 1.0,\n  \"cleanup_quality\": 1.0,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 1.0,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 1.0,\n  \"verdict\": \"All criteria met.\"\n}"
+        "llm_verdict": "Excellent, fully meets expectations.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 1,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 1,\n  \"verdict\": \"Excellent, fully meets expectations.\"\n}"
       },
-      "combined_total": 0.9
+      "combined_total": 0.9215
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v24",
+      "case_id": "ro-mixed-language-technical",
+      "context_summary": null,
+      "output_text": "Adaug\u0103 te rog un bullet despre rollback plan \u0219i un altul despre feature flag cleanup.",
+      "scores": {
+        "output_total": 0.9215,
+        "output_base": 0.843,
+        "output_terms": 1.0,
+        "output_reference": 0.9884,
+        "output_exact": 0.0,
+        "output_format": 1.0,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 1.0,
+        "llm_cleanup_quality": 1.0,
+        "llm_correction_quality": 1.0,
+        "llm_format_fit": 1.0,
+        "llm_anti_hallucination": 1.0,
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 1.0,
+        "llm_verdict": "Excellent, fully correct.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 1,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 1,\n  \"verdict\": \"Excellent, fully correct.\"\n}"
+      },
+      "combined_total": 0.9215
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "user-baseline-system",
+      "case_id": "ro-empty-filler",
+      "context_summary": null,
+      "output_text": "a pai adica",
+      "scores": {
+        "output_total": 0.075,
+        "output_base": 0.0,
+        "output_terms": 0.0,
+        "output_reference": 0.0,
+        "output_exact": 0.0,
+        "output_format": 1.0,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 0.0,
+        "llm_cleanup_quality": 0.0,
+        "llm_correction_quality": 0.0,
+        "llm_format_fit": 0.0,
+        "llm_anti_hallucination": 0.0,
+        "llm_language_preservation": 0.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 0.15,
+        "llm_verdict": "The output does not match the expected empty result.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 0.0,\n  \"cleanup_quality\": 0.0,\n  \"correction_quality\": 0.0,\n  \"format_fit\": 0.0,\n  \"anti_hallucination\": 0.0,\n  \"romanian_or_language_preservation\": 0.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.15,\n  \"verdict\": \"The output does not match the expected empty result.\"\n}"
+      },
+      "combined_total": 0.075
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -992,9 +992,9 @@
       "system_variant": "user-baseline-system-with-example",
       "case_id": "ro-empty-filler",
       "context_summary": null,
-      "output_text": "a pai adica.",
+      "output_text": "a pai adica",
       "scores": {
-        "output_total": 0.125,
+        "output_total": 0.075,
         "output_base": 0.0,
         "output_terms": 0.0,
         "output_reference": 0.0,
@@ -1006,13 +1006,13 @@
         "llm_correction_quality": 0.0,
         "llm_format_fit": 0.0,
         "llm_anti_hallucination": 1.0,
-        "llm_language_preservation": 1.0,
+        "llm_language_preservation": 0.0,
         "llm_output_contract": 0.0,
-        "llm_output_total": 0.25,
-        "llm_verdict": "The output does not match the expected empty result.",
-        "llm_raw_response": "{\"meaning_preservation\":0,\"cleanup_quality\":0,\"correction_quality\":0,\"format_fit\":0,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":0,\"overall\":0.25,\"verdict\":\"The output does not match the expected empty result.\"}"
+        "llm_output_total": 0.15,
+        "llm_verdict": "The output does not meet the expected empty result.",
+        "llm_raw_response": "{\"meaning_preservation\":0,\"cleanup_quality\":0,\"correction_quality\":0,\"format_fit\":0,\"anti_hallucination\":1,\"romanian_or_language_preservation\":0,\"output_contract\":0,\"overall\":0.15,\"verdict\":\"The output does not meet the expected empty result.\"}"
       },
-      "combined_total": 0.125
+      "combined_total": 0.075
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -1048,34 +1048,6 @@
       "system_variant": "user-baseline-system",
       "case_id": "ro-no-context-insertion",
       "context_summary": null,
-      "output_text": "Sun\u0103 bine, revin dup\u0103 ce primesc r\u0103spunsul de la juridic.",
-      "scores": {
-        "output_total": 0.8526,
-        "output_base": 0.8395,
-        "output_terms": 1.0,
-        "output_reference": 0.9825,
-        "output_exact": 0.0,
-        "output_format": 0.2,
-        "output_contract": 1.0,
-        "llm_meaning_preservation": 1.0,
-        "llm_cleanup_quality": 1.0,
-        "llm_correction_quality": 1.0,
-        "llm_format_fit": 1.0,
-        "llm_anti_hallucination": 1.0,
-        "llm_language_preservation": 1.0,
-        "llm_output_contract": 1.0,
-        "llm_output_total": 1.0,
-        "llm_verdict": "All criteria met.",
-        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"All criteria met.\"}"
-      },
-      "combined_total": 0.8526
-    },
-    {
-      "model": "openai/gpt-oss-20b",
-      "context_variant": "-",
-      "system_variant": "user-baseline-system-with-example",
-      "case_id": "ro-no-context-insertion",
-      "context_summary": null,
       "output_text": "Sun\u0103 bine. Revin dup\u0103 ce primesc r\u0103spunsul de la juridic.",
       "scores": {
         "output_total": 0.92,
@@ -1101,12 +1073,12 @@
     {
       "model": "openai/gpt-oss-20b",
       "context_variant": "-",
-      "system_variant": "system-gptoss-multilingual-email-v24",
+      "system_variant": "user-baseline-system-with-example",
       "case_id": "ro-no-context-insertion",
       "context_summary": null,
       "output_text": "Sun\u0103 bine, revin dup\u0103 ce primesc r\u0103spunsul de la juridic.",
       "scores": {
-        "output_total": 0.8426,
+        "output_total": 0.8526,
         "output_base": 0.8395,
         "output_terms": 1.0,
         "output_reference": 0.9825,
@@ -1116,15 +1088,43 @@
         "llm_meaning_preservation": 1.0,
         "llm_cleanup_quality": 1.0,
         "llm_correction_quality": 1.0,
-        "llm_format_fit": 0.8,
+        "llm_format_fit": 1.0,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.98,
-        "llm_verdict": "Minor punctuation tweak needed.",
-        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":0.8,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":0.98,\"verdict\":\"Minor punctuation tweak needed.\"}"
+        "llm_output_total": 1.0,
+        "llm_verdict": "Excellent, no issues.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 1,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 1,\n  \"verdict\": \"Excellent, no issues.\"\n}"
       },
-      "combined_total": 0.8426
+      "combined_total": 0.8526
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v24",
+      "case_id": "ro-no-context-insertion",
+      "context_summary": null,
+      "output_text": "Sun\u0103 bine, revin dup\u0103 ce primesc r\u0103spunsul de la juridic.",
+      "scores": {
+        "output_total": 0.8476,
+        "output_base": 0.8395,
+        "output_terms": 1.0,
+        "output_reference": 0.9825,
+        "output_exact": 0.0,
+        "output_format": 0.2,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 1.0,
+        "llm_cleanup_quality": 1.0,
+        "llm_correction_quality": 1.0,
+        "llm_format_fit": 0.9,
+        "llm_anti_hallucination": 1.0,
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 0.99,
+        "llm_verdict": "Minor punctuation issue, otherwise correct.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":0.9,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":0.99,\"verdict\":\"Minor punctuation issue, otherwise correct.\"}"
+      },
+      "combined_total": 0.8476
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -1134,25 +1134,25 @@
       "context_summary": null,
       "output_text": "Pot s\u0103 trimit draftul m\u00e2ine, de fapt, poim\u00e2ine diminea\u021ba.",
       "scores": {
-        "output_total": 0.5845,
+        "output_total": 0.5669,
         "output_base": 0.4898,
         "output_terms": 0.0,
         "output_reference": 0.8163,
         "output_exact": 0.0,
         "output_format": 0.225,
         "output_contract": 1.0,
-        "llm_meaning_preservation": 0.4,
-        "llm_cleanup_quality": 0.3,
-        "llm_correction_quality": 0.9,
-        "llm_format_fit": 0.9,
+        "llm_meaning_preservation": 0.2,
+        "llm_cleanup_quality": 0.2,
+        "llm_correction_quality": 1.0,
+        "llm_format_fit": 1.0,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.755,
-        "llm_verdict": "The output is largely correct but retains unnecessary filler, slightly lowering the overall score.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 0.4,\n  \"cleanup_quality\": 0.3,\n  \"correction_quality\": 0.9,\n  \"format_fit\": 0.9,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.75,\n  \"verdict\": \"The output is largely correct but retains unnecessary filler, slightly lowering the overall score.\"\n}"
+        "llm_output_total": 0.72,
+        "llm_verdict": "The output partially preserves meaning but includes unnecessary filler, lowering overall quality.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 0.2,\n  \"cleanup_quality\": 0.2,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 1.0,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.72,\n  \"verdict\": \"The output partially preserves meaning but includes unnecessary filler, lowering overall quality.\"\n}"
       },
-      "combined_total": 0.5845
+      "combined_total": 0.5669
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -1162,7 +1162,7 @@
       "context_summary": null,
       "output_text": "Pot s\u0103 trimit draftul m\u00e2ine, de fapt poim\u00e2ine diminea\u021ba.",
       "scores": {
-        "output_total": 0.6116,
+        "output_total": 0.5916,
         "output_base": 0.4948,
         "output_terms": 0.0,
         "output_reference": 0.8247,
@@ -1170,17 +1170,17 @@
         "output_format": 0.225,
         "output_contract": 1.0,
         "llm_meaning_preservation": 0.4,
-        "llm_cleanup_quality": 0.7,
+        "llm_cleanup_quality": 0.3,
         "llm_correction_quality": 0.9,
         "llm_format_fit": 1.0,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.805,
-        "llm_verdict": "Good overall, but extra word slightly alters meaning.",
-        "llm_raw_response": "{\"meaning_preservation\":0.4,\"cleanup_quality\":0.7,\"correction_quality\":0.9,\"format_fit\":1.0,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.805,\"verdict\":\"Good overall, but extra word slightly alters meaning.\"}"
+        "llm_output_total": 0.765,
+        "llm_verdict": "The output is mostly correct but includes an unnecessary word, slightly altering the intended meaning.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 0.4,\n  \"cleanup_quality\": 0.3,\n  \"correction_quality\": 0.9,\n  \"format_fit\": 1.0,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.765,\n  \"verdict\": \"The output is mostly correct but includes an unnecessary word, slightly altering the intended meaning.\"\n}"
       },
-      "combined_total": 0.6116
+      "combined_total": 0.5916
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -1188,27 +1188,27 @@
       "system_variant": "system-gptoss-multilingual-email-v24",
       "case_id": "ro-self-correction-de-fapt",
       "context_summary": null,
-      "output_text": "Pot s\u0103 trimit draftul poim\u00e2ine diminea\u021b\u0103.",
+      "output_text": "Pot s\u0103 trimit draftul m\u00e2ine de fapt poim\u00e2ine diminea\u021b\u0103.",
       "scores": {
-        "output_total": 0.9134,
-        "output_base": 0.875,
-        "output_terms": 0.5,
-        "output_reference": 1.0,
-        "output_exact": 1.0,
-        "output_format": 0.725,
+        "output_total": 0.5415,
+        "output_base": 0.5125,
+        "output_terms": 0.0,
+        "output_reference": 0.8542,
+        "output_exact": 0.0,
+        "output_format": 0.225,
         "output_contract": 1.0,
-        "llm_meaning_preservation": 1.0,
-        "llm_cleanup_quality": 1.0,
+        "llm_meaning_preservation": 0.0,
+        "llm_cleanup_quality": 0.0,
         "llm_correction_quality": 1.0,
         "llm_format_fit": 1.0,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 1.0,
-        "llm_verdict": "Excellent, fully meets all criteria.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 1,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 1,\n  \"verdict\": \"Excellent, fully meets all criteria.\"\n}"
+        "llm_output_total": 0.65,
+        "llm_verdict": "The output adds unintended content, reducing meaning preservation and cleanup quality.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 0.0,\n  \"cleanup_quality\": 0.0,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 1.0,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.65,\n  \"verdict\": \"The output adds unintended content, reducing meaning preservation and cleanup quality.\"\n}"
       },
-      "combined_total": 0.9134
+      "combined_total": 0.5415
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -1233,8 +1233,8 @@
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
         "llm_output_total": 1.0,
-        "llm_verdict": "All criteria met perfectly.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 1,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 1,\n  \"verdict\": \"All criteria met perfectly.\"\n}"
+        "llm_verdict": "Excellent.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent.\"}"
       },
       "combined_total": 0.9
     },
@@ -1261,8 +1261,8 @@
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
         "llm_output_total": 1.0,
-        "llm_verdict": "All criteria met perfectly.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 1,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 1,\n  \"verdict\": \"All criteria met perfectly.\"\n}"
+        "llm_verdict": "Excellent",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent\"}"
       },
       "combined_total": 0.9
     },
@@ -1300,41 +1300,13 @@
       "system_variant": "user-baseline-system",
       "case_id": "en-prose-sequence-not-list",
       "context_summary": null,
-      "output_text": "First, check the logs. Second, confirm the env vars. Third, rerun the job.",
+      "output_text": "First, check the logs; second, confirm the env vars; third, rerun the job.",
       "scores": {
-        "output_total": 1.0,
-        "output_base": 1.0,
+        "output_total": 0.9169,
+        "output_base": 0.8338,
         "output_terms": 1.0,
-        "output_reference": 1.0,
-        "output_exact": 1.0,
-        "output_format": 1.0,
-        "output_contract": 1.0,
-        "llm_meaning_preservation": 1.0,
-        "llm_cleanup_quality": 1.0,
-        "llm_correction_quality": 1.0,
-        "llm_format_fit": 1.0,
-        "llm_anti_hallucination": 1.0,
-        "llm_language_preservation": 1.0,
-        "llm_output_contract": 1.0,
-        "llm_output_total": 1.0,
-        "llm_verdict": "Excellent, fully correct.",
-        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent, fully correct.\"}"
-      },
-      "combined_total": 1.0
-    },
-    {
-      "model": "openai/gpt-oss-20b",
-      "context_variant": "-",
-      "system_variant": "user-baseline-system-with-example",
-      "case_id": "en-prose-sequence-not-list",
-      "context_summary": null,
-      "output_text": "First, check the logs. Second, confirm the env vars. Third, rerun the job.",
-      "scores": {
-        "output_total": 1.0,
-        "output_base": 1.0,
-        "output_terms": 1.0,
-        "output_reference": 1.0,
-        "output_exact": 1.0,
+        "output_reference": 0.973,
+        "output_exact": 0.0,
         "output_format": 1.0,
         "output_contract": 1.0,
         "llm_meaning_preservation": 1.0,
@@ -1346,9 +1318,37 @@
         "llm_output_contract": 1.0,
         "llm_output_total": 1.0,
         "llm_verdict": "Excellent, fully meets all criteria.",
-        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent, fully meets all criteria.\"}"
+        "llm_raw_response": "{\n  \"meaning_preservation\": 1.0,\n  \"cleanup_quality\": 1.0,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 1.0,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 1.0,\n  \"verdict\": \"Excellent, fully meets all criteria.\"\n}"
       },
-      "combined_total": 1.0
+      "combined_total": 0.9169
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "user-baseline-system-with-example",
+      "case_id": "en-prose-sequence-not-list",
+      "context_summary": null,
+      "output_text": "First, check the logs. Then confirm the env vars, and finally rerun the job.",
+      "scores": {
+        "output_total": 0.8105,
+        "output_base": 0.621,
+        "output_terms": 0.5,
+        "output_reference": 0.8267,
+        "output_exact": 0.0,
+        "output_format": 1.0,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 1.0,
+        "llm_cleanup_quality": 1.0,
+        "llm_correction_quality": 1.0,
+        "llm_format_fit": 1.0,
+        "llm_anti_hallucination": 1.0,
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 1.0,
+        "llm_verdict": "Excellent, fully meets expectations.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 1.0,\n  \"cleanup_quality\": 1.0,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 1.0,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 1.0,\n  \"verdict\": \"Excellent, fully meets expectations.\"\n}"
+      },
+      "combined_total": 0.8105
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -1373,8 +1373,8 @@
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
         "llm_output_total": 1.0,
-        "llm_verdict": "All criteria met.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 1,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 1,\n  \"verdict\": \"All criteria met.\"\n}"
+        "llm_verdict": "Excellent.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 1.0,\n  \"cleanup_quality\": 1.0,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 1.0,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 1.0,\n  \"verdict\": \"Excellent.\"\n}"
       },
       "combined_total": 0.9229
     },
@@ -1386,25 +1386,25 @@
       "context_summary": null,
       "output_text": "run pnpm test --watch",
       "scores": {
-        "output_total": 0.908,
+        "output_total": 0.8555,
         "output_base": 0.836,
         "output_terms": 1.0,
         "output_reference": 0.9767,
         "output_exact": 0.0,
         "output_format": 1.0,
         "output_contract": 1.0,
-        "llm_meaning_preservation": 1.0,
+        "llm_meaning_preservation": 0.5,
         "llm_cleanup_quality": 1.0,
         "llm_correction_quality": 1.0,
-        "llm_format_fit": 0.8,
+        "llm_format_fit": 1.0,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.98,
-        "llm_verdict": "Good, but missing period and capitalization.",
-        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":0.8,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":0.98,\"verdict\":\"Good, but missing period and capitalization.\"}"
+        "llm_output_total": 0.875,
+        "llm_verdict": "Mostly correct, but capitalization and period missing.",
+        "llm_raw_response": "{\"meaning_preservation\":0.5,\"cleanup_quality\":1.0,\"correction_quality\":1.0,\"format_fit\":1.0,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.88,\"verdict\":\"Mostly correct, but capitalization and period missing.\"}"
       },
-      "combined_total": 0.908
+      "combined_total": 0.8555
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -1414,7 +1414,7 @@
       "context_summary": null,
       "output_text": "run pnpm test --watch",
       "scores": {
-        "output_total": 0.913,
+        "output_total": 0.893,
         "output_base": 0.836,
         "output_terms": 1.0,
         "output_reference": 0.9767,
@@ -1424,15 +1424,15 @@
         "llm_meaning_preservation": 1.0,
         "llm_cleanup_quality": 1.0,
         "llm_correction_quality": 1.0,
-        "llm_format_fit": 0.9,
+        "llm_format_fit": 0.5,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.99,
-        "llm_verdict": "Excellent, just a minor formatting tweak.",
-        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":0.9,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":0.99,\"verdict\":\"Excellent, just a minor formatting tweak.\"}"
+        "llm_output_total": 0.95,
+        "llm_verdict": "Excellent cleanup, but missing period and capitalization.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":0.5,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":0.95,\"verdict\":\"Excellent cleanup, but missing period and capitalization.\"}"
       },
-      "combined_total": 0.913
+      "combined_total": 0.893
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -1442,25 +1442,25 @@
       "context_summary": null,
       "output_text": "pnpm test --watch",
       "scores": {
-        "output_total": 0.8053,
+        "output_total": 0.7228,
         "output_base": 0.7106,
         "output_terms": 0.75,
         "output_reference": 0.8718,
         "output_exact": 0.0,
         "output_format": 1.0,
         "output_contract": 1.0,
-        "llm_meaning_preservation": 0.8,
+        "llm_meaning_preservation": 0.3,
         "llm_cleanup_quality": 0.9,
         "llm_correction_quality": 1.0,
-        "llm_format_fit": 0.6,
+        "llm_format_fit": 0.2,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.9,
-        "llm_verdict": "Good, but missing the leading 'Run' and period.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 0.8,\n  \"cleanup_quality\": 0.9,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 0.6,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.9,\n  \"verdict\": \"Good, but missing the leading 'Run' and period.\"\n}"
+        "llm_output_total": 0.735,
+        "llm_verdict": "The output is missing the leading 'Run' and period, slightly reducing meaning and format fidelity.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 0.3,\n  \"cleanup_quality\": 0.9,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 0.2,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.735,\n  \"verdict\": \"The output is missing the leading 'Run' and period, slightly reducing meaning and format fidelity.\"\n}"
       },
-      "combined_total": 0.8053
+      "combined_total": 0.7228
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -1468,27 +1468,27 @@
       "system_variant": "user-baseline-system",
       "case_id": "es-chat-self-correction",
       "context_summary": null,
-      "output_text": "Lo mando ma\u00f1ana, pasado ma\u00f1ana por la tarde.",
+      "output_text": "Lo mando ma\u00f1ana, no, perd\u00f3n, pasado ma\u00f1ana por la tarde.",
       "scores": {
-        "output_total": 0.6792,
-        "output_base": 0.665,
-        "output_terms": 0.5,
-        "output_reference": 0.9,
+        "output_total": 0.5409,
+        "output_base": 0.4696,
+        "output_terms": 0.0,
+        "output_reference": 0.7826,
         "output_exact": 0.0,
-        "output_format": 0.725,
+        "output_format": 0.225,
         "output_contract": 1.0,
-        "llm_meaning_preservation": 0.0,
-        "llm_cleanup_quality": 0.8,
-        "llm_correction_quality": 1.0,
-        "llm_format_fit": 1.0,
+        "llm_meaning_preservation": 0.2,
+        "llm_cleanup_quality": 0.1,
+        "llm_correction_quality": 0.9,
+        "llm_format_fit": 0.9,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.73,
-        "llm_verdict": "The output is mostly correct but incorrectly adds an extra time reference.",
-        "llm_raw_response": "{\"meaning_preservation\":0.0,\"cleanup_quality\":0.8,\"correction_quality\":1.0,\"format_fit\":1.0,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.73,\"verdict\":\"The output is mostly correct but incorrectly adds an extra time reference.\"}"
+        "llm_output_total": 0.685,
+        "llm_verdict": "Extraneous content remains; cleanup needed.",
+        "llm_raw_response": "{\"meaning_preservation\":0.2,\"cleanup_quality\":0.1,\"correction_quality\":0.9,\"format_fit\":0.9,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.685,\"verdict\":\"Extraneous content remains; cleanup needed.\"}"
       },
-      "combined_total": 0.6792
+      "combined_total": 0.5409
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -1498,7 +1498,7 @@
       "context_summary": null,
       "output_text": "Lo mando ma\u00f1ana, no, perd\u00f3n, pasado ma\u00f1ana por la tarde.",
       "scores": {
-        "output_total": 0.4484,
+        "output_total": 0.4109,
         "output_base": 0.4696,
         "output_terms": 0.0,
         "output_reference": 0.7826,
@@ -1507,16 +1507,16 @@
         "output_contract": 1.0,
         "llm_meaning_preservation": 0.0,
         "llm_cleanup_quality": 0.0,
-        "llm_correction_quality": 0.0,
+        "llm_correction_quality": 0.3,
         "llm_format_fit": 1.0,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
-        "llm_output_contract": 1.0,
-        "llm_output_total": 0.5,
+        "llm_output_contract": 0.2,
+        "llm_output_total": 0.425,
         "llm_verdict": "The output fails to preserve the intended meaning and contains unnecessary filler.",
-        "llm_raw_response": "{\"meaning_preservation\":0.0,\"cleanup_quality\":0.0,\"correction_quality\":0.0,\"format_fit\":1.0,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.5,\"verdict\":\"The output fails to preserve the intended meaning and contains unnecessary filler.\"}"
+        "llm_raw_response": "{\n  \"meaning_preservation\": 0.0,\n  \"cleanup_quality\": 0.0,\n  \"correction_quality\": 0.3,\n  \"format_fit\": 1.0,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 0.2,\n  \"overall\": 0.425,\n  \"verdict\": \"The output fails to preserve the intended meaning and contains unnecessary filler.\"\n}"
       },
-      "combined_total": 0.4484
+      "combined_total": 0.4109
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -1524,14 +1524,42 @@
       "system_variant": "system-gptoss-multilingual-email-v24",
       "case_id": "es-chat-self-correction",
       "context_summary": null,
-      "output_text": "lo mando pasado ma\u00f1ana por la tarde",
+      "output_text": "Lo mando pasado ma\u00f1ana por la tarde.",
       "scores": {
-        "output_total": 0.8386,
-        "output_base": 0.7165,
+        "output_total": 0.9134,
+        "output_base": 0.875,
         "output_terms": 0.5,
-        "output_reference": 0.9859,
-        "output_exact": 0.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0,
         "output_format": 0.725,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 1.0,
+        "llm_cleanup_quality": 1.0,
+        "llm_correction_quality": 1.0,
+        "llm_format_fit": 1.0,
+        "llm_anti_hallucination": 1.0,
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 1.0,
+        "llm_verdict": "Excellent.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent.\"}"
+      },
+      "combined_total": 0.9134
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "user-baseline-system",
+      "case_id": "fr-email-formal",
+      "context_summary": null,
+      "output_text": "Merci, j'ai joint la version mise \u00e0 jour et je peux envoyer les chiffres finaux ce soir.",
+      "scores": {
+        "output_total": 0.7974,
+        "output_base": 0.7182,
+        "output_terms": 0.5,
+        "output_reference": 0.9886,
+        "output_exact": 0.0,
+        "output_format": 0.14,
         "output_contract": 1.0,
         "llm_meaning_preservation": 1.0,
         "llm_cleanup_quality": 1.0,
@@ -1544,34 +1572,6 @@
         "llm_verdict": "Excellent, fully meets expectations.",
         "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 1,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 1,\n  \"verdict\": \"Excellent, fully meets expectations.\"\n}"
       },
-      "combined_total": 0.8386
-    },
-    {
-      "model": "openai/gpt-oss-20b",
-      "context_variant": "-",
-      "system_variant": "user-baseline-system",
-      "case_id": "fr-email-formal",
-      "context_summary": null,
-      "output_text": "Merci, j'ai joint la version mise \u00e0 jour et je peux envoyer les chiffres finaux ce soir.",
-      "scores": {
-        "output_total": 0.7974,
-        "output_base": 0.7182,
-        "output_terms": 0.5,
-        "output_reference": 0.9886,
-        "output_exact": 0.0,
-        "output_format": 0.14,
-        "output_contract": 1.0,
-        "llm_meaning_preservation": 1.0,
-        "llm_cleanup_quality": 1.0,
-        "llm_correction_quality": 1.0,
-        "llm_format_fit": 1.0,
-        "llm_anti_hallucination": 1.0,
-        "llm_language_preservation": 1.0,
-        "llm_output_contract": 1.0,
-        "llm_output_total": 1.0,
-        "llm_verdict": "Excellent, no issues.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 1,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 1,\n  \"verdict\": \"Excellent, no issues.\"\n}"
-      },
       "combined_total": 0.7974
     },
     {
@@ -1582,7 +1582,7 @@
       "context_summary": null,
       "output_text": "Merci, j'ai joint la version mise \u00e0 jour et je peux envoyer les chiffres finaux ce soir.",
       "scores": {
-        "output_total": 0.7974,
+        "output_total": 0.7923,
         "output_base": 0.7182,
         "output_terms": 0.5,
         "output_reference": 0.9886,
@@ -1592,15 +1592,15 @@
         "llm_meaning_preservation": 1.0,
         "llm_cleanup_quality": 1.0,
         "llm_correction_quality": 1.0,
-        "llm_format_fit": 1.0,
+        "llm_format_fit": 0.9,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 1.0,
-        "llm_verdict": "Excellent.",
-        "llm_raw_response": "{\"meaning_preservation\":1.0,\"cleanup_quality\":1.0,\"correction_quality\":1.0,\"format_fit\":1.0,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":1.0,\"verdict\":\"Excellent.\"}"
+        "llm_output_total": 0.99,
+        "llm_verdict": "Excellent, with a minor punctuation difference.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 1.0,\n  \"cleanup_quality\": 1.0,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 0.9,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.99,\n  \"verdict\": \"Excellent, with a minor punctuation difference.\"\n}"
       },
-      "combined_total": 0.7974
+      "combined_total": 0.7923
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -1666,25 +1666,25 @@
       "context_summary": null,
       "output_text": "Agregar un bullet sobre rollback plan y otro sobre feature flag cleanup.",
       "scores": {
-        "output_total": 0.7979,
+        "output_total": 0.7479,
         "output_base": 0.8458,
         "output_terms": 1.0,
         "output_reference": 0.993,
         "output_exact": 0.0,
         "output_format": 1.0,
         "output_contract": 1.0,
-        "llm_meaning_preservation": 0.2,
+        "llm_meaning_preservation": 0.0,
         "llm_cleanup_quality": 1.0,
         "llm_correction_quality": 1.0,
-        "llm_format_fit": 0.5,
+        "llm_format_fit": 0.0,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.75,
-        "llm_verdict": "The output deviates from the intended imperative form and lacks final punctuation, affecting meaning and formatting.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 0.2,\n  \"cleanup_quality\": 1.0,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 0.5,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.75,\n  \"verdict\": \"The output deviates from the intended imperative form and lacks final punctuation, affecting meaning and formatting.\"\n}"
+        "llm_output_total": 0.65,
+        "llm_verdict": "The output deviates from the intended imperative form and lacks a period, affecting meaning and formatting.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 0.0,\n  \"cleanup_quality\": 1.0,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 0.0,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.65,\n  \"verdict\": \"The output deviates from the intended imperative form and lacks a period, affecting meaning and formatting.\"\n}"
       },
-      "combined_total": 0.7979
+      "combined_total": 0.7479
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -1692,27 +1692,27 @@
       "system_variant": "system-gptoss-multilingual-email-v24",
       "case_id": "es-en-mixed-technical",
       "context_summary": null,
-      "output_text": "- rollback plan\n- feature flag cleanup",
+      "output_text": "Agrega un bullet sobre rollback plan y otro sobre feature flag cleanup.",
       "scores": {
-        "output_total": 0.5482,
-        "output_base": 0.6463,
+        "output_total": 1.0,
+        "output_base": 1.0,
         "output_terms": 1.0,
-        "output_reference": 0.6606,
-        "output_exact": 0.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0,
         "output_format": 1.0,
         "output_contract": 1.0,
-        "llm_meaning_preservation": 0.0,
-        "llm_cleanup_quality": 0.0,
+        "llm_meaning_preservation": 1.0,
+        "llm_cleanup_quality": 1.0,
         "llm_correction_quality": 1.0,
-        "llm_format_fit": 0.0,
+        "llm_format_fit": 1.0,
         "llm_anti_hallucination": 1.0,
-        "llm_language_preservation": 0.0,
+        "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.45,
-        "llm_verdict": "The output fails to preserve meaning and format, but contains no hallucinations.",
-        "llm_raw_response": "{\"meaning_preservation\":0,\"cleanup_quality\":0,\"correction_quality\":1,\"format_fit\":0,\"anti_hallucination\":1,\"romanian_or_language_preservation\":0,\"output_contract\":1,\"overall\":0.45,\"verdict\":\"The output fails to preserve meaning and format, but contains no hallucinations.\"}"
+        "llm_output_total": 1.0,
+        "llm_verdict": "Excellent, fully meets all criteria.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent, fully meets all criteria.\"}"
       },
-      "combined_total": 0.5482
+      "combined_total": 1.0
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -1737,8 +1737,8 @@
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
         "llm_output_total": 1.0,
-        "llm_verdict": "Excellent, fully meets all criteria.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 1,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 1,\n  \"verdict\": \"Excellent, fully meets all criteria.\"\n}"
+        "llm_verdict": "All criteria met.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"All criteria met.\"}"
       },
       "combined_total": 1.0
     },
@@ -1821,8 +1821,8 @@
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
         "llm_output_total": 1.0,
-        "llm_verdict": "Excellent, meets all criteria.",
-        "llm_raw_response": "{\"meaning_preservation\":1.0,\"cleanup_quality\":1.0,\"correction_quality\":1.0,\"format_fit\":1.0,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":1.0,\"verdict\":\"Excellent, meets all criteria.\"}"
+        "llm_verdict": "Excellent, fully meets expectations.",
+        "llm_raw_response": "{\"meaning_preservation\":1.0,\"cleanup_quality\":1.0,\"correction_quality\":1.0,\"format_fit\":1.0,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":1.0,\"verdict\":\"Excellent, fully meets expectations.\"}"
       },
       "combined_total": 0.9184
     },
@@ -1832,9 +1832,9 @@
       "system_variant": "user-baseline-system-with-example",
       "case_id": "en-explicit-numbered-list",
       "context_summary": null,
-      "output_text": "1. update the changelog\n2. tag the release\n3. post the announcement",
+      "output_text": "1. Update the changelog\n2. Tag the release\n3. Post the announcement",
       "scores": {
-        "output_total": 0.9084,
+        "output_total": 0.9134,
         "output_base": 0.8369,
         "output_terms": 1.0,
         "output_reference": 0.9781,
@@ -1844,15 +1844,15 @@
         "llm_meaning_preservation": 1.0,
         "llm_cleanup_quality": 1.0,
         "llm_correction_quality": 1.0,
-        "llm_format_fit": 0.8,
+        "llm_format_fit": 0.9,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.98,
-        "llm_verdict": "Minor punctuation issues, otherwise correct.",
-        "llm_raw_response": "{\"meaning_preservation\":1.0,\"cleanup_quality\":1.0,\"correction_quality\":1.0,\"format_fit\":0.8,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.98,\"verdict\":\"Minor punctuation issues, otherwise correct.\"}"
+        "llm_output_total": 0.99,
+        "llm_verdict": "Excellent, just missing periods.",
+        "llm_raw_response": "{\"meaning_preservation\":1.0,\"cleanup_quality\":1.0,\"correction_quality\":1.0,\"format_fit\":0.9,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.99,\"verdict\":\"Excellent, just missing periods.\"}"
       },
-      "combined_total": 0.9084
+      "combined_total": 0.9134
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -1860,9 +1860,9 @@
       "system_variant": "system-gptoss-multilingual-email-v24",
       "case_id": "en-explicit-numbered-list",
       "context_summary": null,
-      "output_text": "1. update the changelog\n2. tag the release\n3. post the announcement",
+      "output_text": "1. Update the changelog\n2. Tag the release\n3. Post the announcement",
       "scores": {
-        "output_total": 0.9034,
+        "output_total": 0.9134,
         "output_base": 0.8369,
         "output_terms": 1.0,
         "output_reference": 0.9781,
@@ -1872,15 +1872,15 @@
         "llm_meaning_preservation": 1.0,
         "llm_cleanup_quality": 1.0,
         "llm_correction_quality": 1.0,
-        "llm_format_fit": 0.7,
+        "llm_format_fit": 0.9,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.97,
-        "llm_verdict": "Excellent, just a few formatting details.",
-        "llm_raw_response": "{\"meaning_preservation\":1.0,\"cleanup_quality\":1.0,\"correction_quality\":1.0,\"format_fit\":0.7,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.97,\"verdict\":\"Excellent, just a few formatting details.\"}"
+        "llm_output_total": 0.99,
+        "llm_verdict": "Excellent, just add periods at the end of each item.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 1.0,\n  \"cleanup_quality\": 1.0,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 0.9,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.99,\n  \"verdict\": \"Excellent, just add periods at the end of each item.\"\n}"
       },
-      "combined_total": 0.9034
+      "combined_total": 0.9134
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -1890,25 +1890,25 @@
       "context_summary": null,
       "output_text": "- fix the onboarding copy\n- verify the signup email\n- review the FAQ",
       "scores": {
-        "output_total": 0.9161,
+        "output_total": 0.8836,
         "output_base": 0.8371,
         "output_terms": 1.0,
         "output_reference": 0.9784,
         "output_exact": 0.0,
         "output_format": 1.0,
         "output_contract": 1.0,
-        "llm_meaning_preservation": 1.0,
-        "llm_cleanup_quality": 1.0,
+        "llm_meaning_preservation": 0.9,
+        "llm_cleanup_quality": 0.95,
         "llm_correction_quality": 1.0,
-        "llm_format_fit": 0.95,
+        "llm_format_fit": 0.6,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.995,
-        "llm_verdict": "Excellent, just missing periods.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 1.0,\n  \"cleanup_quality\": 1.0,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 0.95,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.99,\n  \"verdict\": \"Excellent, just missing periods.\"\n}"
+        "llm_output_total": 0.93,
+        "llm_verdict": "Good, but missing periods and capitalization.",
+        "llm_raw_response": "{\"meaning_preservation\":0.9,\"cleanup_quality\":0.95,\"correction_quality\":1.0,\"format_fit\":0.6,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.93,\"verdict\":\"Good, but missing periods and capitalization.\"}"
       },
-      "combined_total": 0.9161
+      "combined_total": 0.8836
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -1918,25 +1918,25 @@
       "context_summary": null,
       "output_text": "- fix the onboarding copy\n- verify the signup email\n- review the FAQ",
       "scores": {
-        "output_total": 0.8785,
+        "output_total": 0.8961,
         "output_base": 0.8371,
         "output_terms": 1.0,
         "output_reference": 0.9784,
         "output_exact": 0.0,
         "output_format": 1.0,
         "output_contract": 1.0,
-        "llm_meaning_preservation": 1.0,
+        "llm_meaning_preservation": 0.9,
         "llm_cleanup_quality": 1.0,
         "llm_correction_quality": 1.0,
-        "llm_format_fit": 0.2,
+        "llm_format_fit": 0.8,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.92,
-        "llm_verdict": "Good overall, but formatting needs improvement.",
-        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":0.2,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":0.92,\"verdict\":\"Good overall, but formatting needs improvement.\"}"
+        "llm_output_total": 0.955,
+        "llm_verdict": "Minor punctuation errors, overall good.",
+        "llm_raw_response": "{\"meaning_preservation\":0.9,\"cleanup_quality\":1.0,\"correction_quality\":1.0,\"format_fit\":0.8,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.955,\"verdict\":\"Minor punctuation errors, overall good.\"}"
       },
-      "combined_total": 0.8785
+      "combined_total": 0.8961
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -1946,7 +1946,7 @@
       "context_summary": null,
       "output_text": "- fix the onboarding copy\n- verify the signup email\n- review the FAQ",
       "scores": {
-        "output_total": 0.8935,
+        "output_total": 0.9135,
         "output_base": 0.8371,
         "output_terms": 1.0,
         "output_reference": 0.9784,
@@ -1956,15 +1956,15 @@
         "llm_meaning_preservation": 1.0,
         "llm_cleanup_quality": 1.0,
         "llm_correction_quality": 1.0,
-        "llm_format_fit": 0.5,
+        "llm_format_fit": 0.9,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.95,
-        "llm_verdict": "Good, but formatting could be improved.",
-        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":0.5,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":0.95,\"verdict\":\"Good, but formatting could be improved.\"}"
+        "llm_output_total": 0.99,
+        "llm_verdict": "Excellent, only minor punctuation differences.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 1.0,\n  \"cleanup_quality\": 1.0,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 0.9,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.99,\n  \"verdict\": \"Excellent, only minor punctuation differences.\"\n}"
       },
-      "combined_total": 0.8935
+      "combined_total": 0.9135
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -1972,27 +1972,27 @@
       "system_variant": "user-baseline-system",
       "case_id": "es-explicit-numbered-list",
       "context_summary": null,
-      "output_text": "lista numerada\n1. revisar el reporte\n2. mandar la propuesta\n3. confirmar la reuni\u00f3n",
+      "output_text": "Lista numerada:\n1. Revisar el reporte\n2. Mandar la propuesta\n3. Confirmar la reuni\u00f3n",
       "scores": {
-        "output_total": 0.7454,
-        "output_base": 0.7799,
+        "output_total": 0.7563,
+        "output_base": 0.7765,
         "output_terms": 1.0,
-        "output_reference": 0.8831,
+        "output_reference": 0.8774,
         "output_exact": 0.0,
         "output_format": 0.75,
         "output_contract": 1.0,
         "llm_meaning_preservation": 0.9,
-        "llm_cleanup_quality": 0.7,
-        "llm_correction_quality": 0.8,
-        "llm_format_fit": 0.4,
+        "llm_cleanup_quality": 1.0,
+        "llm_correction_quality": 1.0,
+        "llm_format_fit": 0.2,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
-        "llm_output_contract": 0.3,
-        "llm_output_total": 0.75,
-        "llm_verdict": "The output is mostly correct but contains extraneous text and formatting issues.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 0.9,\n  \"cleanup_quality\": 0.7,\n  \"correction_quality\": 0.8,\n  \"format_fit\": 0.4,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 0.3,\n  \"overall\": 0.75,\n  \"verdict\": \"The output is mostly correct but contains extraneous text and formatting issues.\"\n}"
+        "llm_output_contract": 0.2,
+        "llm_output_total": 0.775,
+        "llm_verdict": "The output preserves meaning but fails to match the required list formatting and includes extraneous text.",
+        "llm_raw_response": "{\"meaning_preservation\":0.9,\"cleanup_quality\":1.0,\"correction_quality\":1.0,\"format_fit\":0.2,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":0.2,\"overall\":0.775,\"verdict\":\"The output preserves meaning but fails to match the required list formatting and includes extraneous text.\"}"
       },
-      "combined_total": 0.7454
+      "combined_total": 0.7563
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -2009,16 +2009,16 @@
         "output_exact": 0.0,
         "output_format": 0.75,
         "output_contract": 1.0,
-        "llm_meaning_preservation": 1.0,
-        "llm_cleanup_quality": 1.0,
+        "llm_meaning_preservation": 0.9,
+        "llm_cleanup_quality": 0.9,
         "llm_correction_quality": 1.0,
-        "llm_format_fit": 0.5,
+        "llm_format_fit": 0.4,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
-        "llm_output_contract": 0.0,
+        "llm_output_contract": 0.3,
         "llm_output_total": 0.8,
-        "llm_verdict": "The output preserves meaning but fails to match the required format and includes extra text.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 1.0,\n  \"cleanup_quality\": 1.0,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 0.5,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 0.0,\n  \"overall\": 0.8,\n  \"verdict\": \"The output preserves meaning but fails to match the required format and includes extra text.\"\n}"
+        "llm_verdict": "Mostly correct but includes unnecessary header and missing punctuation.",
+        "llm_raw_response": "{\"meaning_preservation\":0.9,\"cleanup_quality\":0.9,\"correction_quality\":1.0,\"format_fit\":0.4,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":0.3,\"overall\":0.8,\"verdict\":\"Mostly correct but includes unnecessary header and missing punctuation.\"}"
       },
       "combined_total": 0.7688
     },
@@ -2030,25 +2030,25 @@
       "context_summary": null,
       "output_text": "1. revisar el reporte\n2. mandar la propuesta\n3. confirmar la reunion",
       "scores": {
-        "output_total": 0.7859,
+        "output_total": 0.8309,
         "output_base": 0.7868,
         "output_terms": 0.8333,
         "output_reference": 0.964,
         "output_exact": 0.0,
         "output_format": 1.0,
         "output_contract": 1.0,
-        "llm_meaning_preservation": 0.9,
-        "llm_cleanup_quality": 0.85,
-        "llm_correction_quality": 0.3,
-        "llm_format_fit": 0.3,
+        "llm_meaning_preservation": 1.0,
+        "llm_cleanup_quality": 1.0,
+        "llm_correction_quality": 0.5,
+        "llm_format_fit": 0.5,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.785,
-        "llm_verdict": "The output is mostly correct but lacks proper punctuation, capitalization, and accents, affecting formatting and correction quality.",
-        "llm_raw_response": "{\"meaning_preservation\":0.9,\"cleanup_quality\":0.85,\"correction_quality\":0.3,\"format_fit\":0.3,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.785,\"verdict\":\"The output is mostly correct but lacks proper punctuation, capitalization, and accents, affecting formatting and correction quality.\"}"
+        "llm_output_total": 0.875,
+        "llm_verdict": "Good, but missing punctuation and accents.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 0.5,\n  \"format_fit\": 0.5,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 0.85,\n  \"verdict\": \"Good, but missing punctuation and accents.\"\n}"
       },
-      "combined_total": 0.7859
+      "combined_total": 0.8309
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -2058,25 +2058,25 @@
       "context_summary": null,
       "output_text": "Hi Dana Kline, yes I can send the deck tomorrow morning.",
       "scores": {
-        "output_total": 0.6835,
+        "output_total": 0.601,
         "output_base": 0.6857,
         "output_terms": 0.5,
         "output_reference": 0.9346,
         "output_exact": 0.0,
         "output_format": 0.68,
         "output_contract": 1.0,
-        "llm_meaning_preservation": 0.7,
+        "llm_meaning_preservation": 0.3,
         "llm_cleanup_quality": 0.9,
-        "llm_correction_quality": 1.0,
-        "llm_format_fit": 0.3,
+        "llm_correction_quality": 0.5,
+        "llm_format_fit": 0.4,
         "llm_anti_hallucination": 0.2,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.725,
-        "llm_verdict": "The output deviates from the expected format and adds an unintended name, reducing overall quality.",
-        "llm_raw_response": "{\"meaning_preservation\":0.7,\"cleanup_quality\":0.9,\"correction_quality\":1.0,\"format_fit\":0.3,\"anti_hallucination\":0.2,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.725,\"verdict\":\"The output deviates from the expected format and adds an unintended name, reducing overall quality.\"}"
+        "llm_output_total": 0.56,
+        "llm_verdict": "The output deviates from the expected format and adds unintended information.",
+        "llm_raw_response": "{\"meaning_preservation\":0.3,\"cleanup_quality\":0.9,\"correction_quality\":0.5,\"format_fit\":0.4,\"anti_hallucination\":0.2,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":0.56,\"verdict\":\"The output deviates from the expected format and adds unintended information.\"}"
       },
-      "combined_total": 0.6835
+      "combined_total": 0.601
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -2084,27 +2084,27 @@
       "system_variant": "user-baseline-system-with-example",
       "case_id": "en-email-spoken-greeting",
       "context_summary": null,
-      "output_text": "Hi Dana, yes I can send the deck tomorrow morning.",
+      "output_text": "Hi Dana Kline, yes I can send the deck tomorrow morning.",
       "scores": {
-        "output_total": 0.87,
-        "output_base": 0.8441,
-        "output_terms": 1.0,
-        "output_reference": 0.9901,
+        "output_total": 0.7285,
+        "output_base": 0.6857,
+        "output_terms": 0.5,
+        "output_reference": 0.9346,
         "output_exact": 0.0,
         "output_format": 0.68,
         "output_contract": 1.0,
-        "llm_meaning_preservation": 1.0,
-        "llm_cleanup_quality": 1.0,
+        "llm_meaning_preservation": 0.8,
+        "llm_cleanup_quality": 0.9,
         "llm_correction_quality": 1.0,
         "llm_format_fit": 0.5,
-        "llm_anti_hallucination": 1.0,
+        "llm_anti_hallucination": 0.5,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.95,
-        "llm_verdict": "Good overall, but formatting could be improved.",
-        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":0.5,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":0.95,\"verdict\":\"Good overall, but formatting could be improved.\"}"
+        "llm_output_total": 0.815,
+        "llm_verdict": "The output is mostly correct but incorrectly adds a last name and formatting is off.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 0.8,\n  \"cleanup_quality\": 0.9,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 0.5,\n  \"anti_hallucination\": 0.5,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.815,\n  \"verdict\": \"The output is mostly correct but incorrectly adds a last name and formatting is off.\"\n}"
       },
-      "combined_total": 0.87
+      "combined_total": 0.7285
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -2186,7 +2186,7 @@
         "llm_output_contract": 1.0,
         "llm_output_total": 1.0,
         "llm_verdict": "Excellent, fully correct.",
-        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent, fully correct.\"}"
+        "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 1,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 1,\n  \"verdict\": \"Excellent, fully correct.\"\n}"
       },
       "combined_total": 1.0
     },
@@ -2196,7 +2196,7 @@
       "system_variant": "system-gptoss-multilingual-email-v24",
       "case_id": "en-slack-dictated-punctuation",
       "context_summary": null,
-      "output_text": "yes, let's ship it.",
+      "output_text": "Yes, let's ship it.",
       "scores": {
         "output_total": 1.0,
         "output_base": 1.0,
@@ -2213,8 +2213,8 @@
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
         "llm_output_total": 1.0,
-        "llm_verdict": "Excellent.",
-        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent.\"}"
+        "llm_verdict": "Excellent, fully meets expectations.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent, fully meets expectations.\"}"
       },
       "combined_total": 1.0
     },
@@ -2336,12 +2336,12 @@
       "system_variant": "user-baseline-system-with-example",
       "case_id": "en-cursor-rename-identifier",
       "context_summary": null,
-      "output_text": "Please rename user_id to user_id and keep OAuth capitalized.",
+      "output_text": "Please rename user_id to user underscore id and keep OAuth capitalized.",
       "scores": {
-        "output_total": 0.7325,
-        "output_base": 0.715,
-        "output_terms": 0.5,
-        "output_reference": 0.9833,
+        "output_total": 0.6406,
+        "output_base": 0.5313,
+        "output_terms": 0.0,
+        "output_reference": 0.8855,
         "output_exact": 0.0,
         "output_format": 1.0,
         "output_contract": 1.0,
@@ -2353,10 +2353,10 @@
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
         "llm_output_total": 0.75,
-        "llm_verdict": "The output fails to preserve the intended meaning.",
-        "llm_raw_response": "{\"meaning_preservation\":0,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":0.85,\"verdict\":\"The output fails to preserve the intended meaning.\"}"
+        "llm_verdict": "The output does not preserve the intended meaning.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 0,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 1,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 0.75,\n  \"verdict\": \"The output does not preserve the intended meaning.\"\n}"
       },
-      "combined_total": 0.7325
+      "combined_total": 0.6406
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -2364,60 +2364,32 @@
       "system_variant": "system-gptoss-multilingual-email-v24",
       "case_id": "en-cursor-rename-identifier",
       "context_summary": null,
-      "output_text": "rename user id to user_id and keep OAuth capitalized",
+      "output_text": "Please rename user id to user_id and keep OAuth capitalized.",
       "scores": {
-        "output_total": 0.8111,
-        "output_base": 0.6821,
+        "output_total": 0.9375,
+        "output_base": 0.875,
         "output_terms": 0.5,
-        "output_reference": 0.9286,
-        "output_exact": 0.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0,
         "output_format": 1.0,
         "output_contract": 1.0,
-        "llm_meaning_preservation": 0.8,
+        "llm_meaning_preservation": 1.0,
         "llm_cleanup_quality": 1.0,
         "llm_correction_quality": 1.0,
-        "llm_format_fit": 0.9,
+        "llm_format_fit": 1.0,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.94,
-        "llm_verdict": "Mostly correct, but omitted 'Please' and final period.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 0.8,\n  \"cleanup_quality\": 1.0,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 0.9,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.94,\n  \"verdict\": \"Mostly correct, but omitted 'Please' and final period.\"\n}"
+        "llm_output_total": 1.0,
+        "llm_verdict": "Excellent, fully correct.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent, fully correct.\"}"
       },
-      "combined_total": 0.8111
+      "combined_total": 0.9375
     },
     {
       "model": "openai/gpt-oss-20b",
       "context_variant": "-",
       "system_variant": "user-baseline-system",
-      "case_id": "en-email-dictated-closing",
-      "context_summary": null,
-      "output_text": "Hi Dana Kline, yes that works for me, thanks.",
-      "scores": {
-        "output_total": 0.7135,
-        "output_base": 0.7724,
-        "output_terms": 1.0,
-        "output_reference": 0.8706,
-        "output_exact": 0.0,
-        "output_format": 0.48,
-        "output_contract": 1.0,
-        "llm_meaning_preservation": 0.8,
-        "llm_cleanup_quality": 0.85,
-        "llm_correction_quality": 1.0,
-        "llm_format_fit": 0.2,
-        "llm_anti_hallucination": 0.2,
-        "llm_language_preservation": 1.0,
-        "llm_output_contract": 1.0,
-        "llm_output_total": 0.735,
-        "llm_verdict": "The output deviates from the expected format and adds an extra name, reducing overall quality.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 0.8,\n  \"cleanup_quality\": 0.85,\n  \"correction_quality\": 1,\n  \"format_fit\": 0.2,\n  \"anti_hallucination\": 0.2,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 0.735,\n  \"verdict\": \"The output deviates from the expected format and adds an extra name, reducing overall quality.\"\n}"
-      },
-      "combined_total": 0.7135
-    },
-    {
-      "model": "openai/gpt-oss-20b",
-      "context_variant": "-",
-      "system_variant": "user-baseline-system-with-example",
       "case_id": "en-email-dictated-closing",
       "context_summary": null,
       "output_text": "Hi Dana, yes that works for me, thanks.",
@@ -2445,101 +2417,45 @@
     {
       "model": "openai/gpt-oss-20b",
       "context_variant": "-",
-      "system_variant": "system-gptoss-multilingual-email-v24",
+      "system_variant": "user-baseline-system-with-example",
       "case_id": "en-email-dictated-closing",
       "context_summary": null,
-      "output_text": "Hi Dana,\n\nYes that works for me thanks.",
+      "output_text": "Hi Dana, yes that works for me, thanks.",
       "scores": {
-        "output_total": 0.8333,
-        "output_base": 0.8192,
+        "output_total": 0.8138,
+        "output_base": 0.812,
         "output_terms": 1.0,
-        "output_reference": 0.9487,
+        "output_reference": 0.9367,
         "output_exact": 0.0,
-        "output_format": 0.8,
-        "output_contract": 1.0,
-        "llm_meaning_preservation": 0.8,
-        "llm_cleanup_quality": 1.0,
-        "llm_correction_quality": 1.0,
-        "llm_format_fit": 0.3,
-        "llm_anti_hallucination": 1.0,
-        "llm_language_preservation": 1.0,
-        "llm_output_contract": 1.0,
-        "llm_output_total": 0.88,
-        "llm_verdict": "Mostly correct, but formatting needs improvement.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 0.8,\n  \"cleanup_quality\": 1.0,\n  \"correction_quality\": 1.0,\n  \"format_fit\": 0.3,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.88,\n  \"verdict\": \"Mostly correct, but formatting needs improvement.\"\n}"
-      },
-      "combined_total": 0.8333
-    },
-    {
-      "model": "openai/gpt-oss-20b",
-      "context_variant": "-",
-      "system_variant": "user-baseline-system",
-      "case_id": "en-email-recipient-name-nearmatch-greeting",
-      "context_summary": null,
-      "output_text": "Hi Aysha, thank you for sending over the dates. You can find our booking link here. Thank you.",
-      "scores": {
-        "output_total": 0.913,
-        "output_base": 1.0,
-        "output_terms": 1.0,
-        "output_reference": 1.0,
-        "output_exact": 1.0,
         "output_format": 0.48,
         "output_contract": 1.0,
         "llm_meaning_preservation": 1.0,
         "llm_cleanup_quality": 1.0,
         "llm_correction_quality": 1.0,
-        "llm_format_fit": 0.3,
+        "llm_format_fit": 0.0,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.93,
-        "llm_verdict": "Good, but formatting could be improved.",
-        "llm_raw_response": "{\"meaning_preservation\":1.0,\"cleanup_quality\":1.0,\"correction_quality\":1.0,\"format_fit\":0.3,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.93,\"verdict\":\"Good, but formatting could be improved.\"}"
+        "llm_output_total": 0.9,
+        "llm_verdict": "Formatting does not match the expected email reply structure.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 0,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 0.9,\n  \"verdict\": \"Formatting does not match the expected email reply structure.\"\n}"
       },
-      "combined_total": 0.913
-    },
-    {
-      "model": "openai/gpt-oss-20b",
-      "context_variant": "-",
-      "system_variant": "user-baseline-system-with-example",
-      "case_id": "en-email-recipient-name-nearmatch-greeting",
-      "context_summary": null,
-      "output_text": "Hi Aisha, thank you for sending over the dates. You can find our booking link here. Thank you.",
-      "scores": {
-        "output_total": 0.5946,
-        "output_base": 0.6353,
-        "output_terms": 0.1667,
-        "output_reference": 0.9894,
-        "output_exact": 0.0,
-        "output_format": 0.48,
-        "output_contract": 1.0,
-        "llm_meaning_preservation": 0.4,
-        "llm_cleanup_quality": 1.0,
-        "llm_correction_quality": 0.0,
-        "llm_format_fit": 0.2,
-        "llm_anti_hallucination": 1.0,
-        "llm_language_preservation": 1.0,
-        "llm_output_contract": 1.0,
-        "llm_output_total": 0.62,
-        "llm_verdict": "The output has formatting and name errors.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 0.4,\n  \"cleanup_quality\": 1.0,\n  \"correction_quality\": 0.0,\n  \"format_fit\": 0.2,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.62,\n  \"verdict\": \"The output has formatting and name errors.\"\n}"
-      },
-      "combined_total": 0.5946
+      "combined_total": 0.8138
     },
     {
       "model": "openai/gpt-oss-20b",
       "context_variant": "-",
       "system_variant": "system-gptoss-multilingual-email-v24",
-      "case_id": "en-email-recipient-name-nearmatch-greeting",
+      "case_id": "en-email-dictated-closing",
       "context_summary": null,
-      "output_text": "Hi Aysha,\n\nThank you for sending over the dates. You can find our booking link here. Thank you.",
+      "output_text": "Hi Dana,\n\nYes that works for me thanks.",
       "scores": {
-        "output_total": 0.975,
-        "output_base": 1.0,
+        "output_total": 0.8682,
+        "output_base": 0.8192,
         "output_terms": 1.0,
-        "output_reference": 1.0,
-        "output_exact": 1.0,
-        "output_format": 1.0,
+        "output_reference": 0.9487,
+        "output_exact": 0.0,
+        "output_format": 0.8,
         "output_contract": 1.0,
         "llm_meaning_preservation": 1.0,
         "llm_cleanup_quality": 1.0,
@@ -2549,10 +2465,94 @@
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
         "llm_output_total": 0.95,
-        "llm_verdict": "Good job, but formatting could be improved.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 0.5,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 0.95,\n  \"verdict\": \"Good job, but formatting could be improved.\"\n}"
+        "llm_verdict": "Good overall, but formatting could be improved.",
+        "llm_raw_response": "{\"meaning_preservation\":1.0,\"cleanup_quality\":1.0,\"correction_quality\":1.0,\"format_fit\":0.5,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.95,\"verdict\":\"Good overall, but formatting could be improved.\"}"
       },
-      "combined_total": 0.975
+      "combined_total": 0.8682
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "user-baseline-system",
+      "case_id": "en-email-recipient-name-nearmatch-greeting",
+      "context_summary": null,
+      "output_text": "Hi Aisha, thank you for sending over the dates. You can find our booking link here. Thank you.",
+      "scores": {
+        "output_total": 0.6321,
+        "output_base": 0.6353,
+        "output_terms": 0.1667,
+        "output_reference": 0.9894,
+        "output_exact": 0.0,
+        "output_format": 0.48,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 0.5,
+        "llm_cleanup_quality": 0.9,
+        "llm_correction_quality": 0.2,
+        "llm_format_fit": 0.5,
+        "llm_anti_hallucination": 1.0,
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 0.695,
+        "llm_verdict": "The output is mostly correct but contains a misspelled name and lacks proper paragraph breaks.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 0.5,\n  \"cleanup_quality\": 0.9,\n  \"correction_quality\": 0.2,\n  \"format_fit\": 0.5,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.645,\n  \"verdict\": \"The output is mostly correct but contains a misspelled name and lacks proper paragraph breaks.\"\n}"
+      },
+      "combined_total": 0.6321
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "user-baseline-system-with-example",
+      "case_id": "en-email-recipient-name-nearmatch-greeting",
+      "context_summary": null,
+      "output_text": "Hi Aisha, thank you for sending over the dates. You can find our booking link here. Thank you.",
+      "scores": {
+        "output_total": 0.5346,
+        "output_base": 0.6353,
+        "output_terms": 0.1667,
+        "output_reference": 0.9894,
+        "output_exact": 0.0,
+        "output_format": 0.48,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 0.0,
+        "llm_cleanup_quality": 1.0,
+        "llm_correction_quality": 0.0,
+        "llm_format_fit": 0.0,
+        "llm_anti_hallucination": 1.0,
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 0.5,
+        "llm_verdict": "The output fails to preserve the intended name and formatting, resulting in a mediocre score.",
+        "llm_raw_response": "{\n  \"meaning_preservation\": 0.0,\n  \"cleanup_quality\": 1.0,\n  \"correction_quality\": 0.0,\n  \"format_fit\": 0.0,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.5,\n  \"verdict\": \"The output fails to preserve the intended name and formatting, resulting in a mediocre score.\"\n}"
+      },
+      "combined_total": 0.5346
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v24",
+      "case_id": "en-email-recipient-name-nearmatch-greeting",
+      "context_summary": null,
+      "output_text": "Hi Aysha,\n\nThank you for sending over the dates. You can find our booking link here. Thank you.",
+      "scores": {
+        "output_total": 0.995,
+        "output_base": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0,
+        "output_format": 1.0,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 1.0,
+        "llm_cleanup_quality": 1.0,
+        "llm_correction_quality": 1.0,
+        "llm_format_fit": 0.9,
+        "llm_anti_hallucination": 1.0,
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 0.99,
+        "llm_verdict": "Excellent, just adjust paragraph spacing.",
+        "llm_raw_response": "{\"meaning_preservation\":1.0,\"cleanup_quality\":1.0,\"correction_quality\":1.0,\"format_fit\":0.9,\"anti_hallucination\":1.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.99,\"verdict\":\"Excellent, just adjust paragraph spacing.\"}"
+      },
+      "combined_total": 0.995
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -2577,8 +2577,8 @@
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
         "llm_output_total": 0.9,
-        "llm_verdict": "Formatting does not match expected email structure.",
-        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":0,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":0.9,\"verdict\":\"Formatting does not match expected email structure.\"}"
+        "llm_verdict": "Formatting is incorrect; otherwise accurate.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":0,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":0.9,\"verdict\":\"Formatting is incorrect; otherwise accurate.\"}"
       },
       "combined_total": 0.918
     },
@@ -2590,25 +2590,25 @@
       "context_summary": null,
       "output_text": "Hi Thora, I wanted to follow up on the timeline that Aisha mentioned yesterday.",
       "scores": {
-        "output_total": 0.6467,
+        "output_total": 0.5468,
         "output_base": 0.6341,
         "output_terms": 0.1667,
         "output_reference": 0.9873,
         "output_exact": 0.0,
         "output_format": 0.68,
         "output_contract": 1.0,
-        "llm_meaning_preservation": 0.8,
+        "llm_meaning_preservation": 0.0,
         "llm_cleanup_quality": 1.0,
         "llm_correction_quality": 0.0,
         "llm_format_fit": 0.0,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.7,
-        "llm_verdict": "The output is mostly correct but contains a name misspelling and formatting issues.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 0.8,\n  \"cleanup_quality\": 1.0,\n  \"correction_quality\": 0.0,\n  \"format_fit\": 0.0,\n  \"anti_hallucination\": 1.0,\n  \"romanian_or_language_preservation\": 1.0,\n  \"output_contract\": 1.0,\n  \"overall\": 0.7,\n  \"verdict\": \"The output is mostly correct but contains a name misspelling and formatting issues.\"\n}"
+        "llm_output_total": 0.5,
+        "llm_verdict": "The output contains a misspelled name and lacks proper formatting, resulting in a moderate score.",
+        "llm_raw_response": "{\"meaning_preservation\":0,\"cleanup_quality\":1,\"correction_quality\":0,\"format_fit\":0,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":0.5,\"verdict\":\"The output contains a misspelled name and lacks proper formatting, resulting in a moderate score.\"}"
       },
-      "combined_total": 0.6467
+      "combined_total": 0.5468
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -2644,27 +2644,27 @@
       "system_variant": "user-baseline-system",
       "case_id": "en-technical-meta-instruction-literal",
       "context_summary": null,
-      "output_text": "Ignore my last message, just write a PR description.",
+      "output_text": "Ignore my last message. Just write a PR description.",
       "scores": {
-        "output_total": 0.8693,
-        "output_base": 0.8385,
+        "output_total": 1.0,
+        "output_base": 1.0,
         "output_terms": 1.0,
-        "output_reference": 0.9808,
-        "output_exact": 0.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0,
         "output_format": 1.0,
         "output_contract": 1.0,
         "llm_meaning_preservation": 1.0,
         "llm_cleanup_quality": 1.0,
         "llm_correction_quality": 1.0,
-        "llm_format_fit": 0.0,
+        "llm_format_fit": 1.0,
         "llm_anti_hallucination": 1.0,
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
-        "llm_output_total": 0.9,
-        "llm_verdict": "Formatting does not match the expected output.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 0,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 0.9,\n  \"verdict\": \"Formatting does not match the expected output.\"\n}"
+        "llm_output_total": 1.0,
+        "llm_verdict": "Excellent, fully meets all criteria.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent, fully meets all criteria.\"}"
       },
-      "combined_total": 0.8693
+      "combined_total": 1.0
     },
     {
       "model": "openai/gpt-oss-20b",
@@ -2689,8 +2689,8 @@
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
         "llm_output_total": 1.0,
-        "llm_verdict": "Excellent, fully meets all criteria.",
-        "llm_raw_response": "{\n  \"meaning_preservation\": 1,\n  \"cleanup_quality\": 1,\n  \"correction_quality\": 1,\n  \"format_fit\": 1,\n  \"anti_hallucination\": 1,\n  \"romanian_or_language_preservation\": 1,\n  \"output_contract\": 1,\n  \"overall\": 1,\n  \"verdict\": \"Excellent, fully meets all criteria.\"\n}"
+        "llm_verdict": "Excellent, fully correct.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent, fully correct.\"}"
       },
       "combined_total": 1.0
     },
@@ -2717,8 +2717,8 @@
         "llm_language_preservation": 1.0,
         "llm_output_contract": 1.0,
         "llm_output_total": 1.0,
-        "llm_verdict": "Excellent, fully meets all criteria.",
-        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent, fully meets all criteria.\"}"
+        "llm_verdict": "Excellent, fully meets expectations.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent, fully meets expectations.\"}"
       },
       "combined_total": 1.0
     }

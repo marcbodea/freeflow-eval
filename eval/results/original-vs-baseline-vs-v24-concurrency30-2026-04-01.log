@@ -191,3 +191,26 @@
 [postprocess] model=openai/gpt-oss-20b case=es-explicit-numbered-list context=- system=system-gptoss-multilingual-email-v24
 [judge] model=openai/gpt-oss-20b case=en-explicit-bulleted-list system=system-gptoss-multilingual-email-v24 scoring=hybrid
 [judge] model=openai/gpt-oss-20b case=es-explicit-numbered-list system=system-gptoss-multilingual-email-v24 scoring=hybrid
+[
+  {
+    "model": "openai/gpt-oss-20b",
+    "context_variant": "-",
+    "system_variant": "system-gptoss-multilingual-email-v24",
+    "avg_combined_total": 0.8706,
+    "cases": 32
+  },
+  {
+    "model": "openai/gpt-oss-20b",
+    "context_variant": "-",
+    "system_variant": "user-baseline-system",
+    "avg_combined_total": 0.7934,
+    "cases": 32
+  },
+  {
+    "model": "openai/gpt-oss-20b",
+    "context_variant": "-",
+    "system_variant": "user-baseline-system-with-example",
+    "avg_combined_total": 0.7804,
+    "cases": 32
+  }
+]

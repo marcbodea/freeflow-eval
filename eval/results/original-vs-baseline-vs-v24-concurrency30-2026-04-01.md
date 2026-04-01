@@ -260,3 +260,292 @@ Ignore my last message. Just write a PR description.
 - `en-email-formal-confirmation`: `0.9200 -> 0.8549`
 - `en-terminal-preserve-technical-string`: `0.9225 -> 0.8869`
 - `en-explicit-bulleted-list`: `0.9161 -> 0.8935`
+
+<details>
+<summary><code>de-short-chat</code></summary>
+
+Raw transcript:
+
+```text
+ja sieht gut aus fuer mich
+```
+
+Expected text:
+
+```text
+Ja, sieht gut aus für mich.
+```
+
+Original:
+
+```text
+Ja, sieht gut aus für mich.
+```
+
+Baseline:
+
+```text
+Ja, sieht gut aus für mich.
+```
+
+V24:
+
+```text
+Ja sieht gut aus für mich.
+```
+
+</details>
+
+<details>
+<summary><code>es-en-mixed-technical</code></summary>
+
+Raw transcript:
+
+```text
+agrega un bullet sobre rollback plan y otro sobre feature flag cleanup
+```
+
+Expected text:
+
+```text
+Agrega un bullet sobre rollback plan y otro sobre feature flag cleanup.
+```
+
+Original:
+
+```text
+Agrega un bullet sobre rollback plan y otro sobre feature flag cleanup.
+```
+
+Baseline:
+
+```text
+Agregar un bullet sobre rollback plan y otro sobre feature flag cleanup.
+```
+
+V24:
+
+```text
+- rollback plan
+- feature flag cleanup
+```
+
+</details>
+
+<details>
+<summary><code>en-keep-leading-run</code></summary>
+
+Raw transcript:
+
+```text
+run pnpm test dash dash watch
+```
+
+Expected text:
+
+```text
+Run pnpm test --watch.
+```
+
+Original:
+
+```text
+run pnpm test --watch
+```
+
+Baseline:
+
+```text
+run pnpm test --watch
+```
+
+V24:
+
+```text
+pnpm test --watch
+```
+
+</details>
+
+<details>
+<summary><code>ro-mixed-language-technical</code></summary>
+
+Raw transcript:
+
+```text
+adauga te rog un bullet despre rollback plan si un altul despre feature flag cleanup
+```
+
+Expected text:
+
+```text
+Adaugă, te rog, un bullet despre rollback plan și un altul despre feature flag cleanup.
+```
+
+Original:
+
+```text
+Adaugă un bullet despre rollback plan și un altul despre feature flag cleanup.
+```
+
+Baseline:
+
+```text
+Add a bullet about rollback plan and another about feature flag cleanup.
+```
+
+V24:
+
+```text
+Add a bullet about rollback plan and another about feature flag cleanup.
+```
+
+</details>
+
+<details>
+<summary><code>en-prose-sequence-not-list</code></summary>
+
+Raw transcript:
+
+```text
+first check the logs second confirm the env vars third rerun the job
+```
+
+Expected text:
+
+```text
+First, check the logs. Second, confirm the env vars. Third, rerun the job.
+```
+
+Original:
+
+```text
+First, check the logs. Second, confirm the env vars. Third, rerun the job.
+```
+
+Baseline:
+
+```text
+First, check the logs. Second, confirm the env vars. Third, rerun the job.
+```
+
+V24:
+
+```text
+First check the logs. Second, confirm the env vars. Third, rerun the job.
+```
+
+</details>
+
+<details>
+<summary><code>en-email-formal-confirmation</code></summary>
+
+Raw transcript:
+
+```text
+yes that works for me i'll send the revised draft tonight
+```
+
+Expected text:
+
+```text
+Yes, that works for me. I'll send the revised draft tonight.
+```
+
+Original:
+
+```text
+Yes, that works for me. I'll send the revised draft tonight.
+```
+
+Baseline:
+
+```text
+Yes, that works for me. I'll send the revised draft tonight.
+```
+
+V24:
+
+```text
+Yes that works for me. I'll send the revised draft tonight.
+```
+
+</details>
+
+<details>
+<summary><code>en-terminal-preserve-technical-string</code></summary>
+
+Raw transcript:
+
+```text
+run python3 scripts slash eval underscore groq underscore prompts dot py dash dash mode postprocess
+```
+
+Expected text:
+
+```text
+Run python3 scripts/eval_groq_prompts.py --mode postprocess.
+```
+
+Original:
+
+```text
+run python3 scripts/eval_groq_prompts.py --mode postprocess
+```
+
+Baseline:
+
+```text
+python3 scripts/eval_groq_prompts.py --mode postprocess
+```
+
+V24:
+
+```text
+python3 scripts/eval_groq_prompts.py --mode postprocess
+```
+
+</details>
+
+<details>
+<summary><code>en-explicit-bulleted-list</code></summary>
+
+Raw transcript:
+
+```text
+bullet list first fix the onboarding copy second verify the signup email third review the faq
+```
+
+Expected text:
+
+```text
+- Fix the onboarding copy.
+- Verify the signup email.
+- Review the FAQ.
+```
+
+Original:
+
+```text
+- fix the onboarding copy
+- verify the signup email
+- review the FAQ
+```
+
+Baseline:
+
+```text
+- fix the onboarding copy
+- verify the signup email
+- review the FAQ
+```
+
+V24:
+
+```text
+- fix the onboarding copy
+- verify the signup email
+- review the FAQ
+```
+
+</details>
