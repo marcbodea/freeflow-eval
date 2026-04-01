@@ -1,0 +1,199 @@
+{
+  "generated_at": "2026-04-01T11:12:29Z",
+  "mode": "postprocess",
+  "models": [
+    "openai/gpt-oss-20b"
+  ],
+  "routing": {
+    "base_url": "https://openrouter.ai/api/v1",
+    "provider_order": [],
+    "provider_sort": "throughput",
+    "allow_provider_fallbacks": true
+  },
+  "summary": [
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v9",
+      "avg_combined_total": 0.9135,
+      "cases": 3
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v24",
+      "avg_combined_total": 0.6839,
+      "cases": 3
+    }
+  ],
+  "results": [
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v9",
+      "case_id": "email-reply-typo-fix",
+      "context_summary": null,
+      "output_text": "Hi,\n\nSure, I can send the revised numbers to Dana Kline by this afternoon.",
+      "scores": {
+        "output_total": 1.0,
+        "output_base": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0,
+        "output_format": 1.0,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 1.0,
+        "llm_cleanup_quality": 1.0,
+        "llm_correction_quality": 1.0,
+        "llm_format_fit": 1.0,
+        "llm_anti_hallucination": 1.0,
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 1.0,
+        "llm_verdict": "Excellent work.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent work.\"}"
+      },
+      "combined_total": 1.0
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v24",
+      "case_id": "email-reply-typo-fix",
+      "context_summary": null,
+      "output_text": "Sure, I can send They revised numbers to Dana Kline by this afternoon.",
+      "scores": {
+        "output_total": 0.4732,
+        "output_base": 0.829,
+        "output_terms": 1.0,
+        "output_reference": 0.965,
+        "output_exact": 0.0,
+        "output_format": 0.2,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 0.0,
+        "llm_cleanup_quality": 0.0,
+        "llm_correction_quality": 0.0,
+        "llm_format_fit": 0.0,
+        "llm_anti_hallucination": 0.0,
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 0.25,
+        "llm_verdict": "Poorly matches the expected output.",
+        "llm_raw_response": "{\"meaning_preservation\":0,\"cleanup_quality\":0,\"correction_quality\":0,\"format_fit\":0,\"anti_hallucination\":0,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":0.25,\"verdict\":\"Poorly matches the expected output.\"}"
+      },
+      "combined_total": 0.4732
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v9",
+      "case_id": "terminal-command-cleanup",
+      "context_summary": null,
+      "output_text": "python3 scripts/eval_groq_prompts.py --mode pipeline --model llama-3.1-8b-instant",
+      "scores": {
+        "output_total": 0.8405,
+        "output_base": 0.7809,
+        "output_terms": 1.0,
+        "output_reference": 0.8848,
+        "output_exact": 0.0,
+        "output_format": 1.0,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 1.0,
+        "llm_cleanup_quality": 1.0,
+        "llm_correction_quality": 1.0,
+        "llm_format_fit": 0.0,
+        "llm_anti_hallucination": 1.0,
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 0.9,
+        "llm_verdict": "Good overall, but formatting does not match expected.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":0,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":0.9,\"verdict\":\"Good overall, but formatting does not match expected.\"}"
+      },
+      "combined_total": 0.8405
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v24",
+      "case_id": "terminal-command-cleanup",
+      "context_summary": null,
+      "output_text": "run python3 scripts/eval_groq_prompts.py --mode pipeline --model llama-3.1-8b-instant",
+      "scores": {
+        "output_total": 0.6784,
+        "output_base": 0.7967,
+        "output_terms": 1.0,
+        "output_reference": 0.9112,
+        "output_exact": 0.0,
+        "output_format": 1.0,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 0.2,
+        "llm_cleanup_quality": 0.9,
+        "llm_correction_quality": 1.0,
+        "llm_format_fit": 0.2,
+        "llm_anti_hallucination": 0.0,
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 0.56,
+        "llm_verdict": "The output deviates from the intended command and introduces new flags, reducing overall quality.",
+        "llm_raw_response": "{\"meaning_preservation\":0.2,\"cleanup_quality\":0.9,\"correction_quality\":1.0,\"format_fit\":0.2,\"anti_hallucination\":0.0,\"romanian_or_language_preservation\":1.0,\"output_contract\":1.0,\"overall\":0.56,\"verdict\":\"The output deviates from the intended command and introduces new flags, reducing overall quality.\"}"
+      },
+      "combined_total": 0.6784
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v9",
+      "case_id": "notes-empty-filler",
+      "context_summary": null,
+      "output_text": "",
+      "scores": {
+        "output_total": 0.9,
+        "output_base": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0,
+        "output_format": 0.0,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 1.0,
+        "llm_cleanup_quality": 1.0,
+        "llm_correction_quality": 1.0,
+        "llm_format_fit": 1.0,
+        "llm_anti_hallucination": 1.0,
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 1.0,
+        "llm_verdict": "All criteria met.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"All criteria met.\"}"
+      },
+      "combined_total": 0.9
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "context_variant": "-",
+      "system_variant": "system-gptoss-multilingual-email-v24",
+      "case_id": "notes-empty-filler",
+      "context_summary": null,
+      "output_text": "",
+      "scores": {
+        "output_total": 0.9,
+        "output_base": 1.0,
+        "output_terms": 1.0,
+        "output_reference": 1.0,
+        "output_exact": 1.0,
+        "output_format": 0.0,
+        "output_contract": 1.0,
+        "llm_meaning_preservation": 1.0,
+        "llm_cleanup_quality": 1.0,
+        "llm_correction_quality": 1.0,
+        "llm_format_fit": 1.0,
+        "llm_anti_hallucination": 1.0,
+        "llm_language_preservation": 1.0,
+        "llm_output_contract": 1.0,
+        "llm_output_total": 1.0,
+        "llm_verdict": "Excellent, no issues.",
+        "llm_raw_response": "{\"meaning_preservation\":1,\"cleanup_quality\":1,\"correction_quality\":1,\"format_fit\":1,\"anti_hallucination\":1,\"romanian_or_language_preservation\":1,\"output_contract\":1,\"overall\":1,\"verdict\":\"Excellent, no issues.\"}"
+      },
+      "combined_total": 0.9
+    }
+  ]
+}

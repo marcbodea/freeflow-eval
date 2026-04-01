@@ -105,6 +105,43 @@ CORRECTION_MARKER_PATTERNS = (
     "perdon",
     "non",
 )
+GREETING_STOP_WORDS = {
+    "comma",
+    "yes",
+    "yeah",
+    "yep",
+    "i",
+    "ill",
+    "i'll",
+    "thank",
+    "thanks",
+    "please",
+    "can",
+    "could",
+    "we",
+    "that",
+    "this",
+}
+GENERIC_CAPITALIZED_WORDS = {
+    "The",
+    "This",
+    "That",
+    "These",
+    "Those",
+    "Mail",
+    "Slack",
+    "Superhuman",
+    "LinkedIn",
+    "Launch",
+    "Budget",
+    "Intro",
+    "Re",
+    "Hi",
+    "Hello",
+    "Dear",
+}
+WORD_RE = re.compile(r"[A-Za-zÀ-ÿ']+")
+CAPITALIZED_NAME_RE = re.compile(r"\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*\b")
 
 
 @dataclass
@@ -889,6 +926,108 @@ def sanitize_postprocessed_transcript(value: str) -> str:
     return "" if result == "EMPTY" else result
 
 
+def extract_first_name_candidates(case: Case, context_summary: str) -> list[str]:
+    candidates: list[str] = []
+    sources = [context_summary, case.metadata.get("window_title", ""), *case.custom_vocabulary]
+    seen: set[str] = set()
+    for source in sources:
+        for match in CAPITALIZED_NAME_RE.findall(source):
+            if match in GENERIC_CAPITALIZED_WORDS:
+                continue
+            first = match.split()[0]
+            if len(first) < 3 or first in GENERIC_CAPITALIZED_WORDS:
+                continue
+            if first not in seen:
+                seen.add(first)
+                candidates.append(first)
+    return candidates
+
+
+def build_name_correction_map(case: Case, context_summary: str) -> dict[str, str]:
+    candidates = extract_first_name_candidates(case, context_summary)
+    transcript_tokens = {token.lower() for token in WORD_RE.findall(case.raw_transcript) if len(token) >= 3}
+    mapping: dict[str, str] = {}
+    for token in transcript_tokens:
+        best_candidate = ""
+        best_score = 0.0
+        for candidate in candidates:
+            score = similarity_score(token, candidate)
+            same_initial = token[:1] == candidate[:1].lower()
+            if score > best_score and (same_initial or score >= 0.9):
+                best_candidate = candidate
+                best_score = score
+        if best_candidate and best_score >= 0.72 and token != best_candidate.lower():
+            mapping[token] = best_candidate
+    return mapping
+
+
+def apply_name_corrections(text: str, correction_map: dict[str, str]) -> str:
+    if not correction_map:
+        return text
+
+    pattern = re.compile(
+        r"\b(" + "|".join(re.escape(token) for token in sorted(correction_map, key=len, reverse=True)) + r")\b",
+        re.IGNORECASE,
+    )
+
+    def replace(match: re.Match[str]) -> str:
+        token = match.group(0)
+        return correction_map.get(token.lower(), token)
+
+    return pattern.sub(replace, text)
+
+
+def extract_spoken_greeting_name_tokens(raw_transcript: str) -> tuple[str, list[str]] | None:
+    tokens = WORD_RE.findall(raw_transcript)
+    if not tokens:
+        return None
+    salutation = tokens[0].lower()
+    if salutation not in {"hi", "hello", "hey", "dear", "bonjour", "bonsoir", "salut", "bună", "buna"}:
+        return None
+    name_tokens: list[str] = []
+    for token in tokens[1:]:
+        lowered = token.lower()
+        if lowered in GREETING_STOP_WORDS:
+            break
+        name_tokens.append(token)
+        if len(name_tokens) >= 3:
+            break
+    return salutation, name_tokens
+
+
+def preserve_spoken_email_greeting_scope(output: str, case: Case, context_summary: str) -> str:
+    if not is_email_case(case):
+        return output
+
+    correction_map = build_name_correction_map(case, context_summary)
+    corrected_output = apply_name_corrections(output, correction_map)
+    spoken_greeting = extract_spoken_greeting_name_tokens(case.raw_transcript)
+    stripped = corrected_output.lstrip()
+
+    if spoken_greeting is None:
+        if not EMAIL_SALUTATION_RE.match(stripped.splitlines()[0].strip()) if stripped.splitlines() else False:
+            return corrected_output
+        return re.sub(r"^\s*[^\n]+\n\s*\n?", "", corrected_output, count=1).lstrip()
+
+    salutation, spoken_name_tokens = spoken_greeting
+    lines = corrected_output.splitlines()
+    first_nonempty = next((idx for idx, line in enumerate(lines) if line.strip()), None)
+    if first_nonempty is None:
+        return corrected_output
+    if not EMAIL_SALUTATION_RE.match(lines[first_nonempty].strip()):
+        return corrected_output
+
+    normalized_salutation = salutation.capitalize()
+    corrected_name_tokens = [correction_map.get(token.lower(), token.capitalize()) for token in spoken_name_tokens]
+    greeting_line = normalized_salutation
+    if corrected_name_tokens:
+        greeting_line += " " + " ".join(corrected_name_tokens)
+    if not greeting_line.endswith(","):
+        greeting_line += ","
+    lines[first_nonempty] = greeting_line
+    return "\n".join(lines)
+
+
 def run_context_stage(client: ChatApiClient, model: str, variant: Variant, case: Case, temperature: float) -> tuple[str, dict[str, float]]:
     user_content, _ = build_context_user_message(case, include_screenshot=bool(case.screenshot_path))
     summary = client.chat(
@@ -916,6 +1055,8 @@ def run_postprocess_stage(
         temperature=temperature,
     )
     cleaned = sanitize_postprocessed_transcript(output)
+    if variant.name in {"system-gptoss-multilingual-email-v23", "system-gptoss-multilingual-email-v24"}:
+        cleaned = preserve_spoken_email_greeting_scope(cleaned, case, context_summary)
     return cleaned, score_output(cleaned, case)
 
 
