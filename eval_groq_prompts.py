@@ -281,7 +281,12 @@ def parse_args() -> argparse.Namespace:
         "--scoring-mode",
         choices=("heuristic", "llm", "hybrid"),
         default="heuristic",
-        help="How to score outputs. 'llm' uses the same model as judge, 'hybrid' averages heuristic and llm scores.",
+        help="How to score outputs. 'llm' uses the judge model when provided, otherwise the candidate model; 'hybrid' averages heuristic and llm scores.",
+    )
+    parser.add_argument(
+        "--judge-model",
+        default=None,
+        help="Optional separate model to use for LLM judging. Defaults to the candidate model when omitted.",
     )
     return parser.parse_args()
 
@@ -595,7 +600,7 @@ def clamp_score(value: Any) -> float:
 
 def score_with_llm_judge(
     client: "ChatApiClient",
-    model: str,
+    judge_model: str,
     case: Case,
     context_summary: str,
     output_text: str,
@@ -654,7 +659,7 @@ Return strict JSON only.
         indent=2,
     )
     response = client.chat(
-        model=model,
+        model=judge_model,
         system_prompt=system_prompt,
         user_content=user_prompt,
         temperature=0.0,
@@ -1120,6 +1125,7 @@ def evaluate_case(
 ) -> list[dict[str, Any]]:
     case_results: list[dict[str, Any]] = []
     active_context_variants = context_variants if args.mode in {"context", "pipeline"} else [Variant(name="-", prompt="")]
+    judge_model = args.judge_model or model
 
     for context_variant in active_context_variants:
         context_summary = case.expected_context_summary or ""
@@ -1166,11 +1172,11 @@ def evaluate_case(
             llm_scores = None
             if args.scoring_mode in {"llm", "hybrid"}:
                 print_progress(
-                    f"[judge] model={model} case={case.id} system={system_variant.name} scoring={args.scoring_mode}"
+                    f"[judge] model={model} judge={judge_model} case={case.id} system={system_variant.name} scoring={args.scoring_mode}"
                 )
                 llm_scores = score_with_llm_judge(
                     client=client,
-                    model=model,
+                    judge_model=judge_model,
                     case=case,
                     context_summary=context_summary,
                     output_text=output_text,
@@ -1278,6 +1284,8 @@ def main() -> int:
         "generated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "mode": args.mode,
         "models": args.models,
+        "judge_model": args.judge_model,
+        "scoring_mode": args.scoring_mode,
         "routing": {
             "base_url": args.base_url,
             "provider_order": args.provider_order or [],

@@ -1,6 +1,7 @@
 import unittest
+from unittest import mock
 
-from eval_groq_prompts import Case, score_output
+from eval_groq_prompts import Case, parse_args, score_output
 
 
 def make_case(**overrides):
@@ -141,6 +142,18 @@ class ScoreOutputTests(unittest.TestCase):
         )
 
         self.assertGreater(literal["output_total"], answered["output_total"])
+
+
+class ParseArgsTests(unittest.TestCase):
+    def test_judge_model_defaults_to_none(self):
+        with mock.patch("sys.argv", ["eval_groq_prompts.py"]):
+            args = parse_args()
+        self.assertIsNone(args.judge_model)
+
+    def test_judge_model_can_be_set(self):
+        with mock.patch("sys.argv", ["eval_groq_prompts.py", "--judge-model", "openai/gpt-5.4-nano"]):
+            args = parse_args()
+        self.assertEqual(args.judge_model, "openai/gpt-5.4-nano")
 
 
 if __name__ == "__main__":
