@@ -102,6 +102,108 @@ Result: `openai/gpt-oss-20b` remains the stronger choice on `v24` under hybrid s
   - otherwise-clean outputs that violated a narrow formatting expectation
 - Even with that softer judging, the ranking did not change: `gpt-oss-20b` still won overall and by case count.
 
+## English-Only Subset
+
+This run includes `19` English cases.
+
+| Model | Avg hybrid score | English case wins |
+| --- | ---: | ---: |
+| `openai/gpt-oss-20b` | `0.9284` | `10` |
+| `meta-llama/llama-4-scout` | `0.8887` | `3` |
+
+English-only ties: `6`
+
+English-only pattern:
+
+- `gpt-oss-20b` is stronger on English email cleanup and anti-hallucination.
+- `llama-4-scout` still tends to add unwanted closings such as `Best, [Your Name]` in English email-style cases.
+- `llama-4-scout` has a few narrower wins on punctuation or literal phrasing, but not enough to close the overall gap.
+
+Representative English wins for `gpt-oss-20b`:
+
+- `en-email-formal-confirmation`
+  - `gpt-oss-20b`: `0.8549`
+  - `llama-4-scout`: `0.6973`
+- `en-no-context-name-insertion`
+  - `gpt-oss-20b`: `0.8525`
+  - `llama-4-scout`: `0.7350`
+- `en-email-recipient-name-nearmatch-body`
+  - `gpt-oss-20b`: `1.0000`
+  - `llama-4-scout`: `0.8547`
+- `en-chat-keep-casual-tone`
+  - `gpt-oss-20b`: `1.0000`
+  - `llama-4-scout`: `0.9040`
+
+Representative English wins for `llama-4-scout`:
+
+- `en-prose-sequence-not-list`
+  - `llama-4-scout`: `1.0000`
+  - `gpt-oss-20b`: `0.9113`
+- `en-terminal-preserve-technical-string`
+  - `llama-4-scout`: `0.8975`
+  - `gpt-oss-20b`: `0.8795`
+- `en-email-recipient-name-nearmatch-greeting`
+  - `llama-4-scout`: `0.9950`
+  - `gpt-oss-20b`: `0.9650`
+
+## Heuristic-Only Reference
+
+This section records the earlier heuristic-only run from `eval/results/model-compare-v24-openrouter-2026-04-05.json` using the same models, same `v24` system prompt, and same case set, but without an LLM judge.
+
+### Overall Heuristic Results
+
+| Model | Avg heuristic score | Cases |
+| --- | ---: | ---: |
+| `openai/gpt-oss-20b` | `0.8133` | `32` |
+| `meta-llama/llama-4-scout` | `0.7480` | `32` |
+
+Heuristic head-to-head by case:
+
+- `openai/gpt-oss-20b`: `14` wins
+- `meta-llama/llama-4-scout`: `6` wins
+- Ties: `12`
+
+Heuristic-only pattern:
+
+- `gpt-oss-20b` had a larger raw lead under heuristic scoring than under hybrid scoring.
+- The heuristic scorer was harsher on formatting deviations, especially when a model produced a list instead of prose or skipped narrow email formatting expectations.
+- `llama-4-scout` still showed formatting strengths on some English prose/list cases, but those were not enough to overcome its weaker anti-hallucination behavior overall.
+
+### English-Only Heuristic Results
+
+This run includes the same `19` English cases.
+
+| Model | Avg heuristic score | English case wins |
+| --- | ---: | ---: |
+| `openai/gpt-oss-20b` | `0.8814` | `7` |
+| `meta-llama/llama-4-scout` | `0.8641` | `3` |
+
+English-only heuristic ties: `9`
+
+Representative heuristic English wins for `gpt-oss-20b`:
+
+- `en-cursor-rename-identifier`
+  - `gpt-oss-20b`: `0.8750`
+  - `llama-4-scout`: `0.6714`
+- `en-chat-keep-casual-tone`
+  - `gpt-oss-20b`: `1.0000`
+  - `llama-4-scout`: `0.8079`
+- `en-explicit-bulleted-list`
+  - `gpt-oss-20b`: `0.8371`
+  - `llama-4-scout`: `0.7487`
+
+Representative heuristic English wins for `llama-4-scout`:
+
+- `en-prose-sequence-not-list`
+  - `llama-4-scout`: `1.0000`
+  - `gpt-oss-20b`: `0.8210`
+- `en-list-structure`
+  - `llama-4-scout`: `1.0000`
+  - `gpt-oss-20b`: `0.8402`
+- `en-terminal-preserve-technical-string`
+  - `llama-4-scout`: `0.8450`
+  - `gpt-oss-20b`: `0.8239`
+
 ## Recommendation
 
 Keep `openai/gpt-oss-20b` as the leading candidate for `v24`.
