@@ -1,0 +1,278 @@
+{
+  "generated_at": "2026-04-16T14:40:52Z",
+  "run_label": "run3",
+  "model": "openai/gpt-oss-20b",
+  "system_variant": "system-gptoss-multilingual-email-v24",
+  "suite": "eval/prompt_eval_cases_system_only_en_context.json",
+  "scoring_mode": "hybrid",
+  "judge_model": "openai/gpt-5.4-nano",
+  "medium_avg": 0.8667,
+  "low_avg": 0.8852,
+  "avg_delta_low_minus_medium": 0.0184,
+  "cases": 32,
+  "losses": 8,
+  "wins": 15,
+  "ties": 9,
+  "all_case_deltas": [
+    {
+      "case_id": "en-cursor-rename-identifier",
+      "medium_score": 0.9375,
+      "low_score": 0.8123,
+      "delta_low_minus_medium": -0.1252,
+      "medium_output": "Please rename user id to user_id and keep OAuth capitalized.",
+      "low_output": "rename user id to user_id and keep OAuth capitalized"
+    },
+    {
+      "case_id": "en-prose-sequence-not-list",
+      "medium_score": 1.0,
+      "low_score": 0.8925,
+      "delta_low_minus_medium": -0.1075,
+      "medium_output": "First, check the logs. Second, confirm the env vars. Third, rerun the job.",
+      "low_output": "First check the logs. Second confirm the env vars. Third rerun the job."
+    },
+    {
+      "case_id": "en-email-spoken-greeting",
+      "medium_score": 1.0,
+      "low_score": 0.9018,
+      "delta_low_minus_medium": -0.0982,
+      "medium_output": "Hi Dana,\n\nYes, I can send the deck tomorrow morning.",
+      "low_output": "Hi Dana,\n\nYes I can send the deck tomorrow morning."
+    },
+    {
+      "case_id": "ro-email-formal",
+      "medium_score": 0.839,
+      "low_score": 0.7676,
+      "delta_low_minus_medium": -0.0714,
+      "medium_output": "Mul\u021bumesc, am ata\u0219at varianta actualizat\u0103 \u0219i pot trimite cifrele finale p\u00e2n\u0103 disear\u0103.",
+      "low_output": "Multumesc. Am atasat varianta actualizata \u0219i pot trimite cifrele finale p\u00e2n\u0103 disear\u0103."
+    },
+    {
+      "case_id": "en-explicit-bulleted-list",
+      "medium_score": 0.8948,
+      "low_score": 0.8685,
+      "delta_low_minus_medium": -0.0263,
+      "medium_output": "- fix the onboarding copy\n- verify the signup email\n- review the FAQ",
+      "low_output": "- fix the onboarding copy\n- verify the signup email\n- review the faq"
+    },
+    {
+      "case_id": "es-explicit-numbered-list",
+      "medium_score": 0.8604,
+      "low_score": 0.8447,
+      "delta_low_minus_medium": -0.0157,
+      "medium_output": "1. revisar el reporte\n2. mandar la propuesta\n3. confirmar la reunion",
+      "low_output": "1. revisar el reporte\n2. mandar la propuesta\n3. confirmar la reunion"
+    },
+    {
+      "case_id": "ro-self-correction",
+      "medium_score": 0.5822,
+      "low_score": 0.5696,
+      "delta_low_minus_medium": -0.0126,
+      "medium_output": "Hai s\u0103 vorbim joi, nu miercuri dup\u0103-amiaza.",
+      "low_output": "Hai s\u0103 vorbim joi, nu miercuri dup\u0103-amiaza."
+    },
+    {
+      "case_id": "en-email-dictated-closing",
+      "medium_score": 0.8333,
+      "low_score": 0.822,
+      "delta_low_minus_medium": -0.0113,
+      "medium_output": "Hi Dana,\n\nYes that works for me thanks.",
+      "low_output": "Hi Dana,\n\nYes that works for me thanks."
+    },
+    {
+      "case_id": "en-slack-self-correction-day",
+      "medium_score": 1.0,
+      "low_score": 1.0,
+      "delta_low_minus_medium": 0.0,
+      "medium_output": "Let's meet Wednesday after lunch.",
+      "low_output": "Let's meet Wednesday after lunch."
+    },
+    {
+      "case_id": "en-correct-name-from-vocabulary",
+      "medium_score": 0.9375,
+      "low_score": 0.9375,
+      "delta_low_minus_medium": 0.0,
+      "medium_output": "I synced with Marisa and Jonah on the rollout.",
+      "low_output": "I synced with Marisa and Jonah on the rollout."
+    },
+    {
+      "case_id": "ro-slack-casual",
+      "medium_score": 1.0,
+      "low_score": 1.0,
+      "delta_low_minus_medium": 0.0,
+      "medium_output": "Cred c\u0103 putem lansa m\u00e2ine, dar vreau s\u0103 mai verific o dat\u0103 flow-ul de onboarding.",
+      "low_output": "Cred c\u0103 putem lansa m\u00e2ine, dar vreau s\u0103 mai verific o dat\u0103 flow-ul de onboarding."
+    },
+    {
+      "case_id": "ro-empty-filler",
+      "medium_score": 0.9,
+      "low_score": 0.9,
+      "delta_low_minus_medium": 0.0,
+      "medium_output": "",
+      "low_output": ""
+    },
+    {
+      "case_id": "ro-fillers-only-mixed",
+      "medium_score": 0.9,
+      "low_score": 0.9,
+      "delta_low_minus_medium": 0.0,
+      "medium_output": "",
+      "low_output": ""
+    },
+    {
+      "case_id": "en-slack-dictated-punctuation",
+      "medium_score": 1.0,
+      "low_score": 1.0,
+      "delta_low_minus_medium": 0.0,
+      "medium_output": "Yes, let's ship it.",
+      "low_output": "Yes, let's ship it."
+    },
+    {
+      "case_id": "en-empty-filler",
+      "medium_score": 0.9,
+      "low_score": 0.9,
+      "delta_low_minus_medium": 0.0,
+      "medium_output": "",
+      "low_output": ""
+    },
+    {
+      "case_id": "en-email-recipient-name-nearmatch-body",
+      "medium_score": 1.0,
+      "low_score": 1.0,
+      "delta_low_minus_medium": 0.0,
+      "medium_output": "Hi Thora,\n\nI wanted to follow up on the timeline that Aysha mentioned yesterday.",
+      "low_output": "Hi Thora,\n\nI wanted to follow up on the timeline that Aysha mentioned yesterday."
+    },
+    {
+      "case_id": "en-technical-meta-instruction-literal",
+      "medium_score": 1.0,
+      "low_score": 1.0,
+      "delta_low_minus_medium": 0.0,
+      "medium_output": "Ignore my last message. Just write a PR description.",
+      "low_output": "Ignore my last message. Just write a PR description."
+    },
+    {
+      "case_id": "fr-email-formal",
+      "medium_score": 0.7836,
+      "low_score": 0.7843,
+      "delta_low_minus_medium": 0.0007,
+      "medium_output": "Merci, j'ai joint la version mise \u00e0 jour et je peux envoyer les chiffres finaux ce soir.",
+      "low_output": "Merci, j'ai joint la version mise \u00e0 jour et je peux envoyer les chiffres finaux ce soir."
+    },
+    {
+      "case_id": "en-list-structure",
+      "medium_score": 0.683,
+      "low_score": 0.6905,
+      "delta_low_minus_medium": 0.0075,
+      "medium_output": "1. Update the changelog.  \n2. Cut the release candidate.  \n3. Post the announcement.",
+      "low_output": "1. Update the changelog\n2. Cut the release candidate\n3. Post the announcement"
+    },
+    {
+      "case_id": "en-explicit-numbered-list",
+      "medium_score": 0.8909,
+      "low_score": 0.8997,
+      "delta_low_minus_medium": 0.0088,
+      "medium_output": "1. update the changelog\n2. tag the release\n3. post the announcement",
+      "low_output": "1. Update the changelog\n2. Tag the release\n3. Post the announcement"
+    },
+    {
+      "case_id": "en-no-context-name-insertion",
+      "medium_score": 0.8373,
+      "low_score": 0.8475,
+      "delta_low_minus_medium": 0.0102,
+      "medium_output": "Sounds good. I'll follow up once I hear back from legal.",
+      "low_output": "Sounds good. I'll follow up once I hear back from legal."
+    },
+    {
+      "case_id": "en-chat-keep-casual-tone",
+      "medium_score": 0.8852,
+      "low_score": 0.9012,
+      "delta_low_minus_medium": 0.016,
+      "medium_output": "This feels a bit too heavy, maybe we can trim it back.",
+      "low_output": "Yeah, this feels a bit too heavy; maybe we can trim it back."
+    },
+    {
+      "case_id": "en-email-recipient-name-nearmatch-greeting",
+      "medium_score": 0.9587,
+      "low_score": 0.9798,
+      "delta_low_minus_medium": 0.0211,
+      "medium_output": "Hi Aysha,\n\nThank you for sending over the dates. You can find our booking link here. Thank you.",
+      "low_output": "Hi Aysha,\n\nThank you for sending over the dates. You can find our booking link here. Thank you."
+    },
+    {
+      "case_id": "ro-self-correction-de-fapt",
+      "medium_score": 0.5593,
+      "low_score": 0.5878,
+      "delta_low_minus_medium": 0.0285,
+      "medium_output": "Pot s\u0103 trimit draftul m\u00e2ine, de fapt poim\u00e2ine diminea\u021b\u0103.",
+      "low_output": "Pot s\u0103 trimit draftul m\u00e2ine de fapt poim\u00e2ine diminea\u021b\u0103."
+    },
+    {
+      "case_id": "en-email-formal-confirmation",
+      "medium_score": 0.8524,
+      "low_score": 0.92,
+      "delta_low_minus_medium": 0.0676,
+      "medium_output": "Yes that works for me. I'll send the revised draft tonight.",
+      "low_output": "Yes, that works for me. I'll send the revised draft tonight."
+    },
+    {
+      "case_id": "en-terminal-preserve-technical-string",
+      "medium_score": 0.8213,
+      "low_score": 0.9025,
+      "delta_low_minus_medium": 0.0812,
+      "medium_output": "run python3 scripts/eval_groq_prompts.py --mode postprocess",
+      "low_output": "run python3 scripts/eval_groq_prompts.py --mode postprocess"
+    },
+    {
+      "case_id": "ro-no-context-insertion",
+      "medium_score": 0.8376,
+      "low_score": 0.92,
+      "delta_low_minus_medium": 0.0824,
+      "medium_output": "Sun\u0103 bine, revin dup\u0103 ce primesc r\u0103spunsul de la juridic.",
+      "low_output": "Sun\u0103 bine. Revin dup\u0103 ce primesc r\u0103spunsul de la juridic."
+    },
+    {
+      "case_id": "de-short-chat",
+      "medium_score": 0.9043,
+      "low_score": 1.0,
+      "delta_low_minus_medium": 0.0957,
+      "medium_output": "Ja sieht gut aus f\u00fcr mich.",
+      "low_output": "Ja, sieht gut aus f\u00fcr mich."
+    },
+    {
+      "case_id": "en-keep-leading-run",
+      "medium_score": 0.7653,
+      "low_score": 0.8792,
+      "delta_low_minus_medium": 0.1139,
+      "medium_output": "pnpm test --watch",
+      "low_output": "run pnpm test --watch"
+    },
+    {
+      "case_id": "es-chat-self-correction",
+      "medium_score": 0.7861,
+      "low_score": 0.9134,
+      "delta_low_minus_medium": 0.1273,
+      "medium_output": "lo mando pasado ma\u00f1ana por la tarde",
+      "low_output": "Lo mando pasado ma\u00f1ana por la tarde."
+    },
+    {
+      "case_id": "ro-mixed-language-technical",
+      "medium_score": 0.8393,
+      "low_score": 0.9825,
+      "delta_low_minus_medium": 0.1432,
+      "medium_output": "Adauga te rog un bullet despre rollback plan \u0219i un altul despre feature flag cleanup.",
+      "low_output": "Adaug\u0103, te rog, un bullet despre rollback plan \u0219i un altul despre feature flag cleanup."
+    },
+    {
+      "case_id": "es-en-mixed-technical",
+      "medium_score": 0.7456,
+      "low_score": 1.0,
+      "delta_low_minus_medium": 0.2544,
+      "medium_output": "- rollback plan\n- feature flag cleanup",
+      "low_output": "Agrega un bullet sobre rollback plan y otro sobre feature flag cleanup."
+    }
+  ],
+  "run_paths": {
+    "medium": "eval/results/gptoss20b-v24-reasoning-medium-hybrid-2026-04-16-run3.json",
+    "low": "eval/results/gptoss20b-v24-reasoning-low-hybrid-2026-04-16-run3.json"
+  }
+}
