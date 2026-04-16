@@ -1,0 +1,445 @@
+{
+  "generated_at": "2026-04-16T14:25:42Z",
+  "model": "openai/gpt-oss-20b",
+  "system_variant": "system-gptoss-multilingual-email-v24",
+  "suite": "eval/prompt_eval_cases_system_only_en_context.json",
+  "scoring_mode": "hybrid",
+  "judge_model": "openai/gpt-5.4-nano",
+  "medium_avg": 0.8822,
+  "low_avg": 0.8761,
+  "avg_delta_low_minus_medium": -0.0061,
+  "cases": 32,
+  "losses": 10,
+  "wins": 11,
+  "ties": 11,
+  "major_losses": [
+    {
+      "case_id": "ro-slack-casual",
+      "medium_score": 1.0,
+      "low_score": 0.8551,
+      "delta_low_minus_medium": -0.1449,
+      "medium_output": "Cred c\u0103 putem lansa m\u00e2ine, dar vreau s\u0103 mai verific o dat\u0103 flow-ul de onboarding.",
+      "low_output": "Cred c\u0103 putem lansa m\u00e2ine, dar vreau s\u0103 mai verific o dat\u0103 flow\u2011ul de onboarding.",
+      "medium_verdict": "The candidate output cleanly and exactly matches the expected Romanian meaning and formatting with no added content.",
+      "low_verdict": "The candidate output preserves the intended meaning and Romanian text with excellent cleanup and correct formatting, matching the expected output."
+    },
+    {
+      "case_id": "en-cursor-rename-identifier",
+      "medium_score": 0.9375,
+      "low_score": 0.8086,
+      "delta_low_minus_medium": -0.1289,
+      "medium_output": "Please rename user id to user_id and keep OAuth capitalized.",
+      "low_output": "rename user id to user_id and keep OAuth capitalized",
+      "medium_verdict": "The candidate output perfectly preserves meaning, formatting, and language with no extraneous content.",
+      "low_verdict": "Mostly correct identifier correction and formatting, with only a minor loss of the leading \u201cPlease\u201d and missing final punctuation."
+    },
+    {
+      "case_id": "es-explicit-numbered-list",
+      "medium_score": 0.9725,
+      "low_score": 0.8444,
+      "delta_low_minus_medium": -0.1281,
+      "medium_output": "1. revisar el reporte.\n2. mandar la propuesta.\n3. confirmar la reuni\u00f3n.",
+      "low_output": "1. revisar el reporte\n2. mandar la propuesta\n3. confirmar la reunion",
+      "medium_verdict": "The output preserves the intended numbered list and formatting correctly, with only minor issues in capitalization.",
+      "low_verdict": "The numbered list structure and meaning are preserved well, with only minor formatting and capitalization differences."
+    },
+    {
+      "case_id": "en-prose-sequence-not-list",
+      "medium_score": 1.0,
+      "low_score": 0.8836,
+      "delta_low_minus_medium": -0.1164,
+      "medium_output": "First, check the logs. Second, confirm the env vars. Third, rerun the job.",
+      "low_output": "First check the logs. Second confirm the env vars. Third rerun the job.",
+      "medium_verdict": "The candidate output matches the expected cleaned prose exactly with correct formatting and no added or missing content.",
+      "low_verdict": "The candidate preserves the intended meaning well and cleans up correctly, with only minor punctuation/capitalization differences from the expected prose."
+    },
+    {
+      "case_id": "en-email-spoken-greeting",
+      "medium_score": 1.0,
+      "low_score": 0.8883,
+      "delta_low_minus_medium": -0.1117,
+      "medium_output": "Hi Dana,\n\nYes, I can send the deck tomorrow morning.",
+      "low_output": "Hi Dana,\n\nYes I can send the deck tomorrow morning.",
+      "medium_verdict": "The candidate output perfectly matches the expected cleaned email reply with correct meaning, formatting, and no extra content.",
+      "low_verdict": "The candidate output closely preserves the intended email reply and formatting, with only minor punctuation differences."
+    },
+    {
+      "case_id": "en-explicit-bulleted-list",
+      "medium_score": 0.8885,
+      "low_score": 0.8257,
+      "delta_low_minus_medium": -0.0628,
+      "medium_output": "- fix the onboarding copy\n- verify the signup email\n- review the FAQ",
+      "low_output": "- first fix the onboarding copy\n- second verify the signup email\n- third review the faq",
+      "medium_verdict": "The candidate correctly converts the transcript into a bullet list with accurate wording and no added content, with only minor casing/punctuation differences.",
+      "low_verdict": "The candidate preserves the intended bulleted items and is clean overall, with minor issues in phrasing/capitalization (e.g., FAQ) compared to the expected output."
+    }
+  ],
+  "major_wins": [
+    {
+      "case_id": "en-email-formal-confirmation",
+      "medium_score": 0.8549,
+      "low_score": 0.92,
+      "delta_low_minus_medium": 0.0651,
+      "medium_output": "Yes that works for me. I'll send the revised draft tonight.",
+      "low_output": "Yes, that works for me. I'll send the revised draft tonight.",
+      "medium_verdict": "The candidate output matches the expected email reply exactly with clean formatting and no extraneous content.",
+      "low_verdict": "Perfect match: meaning, cleanup, formatting, and output contract are all satisfied with no added content."
+    },
+    {
+      "case_id": "ro-no-context-insertion",
+      "medium_score": 0.8414,
+      "low_score": 0.92,
+      "delta_low_minus_medium": 0.0786,
+      "medium_output": "Sun\u0103 bine, revin dup\u0103 ce primesc r\u0103spunsul de la juridic.",
+      "low_output": "Sun\u0103 bine. Revin dup\u0103 ce primesc r\u0103spunsul de la juridic.",
+      "medium_verdict": "Accurate Romanian cleanup with only a minor punctuation/sentence-boundary difference versus the expected output.",
+      "low_verdict": "The candidate output exactly matches the expected cleaned email reply with perfect meaning, language, and formatting."
+    },
+    {
+      "case_id": "ro-mixed-language-technical",
+      "medium_score": 0.889,
+      "low_score": 1.0,
+      "delta_low_minus_medium": 0.111,
+      "medium_output": "Adauga te rog un bullet despre rollback plan \u0219i un altul despre feature flag cleanup.",
+      "low_output": "Adaug\u0103, te rog, un bullet despre rollback plan \u0219i un altul despre feature flag cleanup.",
+      "medium_verdict": "The candidate preserves the intended Romanian meaning and technical terms well, with only minor punctuation loss compared to the reference.",
+      "low_verdict": "The candidate output matches the expected cleaned text perfectly with no added or missing content."
+    },
+    {
+      "case_id": "ro-email-formal",
+      "medium_score": 0.5945,
+      "low_score": 0.7409,
+      "delta_low_minus_medium": 0.1464,
+      "medium_output": "Am atasat varianta actualizata si pot trimite cifrele finale pana diseara.\n\nMultumesc.",
+      "low_output": "Multumesc, am atasat varianta actualizata \u0219i pot trimite cifrele finale p\u00e2n\u0103 disear\u0103.",
+      "medium_verdict": "Meaning is largely preserved and no hallucinations were added, but Romanian diacritics and the expected paragraph/sentence structure were not matched well.",
+      "low_verdict": "The output preserves the meaning and is well-cleaned, with minor shortcomings in Romanian diacritics and punctuation compared to the expected email text."
+    }
+  ],
+  "all_case_deltas": [
+    {
+      "case_id": "ro-slack-casual",
+      "medium_score": 1.0,
+      "low_score": 0.8551,
+      "delta_low_minus_medium": -0.1449,
+      "medium_output": "Cred c\u0103 putem lansa m\u00e2ine, dar vreau s\u0103 mai verific o dat\u0103 flow-ul de onboarding.",
+      "low_output": "Cred c\u0103 putem lansa m\u00e2ine, dar vreau s\u0103 mai verific o dat\u0103 flow\u2011ul de onboarding.",
+      "medium_verdict": "The candidate output cleanly and exactly matches the expected Romanian meaning and formatting with no added content.",
+      "low_verdict": "The candidate output preserves the intended meaning and Romanian text with excellent cleanup and correct formatting, matching the expected output."
+    },
+    {
+      "case_id": "en-cursor-rename-identifier",
+      "medium_score": 0.9375,
+      "low_score": 0.8086,
+      "delta_low_minus_medium": -0.1289,
+      "medium_output": "Please rename user id to user_id and keep OAuth capitalized.",
+      "low_output": "rename user id to user_id and keep OAuth capitalized",
+      "medium_verdict": "The candidate output perfectly preserves meaning, formatting, and language with no extraneous content.",
+      "low_verdict": "Mostly correct identifier correction and formatting, with only a minor loss of the leading \u201cPlease\u201d and missing final punctuation."
+    },
+    {
+      "case_id": "es-explicit-numbered-list",
+      "medium_score": 0.9725,
+      "low_score": 0.8444,
+      "delta_low_minus_medium": -0.1281,
+      "medium_output": "1. revisar el reporte.\n2. mandar la propuesta.\n3. confirmar la reuni\u00f3n.",
+      "low_output": "1. revisar el reporte\n2. mandar la propuesta\n3. confirmar la reunion",
+      "medium_verdict": "The output preserves the intended numbered list and formatting correctly, with only minor issues in capitalization.",
+      "low_verdict": "The numbered list structure and meaning are preserved well, with only minor formatting and capitalization differences."
+    },
+    {
+      "case_id": "en-prose-sequence-not-list",
+      "medium_score": 1.0,
+      "low_score": 0.8836,
+      "delta_low_minus_medium": -0.1164,
+      "medium_output": "First, check the logs. Second, confirm the env vars. Third, rerun the job.",
+      "low_output": "First check the logs. Second confirm the env vars. Third rerun the job.",
+      "medium_verdict": "The candidate output matches the expected cleaned prose exactly with correct formatting and no added or missing content.",
+      "low_verdict": "The candidate preserves the intended meaning well and cleans up correctly, with only minor punctuation/capitalization differences from the expected prose."
+    },
+    {
+      "case_id": "en-email-spoken-greeting",
+      "medium_score": 1.0,
+      "low_score": 0.8883,
+      "delta_low_minus_medium": -0.1117,
+      "medium_output": "Hi Dana,\n\nYes, I can send the deck tomorrow morning.",
+      "low_output": "Hi Dana,\n\nYes I can send the deck tomorrow morning.",
+      "medium_verdict": "The candidate output perfectly matches the expected cleaned email reply with correct meaning, formatting, and no extra content.",
+      "low_verdict": "The candidate output closely preserves the intended email reply and formatting, with only minor punctuation differences."
+    },
+    {
+      "case_id": "en-explicit-bulleted-list",
+      "medium_score": 0.8885,
+      "low_score": 0.8257,
+      "delta_low_minus_medium": -0.0628,
+      "medium_output": "- fix the onboarding copy\n- verify the signup email\n- review the FAQ",
+      "low_output": "- first fix the onboarding copy\n- second verify the signup email\n- third review the faq",
+      "medium_verdict": "The candidate correctly converts the transcript into a bullet list with accurate wording and no added content, with only minor casing/punctuation differences.",
+      "low_verdict": "The candidate preserves the intended bulleted items and is clean overall, with minor issues in phrasing/capitalization (e.g., FAQ) compared to the expected output."
+    },
+    {
+      "case_id": "en-terminal-preserve-technical-string",
+      "medium_score": 0.9075,
+      "low_score": 0.8912,
+      "delta_low_minus_medium": -0.0163,
+      "medium_output": "run python3 scripts/eval_groq_prompts.py --mode postprocess",
+      "low_output": "run python3 scripts/eval_groq_prompts.py --mode postprocess",
+      "medium_verdict": "The candidate preserves the intended technical command accurately and cleanly, with only minor formatting/punctuation differences from the expected output.",
+      "low_verdict": "The command is preserved correctly with only minor formatting differences (missing capitalization and trailing period)."
+    },
+    {
+      "case_id": "en-email-dictated-closing",
+      "medium_score": 0.8305,
+      "low_score": 0.8157,
+      "delta_low_minus_medium": -0.0148,
+      "medium_output": "Hi Dana,\n\nYes that works for me thanks.",
+      "low_output": "Hi Dana,\n\nYes that works for me thanks.",
+      "medium_verdict": "Good cleaned email reply with minor punctuation and paragraph formatting differences.",
+      "low_verdict": "The candidate preserves the intended meaning and cleans the transcript well, but the email formatting and punctuation (comma, paragraph breaks before \u201cThanks,\u201d) don\u2019t match the expected output."
+    },
+    {
+      "case_id": "en-keep-leading-run",
+      "medium_score": 0.8165,
+      "low_score": 0.8078,
+      "delta_low_minus_medium": -0.0087,
+      "medium_output": "pnpm test --watch",
+      "low_output": "pnpm test --watch",
+      "medium_verdict": "Mostly correct command cleanup, but it omits the expected leading 'Run' wording and final punctuation.",
+      "low_verdict": "The candidate preserves the intended terminal command correctly, with minor formatting differences (missing the leading \u201cRun\u201d and final period)."
+    },
+    {
+      "case_id": "en-email-recipient-name-nearmatch-greeting",
+      "medium_score": 0.98,
+      "low_score": 0.9738,
+      "delta_low_minus_medium": -0.0062,
+      "medium_output": "Hi Aysha,\n\nThank you for sending over the dates. You can find our booking link here. Thank you.",
+      "low_output": "Hi Aysha,\n\nThank you for sending over the dates. You can find our booking link here. Thank you.",
+      "medium_verdict": "The candidate preserves the intended message and content well, with only minor formatting differences in paragraph separation.",
+      "low_verdict": "The candidate preserves the intended message and content accurately, with only minor email paragraph formatting differences."
+    },
+    {
+      "case_id": "en-slack-self-correction-day",
+      "medium_score": 1.0,
+      "low_score": 1.0,
+      "delta_low_minus_medium": 0.0,
+      "medium_output": "Let's meet Wednesday after lunch.",
+      "low_output": "Let's meet Wednesday after lunch.",
+      "medium_verdict": "The candidate output perfectly preserves the final corrected meaning and matches the expected formatting with no extra content.",
+      "low_verdict": "The candidate output cleanly preserves the self-corrected meaning with perfect formatting and no extra content."
+    },
+    {
+      "case_id": "en-correct-name-from-vocabulary",
+      "medium_score": 0.9375,
+      "low_score": 0.9375,
+      "delta_low_minus_medium": 0.0,
+      "medium_output": "I synced with Marisa and Jonah on the rollout.",
+      "low_output": "I synced with Marisa and Jonah on the rollout.",
+      "medium_verdict": "The candidate output matches the expected cleaned text exactly with no extra or invented content.",
+      "low_verdict": "The candidate output matches the expected Slack update exactly with perfect cleanup, corrections, formatting, and no added content."
+    },
+    {
+      "case_id": "ro-empty-filler",
+      "medium_score": 0.9,
+      "low_score": 0.9,
+      "delta_low_minus_medium": 0.0,
+      "medium_output": "",
+      "low_output": "",
+      "medium_verdict": "The candidate output correctly matches the expected empty result with no added or missing content.",
+      "low_verdict": "The candidate output correctly matches the empty expected result with no added text."
+    },
+    {
+      "case_id": "ro-fillers-only-mixed",
+      "medium_score": 0.9,
+      "low_score": 0.9,
+      "delta_low_minus_medium": 0.0,
+      "medium_output": "",
+      "low_output": "",
+      "medium_verdict": "The output correctly returns empty text, matching the expected cleanup of filler-only content.",
+      "low_verdict": "The candidate output matches the expected empty result with perfect preservation and contract adherence."
+    },
+    {
+      "case_id": "es-chat-self-correction",
+      "medium_score": 0.9134,
+      "low_score": 0.9134,
+      "delta_low_minus_medium": 0.0,
+      "medium_output": "Lo mando pasado ma\u00f1ana por la tarde.",
+      "low_output": "Lo mando pasado ma\u00f1ana por la tarde.",
+      "medium_verdict": "The candidate output perfectly matches the expected cleaned message with correct meaning, formatting, and no extra content.",
+      "low_verdict": "The candidate output cleanly preserves the intended meaning, matches the expected text exactly, and follows the output contract."
+    },
+    {
+      "case_id": "es-en-mixed-technical",
+      "medium_score": 1.0,
+      "low_score": 1.0,
+      "delta_low_minus_medium": 0.0,
+      "medium_output": "Agrega un bullet sobre rollback plan y otro sobre feature flag cleanup.",
+      "low_output": "Agrega un bullet sobre rollback plan y otro sobre feature flag cleanup.",
+      "medium_verdict": "The candidate output matches the expected cleaned text exactly with correct language, wording, and formatting.",
+      "low_verdict": "The candidate output cleanly preserves the exact intended meaning, language, and formatting with no extra content."
+    },
+    {
+      "case_id": "de-short-chat",
+      "medium_score": 1.0,
+      "low_score": 1.0,
+      "delta_low_minus_medium": 0.0,
+      "medium_output": "Ja, sieht gut aus f\u00fcr mich.",
+      "low_output": "Ja, sieht gut aus f\u00fcr mich.",
+      "medium_verdict": "The candidate output perfectly preserves the intended meaning, matches the expected formatting and wording, and contains no extra text or invented content.",
+      "low_verdict": "The candidate output perfectly preserves the meaning and language, with correct punctuation and no extra text."
+    },
+    {
+      "case_id": "en-slack-dictated-punctuation",
+      "medium_score": 1.0,
+      "low_score": 1.0,
+      "delta_low_minus_medium": 0.0,
+      "medium_output": "Yes, let's ship it.",
+      "low_output": "Yes, let's ship it.",
+      "medium_verdict": "The candidate output matches the expected cleaned Slack message exactly with correct punctuation and no added text.",
+      "low_verdict": "Perfect match to the expected cleaned Slack message with correct punctuation and no extra content."
+    },
+    {
+      "case_id": "en-empty-filler",
+      "medium_score": 0.9,
+      "low_score": 0.9,
+      "delta_low_minus_medium": 0.0,
+      "medium_output": "",
+      "low_output": "",
+      "medium_verdict": "The candidate output correctly matches the empty expected result with perfect cleanup and no added content.",
+      "low_verdict": "The candidate output correctly matches the expected empty result with no extraneous text."
+    },
+    {
+      "case_id": "en-email-recipient-name-nearmatch-body",
+      "medium_score": 1.0,
+      "low_score": 1.0,
+      "delta_low_minus_medium": 0.0,
+      "medium_output": "Hi Thora,\n\nI wanted to follow up on the timeline that Aysha mentioned yesterday.",
+      "low_output": "Hi Thora,\n\nI wanted to follow up on the timeline that Aysha mentioned yesterday.",
+      "medium_verdict": "Perfect match to the expected cleaned email reply with correct meaning, formatting, and no added content.",
+      "low_verdict": "The candidate output perfectly matches the expected cleaned email reply with correct meaning, formatting, and no added content."
+    },
+    {
+      "case_id": "en-technical-meta-instruction-literal",
+      "medium_score": 1.0,
+      "low_score": 1.0,
+      "delta_low_minus_medium": 0.0,
+      "medium_output": "Ignore my last message. Just write a PR description.",
+      "low_output": "Ignore my last message. Just write a PR description.",
+      "medium_verdict": "The candidate output matches the expected PR description exactly with no added or missing content.",
+      "low_verdict": "The candidate output matches the expected PR description exactly with no extra text or artifacts."
+    },
+    {
+      "case_id": "en-no-context-name-insertion",
+      "medium_score": 0.8362,
+      "low_score": 0.84,
+      "delta_low_minus_medium": 0.0038,
+      "medium_output": "Sounds good. I'll follow up once I hear back from legal.",
+      "low_output": "Sounds good. I'll follow up once I hear back from legal.",
+      "medium_verdict": "The candidate output preserves the intended meaning with proper cleanup and punctuation, with only minor formatting differences.",
+      "low_verdict": "The candidate output preserves the intended meaning, cleans filler well, and matches the expected email-body formatting with only minor punctuation differences."
+    },
+    {
+      "case_id": "en-list-structure",
+      "medium_score": 0.6978,
+      "low_score": 0.7055,
+      "delta_low_minus_medium": 0.0077,
+      "medium_output": "1. Update the changelog.  \n2. Cut the release candidate.  \n3. Post the announcement.",
+      "low_output": "1. Update the changelog  \n2. Cut the release candidate  \n3. Post the announcement",
+      "medium_verdict": "The candidate preserves the intended meaning and cleans the transcript well, but uses a numbered list instead of the expected prose-style ordinal sentences.",
+      "low_verdict": "The candidate preserves the intended meaning with good cleanup and no hallucinations, though it uses a numbered list instead of the expected prose-style ordinal sentences."
+    },
+    {
+      "case_id": "en-chat-keep-casual-tone",
+      "medium_score": 0.8902,
+      "low_score": 0.915,
+      "delta_low_minus_medium": 0.0248,
+      "medium_output": "This feels a bit too heavy, maybe we can trim it back.",
+      "low_output": "Yeah, this feels a bit too heavy; maybe we can trim it back.",
+      "medium_verdict": "The candidate cleanly preserves the intended meaning and tone with only minor punctuation/capitalization differences.",
+      "low_verdict": "The candidate output cleanly preserves the original meaning and fits the casual chat format with only minor punctuation differences."
+    },
+    {
+      "case_id": "fr-email-formal",
+      "medium_score": 0.7649,
+      "low_score": 0.7898,
+      "delta_low_minus_medium": 0.0249,
+      "medium_output": "Merci, j'ai joint la version mise \u00e0 jour et je peux envoyer les chiffres finaux ce soir.",
+      "low_output": "Merci, j'ai joint la version mise \u00e0 jour et je peux envoyer les chiffres finaux ce soir.",
+      "medium_verdict": "The candidate preserves the intended meaning and cleans the text well, with only minor punctuation/diacritic differences from the expected output.",
+      "low_verdict": "The candidate output preserves the intended meaning and language accurately, with only minor punctuation differences versus the expected email reply."
+    },
+    {
+      "case_id": "en-explicit-numbered-list",
+      "medium_score": 0.881,
+      "low_score": 0.906,
+      "delta_low_minus_medium": 0.025,
+      "medium_output": "1. update the changelog\n2. tag the release\n3. post the announcement",
+      "low_output": "1. Update the changelog\n2. Tag the release\n3. Post the announcement",
+      "medium_verdict": "The candidate preserves the intended numbered list well with only minor punctuation/capitalization differences.",
+      "low_verdict": "The output preserves the intended numbered list content accurately with only minor punctuation differences."
+    },
+    {
+      "case_id": "ro-self-correction-de-fapt",
+      "medium_score": 0.558,
+      "low_score": 0.5831,
+      "delta_low_minus_medium": 0.0251,
+      "medium_output": "Pot s\u0103 trimit draftul m\u00e2ine, de fapt poim\u00e2ine diminea\u021b\u0103.",
+      "low_output": "Pot s\u0103 trimit draftul m\u00e2ine, de fapt poim\u00e2ine diminea\u021b\u0103.",
+      "medium_verdict": "Candidate preserves most Romanian/format details but fails to remove the abandoned self-correction (\u201cm\u00e2ine\u201d), hurting meaning preservation and cleanup.",
+      "low_verdict": "Mostly clean and well-formatted Romanian, but it failed to remove the abandoned part of the self-correction (\u201cde fapt\u201d), reducing meaning preservation."
+    },
+    {
+      "case_id": "ro-self-correction",
+      "medium_score": 0.5396,
+      "low_score": 0.5709,
+      "delta_low_minus_medium": 0.0313,
+      "medium_output": "Hai s\u0103 vorbim joi, nu miercuri dup\u0103-amiaza.",
+      "low_output": "Hai s\u0103 vorbim joi, nu miercuri dup\u0103-amiaza.",
+      "medium_verdict": "Output preserves Romanian and is clean, but it fails the self-correction and keeps the wrong day (joi instead of miercuri dup\u0103-amiaz\u0103).",
+      "low_verdict": "Meaning is not fully preserved due to retaining the abandoned 'joi' option instead of the final corrected 'miercuri dup\u0103-amiaz\u0103'."
+    },
+    {
+      "case_id": "en-email-formal-confirmation",
+      "medium_score": 0.8549,
+      "low_score": 0.92,
+      "delta_low_minus_medium": 0.0651,
+      "medium_output": "Yes that works for me. I'll send the revised draft tonight.",
+      "low_output": "Yes, that works for me. I'll send the revised draft tonight.",
+      "medium_verdict": "The candidate output matches the expected email reply exactly with clean formatting and no extraneous content.",
+      "low_verdict": "Perfect match: meaning, cleanup, formatting, and output contract are all satisfied with no added content."
+    },
+    {
+      "case_id": "ro-no-context-insertion",
+      "medium_score": 0.8414,
+      "low_score": 0.92,
+      "delta_low_minus_medium": 0.0786,
+      "medium_output": "Sun\u0103 bine, revin dup\u0103 ce primesc r\u0103spunsul de la juridic.",
+      "low_output": "Sun\u0103 bine. Revin dup\u0103 ce primesc r\u0103spunsul de la juridic.",
+      "medium_verdict": "Accurate Romanian cleanup with only a minor punctuation/sentence-boundary difference versus the expected output.",
+      "low_verdict": "The candidate output exactly matches the expected cleaned email reply with perfect meaning, language, and formatting."
+    },
+    {
+      "case_id": "ro-mixed-language-technical",
+      "medium_score": 0.889,
+      "low_score": 1.0,
+      "delta_low_minus_medium": 0.111,
+      "medium_output": "Adauga te rog un bullet despre rollback plan \u0219i un altul despre feature flag cleanup.",
+      "low_output": "Adaug\u0103, te rog, un bullet despre rollback plan \u0219i un altul despre feature flag cleanup.",
+      "medium_verdict": "The candidate preserves the intended Romanian meaning and technical terms well, with only minor punctuation loss compared to the reference.",
+      "low_verdict": "The candidate output matches the expected cleaned text perfectly with no added or missing content."
+    },
+    {
+      "case_id": "ro-email-formal",
+      "medium_score": 0.5945,
+      "low_score": 0.7409,
+      "delta_low_minus_medium": 0.1464,
+      "medium_output": "Am atasat varianta actualizata si pot trimite cifrele finale pana diseara.\n\nMultumesc.",
+      "low_output": "Multumesc, am atasat varianta actualizata \u0219i pot trimite cifrele finale p\u00e2n\u0103 disear\u0103.",
+      "medium_verdict": "Meaning is largely preserved and no hallucinations were added, but Romanian diacritics and the expected paragraph/sentence structure were not matched well.",
+      "low_verdict": "The output preserves the meaning and is well-cleaned, with minor shortcomings in Romanian diacritics and punctuation compared to the expected email text."
+    }
+  ],
+  "run_paths": {
+    "medium": "eval/results/gptoss20b-v24-reasoning-medium-hybrid-2026-04-16.json",
+    "low": "eval/results/gptoss20b-v24-reasoning-low-hybrid-2026-04-16.json"
+  }
+}
